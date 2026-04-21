@@ -109,7 +109,7 @@ collections:
     extension: "md"
     format: "frontmatter"
     editor:
-      preview: false
+      preview: true
     fields:
       - label: "Titulo"
         name: "title"
