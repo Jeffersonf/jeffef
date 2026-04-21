@@ -11,6 +11,8 @@ const notas = defineCollection({
     tags: z.array(z.string()).default([]),
     photo: z.string().optional(),
     photoAlt: z.string().optional(),
+    photoFit: z.enum(['cover', 'contain']).default('cover'),
+    photoHeight: z.coerce.number().int().min(240).max(1200).default(520),
     draft: z.boolean().default(false)
   })
 });

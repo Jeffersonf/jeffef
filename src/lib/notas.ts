@@ -47,6 +47,7 @@ export function resolveAssetPath(path?: string) {
   if (!path) return undefined;
 
   if (/^https?:\/\//i.test(path)) return path;
+  if (/^\/jeffef\//i.test(path)) return path;
 
   const normalized = path
     .replace(/^public[\\/]/i, '')

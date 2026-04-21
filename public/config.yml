@@ -11,7 +11,7 @@ backend:
   auth_endpoint: auth
 
 media_folder: "public/uploads"
-public_folder: "/uploads"
+public_folder: "/jeffef/uploads"
 
 collections:
   - name: "site"
@@ -150,6 +150,22 @@ collections:
         name: "photoAlt"
         widget: "string"
         required: false
+      - label: "Ajuste da foto"
+        name: "photoFit"
+        widget: "select"
+        default: "cover"
+        required: false
+        options:
+          - { label: "Preencher corte", value: "cover" }
+          - { label: "Mostrar inteira", value: "contain" }
+      - label: "Altura maxima da foto"
+        name: "photoHeight"
+        widget: "number"
+        default: 520
+        required: false
+        value_type: "int"
+        min: 240
+        max: 1200
       - label: "Rascunho"
         name: "draft"
         widget: "boolean"
