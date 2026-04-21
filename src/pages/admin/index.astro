@@ -9,8 +9,329 @@ const url = (path: string) => `${base}${path.replace(/^\/+/, '')}`;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Editor - jefferson</title>
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .image-lab {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        z-index: 1000;
+        width: min(360px, calc(100vw - 24px));
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        border-radius: 10px;
+        background: rgba(15, 19, 28, 0.96);
+        box-shadow: 0 22px 60px rgba(0, 0, 0, 0.45);
+        color: #f3f7ff;
+        font: 13px/1.45 Inter, Arial, sans-serif;
+        overflow: hidden;
+      }
+
+      .image-lab[data-collapsed="true"] .image-lab__body {
+        display: none;
+      }
+
+      .image-lab__head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 12px 14px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .image-lab__title {
+        margin: 0;
+        font-size: 13px;
+        font-weight: 700;
+      }
+
+      .image-lab__toggle {
+        appearance: none;
+        border: 0;
+        background: transparent;
+        color: #9db4ff;
+        cursor: pointer;
+        font: inherit;
+      }
+
+      .image-lab__body {
+        display: grid;
+        gap: 12px;
+        padding: 14px;
+      }
+
+      .image-lab__hint {
+        margin: 0;
+        color: rgba(255, 255, 255, 0.72);
+      }
+
+      .image-lab__grid {
+        display: grid;
+        gap: 10px;
+      }
+
+      .image-lab__field {
+        display: grid;
+        gap: 6px;
+      }
+
+      .image-lab__field label {
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.78);
+      }
+
+      .image-lab__field input,
+      .image-lab__field select {
+        width: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.04);
+        color: inherit;
+        padding: 10px 12px;
+        box-sizing: border-box;
+      }
+
+      .image-lab__field input[type="range"] {
+        padding: 0;
+      }
+
+      .image-lab__metrics {
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+        color: rgba(255, 255, 255, 0.64);
+        font-size: 11px;
+      }
+
+      .image-lab__preview {
+        display: grid;
+        place-items: center;
+        min-height: 180px;
+        border: 1px dashed rgba(255, 255, 255, 0.18);
+        border-radius: 10px;
+        background:
+          linear-gradient(45deg, rgba(255,255,255,0.04) 25%, transparent 25%),
+          linear-gradient(-45deg, rgba(255,255,255,0.04) 25%, transparent 25%),
+          linear-gradient(45deg, transparent 75%, rgba(255,255,255,0.04) 75%),
+          linear-gradient(-45deg, transparent 75%, rgba(255,255,255,0.04) 75%);
+        background-size: 18px 18px;
+        background-position: 0 0, 0 9px, 9px -9px, -9px 0;
+        overflow: hidden;
+      }
+
+      .image-lab__preview img {
+        max-width: 100%;
+        max-height: 220px;
+        display: block;
+      }
+
+      .image-lab__actions {
+        display: flex;
+        gap: 10px;
+      }
+
+      .image-lab__actions button,
+      .image-lab__actions a {
+        flex: 1;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 40px;
+        border-radius: 8px;
+        border: 0;
+        background: #7aa2ff;
+        color: #07111f;
+        font: inherit;
+        font-weight: 700;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .image-lab__actions button[disabled],
+      .image-lab__actions a[aria-disabled="true"] {
+        opacity: 0.45;
+        pointer-events: none;
+      }
+    </style>
   </head>
   <body>
+    <aside class="image-lab" data-collapsed="false">
+      <div class="image-lab__head">
+        <p class="image-lab__title">Laboratório de Imagem</p>
+        <button class="image-lab__toggle" type="button" data-image-lab-toggle>recolher</button>
+      </div>
+      <div class="image-lab__body">
+        <p class="image-lab__hint">Redimensione antes de enviar para a nota.</p>
+        <div class="image-lab__grid">
+          <div class="image-lab__field">
+            <label for="image-lab-file">Arquivo</label>
+            <input id="image-lab-file" type="file" accept="image/*" />
+          </div>
+          <div class="image-lab__field">
+            <label for="image-lab-width">Largura máxima</label>
+            <input id="image-lab-width" type="number" min="480" max="3200" step="10" value="1600" />
+          </div>
+          <div class="image-lab__field">
+            <label for="image-lab-quality">Qualidade JPEG/WebP</label>
+            <input id="image-lab-quality" type="range" min="0.4" max="1" step="0.05" value="0.82" />
+            <div class="image-lab__metrics">
+              <span data-image-lab-quality-label>82%</span>
+              <span data-image-lab-size-label>sem arquivo</span>
+            </div>
+          </div>
+          <div class="image-lab__field">
+            <label for="image-lab-format">Formato</label>
+            <select id="image-lab-format">
+              <option value="image/jpeg">JPEG</option>
+              <option value="image/webp">WebP</option>
+              <option value="image/png">PNG</option>
+            </select>
+          </div>
+        </div>
+        <div class="image-lab__preview" data-image-lab-preview>
+          <span data-image-lab-empty>Nenhuma imagem carregada.</span>
+        </div>
+        <div class="image-lab__actions">
+          <button type="button" data-image-lab-render disabled>processar</button>
+          <a href="#" download aria-disabled="true" data-image-lab-download>baixar</a>
+        </div>
+      </div>
+    </aside>
     <script is:inline src={url('/admin/decap-cms.js')}></script>
+    <script is:inline>
+      (() => {
+        const root = document.querySelector('.image-lab');
+        const toggle = document.querySelector('[data-image-lab-toggle]');
+        const fileInput = document.getElementById('image-lab-file');
+        const widthInput = document.getElementById('image-lab-width');
+        const qualityInput = document.getElementById('image-lab-quality');
+        const formatInput = document.getElementById('image-lab-format');
+        const preview = document.querySelector('[data-image-lab-preview]');
+        const empty = document.querySelector('[data-image-lab-empty]');
+        const renderButton = document.querySelector('[data-image-lab-render]');
+        const download = document.querySelector('[data-image-lab-download]');
+        const qualityLabel = document.querySelector('[data-image-lab-quality-label]');
+        const sizeLabel = document.querySelector('[data-image-lab-size-label]');
+
+        let sourceFile = null;
+        let previewUrl = null;
+
+        const formatExtension = (mime) =>
+          mime === 'image/png' ? 'png' : mime === 'image/webp' ? 'webp' : 'jpg';
+
+        const revokePreview = () => {
+          if (previewUrl) URL.revokeObjectURL(previewUrl);
+          previewUrl = null;
+        };
+
+        const setDownload = (blob) => {
+          revokePreview();
+          previewUrl = URL.createObjectURL(blob);
+          const stem = (sourceFile?.name || 'imagem')
+            .replace(/\.[^.]+$/, '')
+            .replace(/[^a-z0-9-_]+/gi, '-')
+            .replace(/-+/g, '-')
+            .replace(/^-|-$/g, '') || 'imagem';
+          download.href = previewUrl;
+          download.download = `${stem}-${blob.size}.${formatExtension(blob.type)}`;
+          download.setAttribute('aria-disabled', 'false');
+          sizeLabel.textContent = `${(blob.size / 1024 / 1024).toFixed(2)} MB`;
+        };
+
+        const setPreviewImage = (src) => {
+          preview.innerHTML = '';
+          const image = document.createElement('img');
+          image.src = src;
+          preview.appendChild(image);
+        };
+
+        const loadBitmap = (file) =>
+          new Promise((resolve, reject) => {
+            const reader = new FileReader();
+            reader.onload = () => {
+              const image = new Image();
+              image.onload = () => resolve(image);
+              image.onerror = reject;
+              image.src = String(reader.result);
+            };
+            reader.onerror = reject;
+            reader.readAsDataURL(file);
+          });
+
+        const renderOutput = async () => {
+          if (!sourceFile) return;
+
+          renderButton.disabled = true;
+          renderButton.textContent = 'processando';
+
+          try {
+            const image = await loadBitmap(sourceFile);
+            const maxWidth = Math.max(480, Number(widthInput.value) || 1600);
+            const ratio = image.naturalWidth > maxWidth ? maxWidth / image.naturalWidth : 1;
+            const width = Math.round(image.naturalWidth * ratio);
+            const height = Math.round(image.naturalHeight * ratio);
+
+            const canvas = document.createElement('canvas');
+            canvas.width = width;
+            canvas.height = height;
+
+            const ctx = canvas.getContext('2d');
+            ctx.drawImage(image, 0, 0, width, height);
+
+            const mime = formatInput.value;
+            const quality = Number(qualityInput.value);
+            const blob = await new Promise((resolve) =>
+              canvas.toBlob(resolve, mime, mime === 'image/png' ? undefined : quality)
+            );
+
+            if (!blob) throw new Error('Falha ao gerar imagem.');
+
+            setPreviewImage(URL.createObjectURL(blob));
+            setDownload(blob);
+          } catch (error) {
+            sizeLabel.textContent = 'erro ao processar';
+            console.error(error);
+          } finally {
+            renderButton.disabled = !sourceFile;
+            renderButton.textContent = 'processar';
+          }
+        };
+
+        toggle?.addEventListener('click', () => {
+          const collapsed = root?.dataset.collapsed === 'true';
+          root.dataset.collapsed = collapsed ? 'false' : 'true';
+          toggle.textContent = collapsed ? 'recolher' : 'abrir';
+        });
+
+        qualityInput?.addEventListener('input', () => {
+          qualityLabel.textContent = `${Math.round(Number(qualityInput.value) * 100)}%`;
+        });
+
+        fileInput?.addEventListener('change', async () => {
+          sourceFile = fileInput.files?.[0] ?? null;
+          renderButton.disabled = !sourceFile;
+          download.removeAttribute('href');
+          download.setAttribute('aria-disabled', 'true');
+          sizeLabel.textContent = sourceFile ? `${(sourceFile.size / 1024 / 1024).toFixed(2)} MB original` : 'sem arquivo';
+          if (!sourceFile) {
+            preview.innerHTML = '';
+            preview.appendChild(empty);
+            return;
+          }
+
+          const image = await loadBitmap(sourceFile);
+          setPreviewImage(image.src);
+        });
+
+        renderButton?.addEventListener('click', renderOutput);
+      })();
+    </script>
   </body>
 </html>
