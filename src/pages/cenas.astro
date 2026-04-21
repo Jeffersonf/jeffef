@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getPublishedNotas, noteSlug } from '../lib/notas';
+
+const cenas = (await getPublishedNotas()).filter((nota) => nota.data.photo);
+---
+
+<BaseLayout title="cenas - jefferson" description="Arquivo visual do caderno pessoal de Jefferson.">
+  <main>
+    <section class="shell page-head">
+      <p class="eyebrow">arquivo visual</p>
+      <h1>Cenas</h1>
+      <p class="lead">
+        Fotos entram quando ajudam a lembrar, não quando precisam provar alguma coisa.
+      </p>
+    </section>
+
+    <section class="shell scene-archive">
+      {cenas.length > 0 ? (
+        cenas.map((nota, index) => (
+          <a class:list={['scene-card', { large: index % 3 === 0 }]} href={`/notas/${noteSlug(nota.id)}/`}>
+            <figure>
+              <img src={nota.data.photo} alt={nota.data.photoAlt ?? ''} />
+              <figcaption>
+                <span>{nota.data.place ?? nota.data.kind}</span>
+                <strong>{nota.data.title}</strong>
+              </figcaption>
+            </figure>
+          </a>
+        ))
+      ) : (
+        <p class="empty-state scene-empty">Nenhuma cena publicada por enquanto.</p>
+      )}
+    </section>
+  </main>
+</BaseLayout>

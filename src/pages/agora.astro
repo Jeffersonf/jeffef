@@ -1,0 +1,45 @@
+---
+import { getEntry } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const page = await getEntry('site', 'agora');
+if (!page) throw new Error('Missing site/agora.json');
+
+const data = page.data;
+---
+
+<BaseLayout title={data.title} description={data.description}>
+  <main>
+    <section class="shell page-head now-head">
+      <p class="eyebrow">{data.eyebrow}</p>
+      <h1>{data.heroTitle}</h1>
+      <p class="lead">{data.heroLead}</p>
+    </section>
+
+    <section class="shell section now-section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">{data.sections?.now?.eyebrow}</p>
+          <h2>{data.sections?.now?.title}</h2>
+        </div>
+        <p>{data.sections?.now?.body}</p>
+      </div>
+
+      <div class="section-body">
+        <div class="now-board">
+          {data.cards.map((card) => (
+            <article class:list={['now-item', { highlight: card.highlight }]}>
+              <span>{card.label}</span>
+              <h3>{card.title}</h3>
+              {card.body && <p>{card.body}</p>}
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <div class="shell">
+      <p class="closing">{data.closing}</p>
+    </div>
+  </main>
+</BaseLayout>

@@ -1,0 +1,153 @@
+local_backend: true
+
+backend:
+  name: proxy
+  proxy_url: http://localhost:8081/api/v1
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "site"
+    label: "Páginas"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "src/content/site/home.json"
+        format: "json"
+        fields:
+          - { label: "Título SEO", name: "title", widget: "string" }
+          - { label: "Descrição SEO", name: "description", widget: "text" }
+          - { label: "Título principal", name: "heroTitle", widget: "string" }
+          - { label: "Texto principal", name: "heroLead", widget: "text" }
+          - { label: "Nota lateral", name: "heroNote", widget: "text" }
+          - label: "Chips"
+            name: "chips"
+            widget: "list"
+            fields:
+              - { label: "Texto", name: "label", widget: "string" }
+              - label: "Cor"
+                name: "color"
+                widget: "select"
+                options: ["blue", "green", "rose", "gold", "sky"]
+          - label: "Seções"
+            name: "sections"
+            widget: "object"
+            fields:
+              - label: "Notas"
+                name: "notes"
+                widget: "object"
+                fields:
+                  - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto", name: "body", widget: "text" }
+              - label: "Cenas"
+                name: "photos"
+                widget: "object"
+                fields:
+                  - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto", name: "body", widget: "text" }
+              - label: "Sobre"
+                name: "about"
+                widget: "object"
+                fields:
+                  - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto", name: "body", widget: "text" }
+          - label: "Cards do sobre"
+            name: "cards"
+            widget: "list"
+            fields:
+              - { label: "Rótulo", name: "label", widget: "string" }
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Texto", name: "body", widget: "text", required: false }
+              - { label: "Destaque", name: "highlight", widget: "boolean", default: false }
+          - { label: "Fechamento", name: "closing", widget: "string" }
+      - label: "Agora"
+        name: "agora"
+        file: "src/content/site/agora.json"
+        format: "json"
+        fields:
+          - { label: "Título SEO", name: "title", widget: "string" }
+          - { label: "Descrição SEO", name: "description", widget: "text" }
+          - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+          - { label: "Título principal", name: "heroTitle", widget: "string" }
+          - { label: "Texto principal", name: "heroLead", widget: "text" }
+          - label: "Seções"
+            name: "sections"
+            widget: "object"
+            fields:
+              - label: "Agora"
+                name: "now"
+                widget: "object"
+                fields:
+                  - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto", name: "body", widget: "text" }
+          - label: "Cards"
+            name: "cards"
+            widget: "list"
+            fields:
+              - { label: "Rótulo", name: "label", widget: "string" }
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Texto", name: "body", widget: "text", required: false }
+              - { label: "Destaque", name: "highlight", widget: "boolean", default: false }
+          - { label: "Fechamento", name: "closing", widget: "string" }
+  - name: "notas"
+    label: "Notas"
+    label_singular: "Nota"
+    folder: "src/content/notas"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    editor:
+      preview: false
+    fields:
+      - label: "Titulo"
+        name: "title"
+        widget: "string"
+      - label: "Data"
+        name: "date"
+        widget: "datetime"
+        date_format: "YYYY-MM-DD"
+        time_format: false
+      - label: "Resumo"
+        name: "summary"
+        widget: "text"
+        required: false
+      - label: "Tipo"
+        name: "kind"
+        widget: "select"
+        default: "diario"
+        options:
+          - { label: "Diario", value: "diario" }
+          - { label: "Trabalho", value: "trabalho" }
+          - { label: "Leitura", value: "leitura" }
+          - { label: "Movimento", value: "movimento" }
+          - { label: "Foto", value: "foto" }
+          - { label: "Ideia", value: "ideia" }
+      - label: "Local"
+        name: "place"
+        widget: "string"
+        required: false
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        required: false
+      - label: "Foto"
+        name: "photo"
+        widget: "image"
+        required: false
+      - label: "Texto alternativo da foto"
+        name: "photoAlt"
+        widget: "string"
+        required: false
+      - label: "Rascunho"
+        name: "draft"
+        widget: "boolean"
+        default: false
+      - label: "Texto"
+        name: "body"
+        widget: "markdown"

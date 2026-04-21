@@ -1,0 +1,46 @@
+{
+  "title": "jefferson - caderno",
+  "description": "Um pequeno caderno pessoal de notas, cenas, trabalho e vida comum.",
+  "heroTitle": "Um arquivo vivo para ideias, rotina e movimento.",
+  "heroLead": "Tecnologia, dados, leitura, trabalho, rotina e pequenas cenas do dia. Um lugar para registrar sem transformar tudo em vitrine.",
+  "heroNote": "Não é currículo, rede social nem portfólio completo. É só um caderno aberto o suficiente para guardar o que vale lembrar.",
+  "chips": [
+    { "label": "vida comum", "color": "blue" },
+    { "label": "dados e trabalho", "color": "green" },
+    { "label": "memória própria", "color": "rose" }
+  ],
+  "sections": {
+    "notes": {
+      "eyebrow": "entradas",
+      "title": "notas recentes",
+      "body": "Textos curtos, registros comuns, trabalho quando aparecer e memória quando fizer sentido."
+    },
+    "photos": {
+      "eyebrow": "imagens",
+      "title": "cenas",
+      "body": "Fotos entram quando ajudam a lembrar, não quando precisam provar alguma coisa."
+    },
+    "about": {
+      "eyebrow": "contexto",
+      "title": "sobre",
+      "body": "O bastante para saber de onde as notas saem, sem transformar a página em currículo."
+    }
+  },
+  "cards": [
+    {
+      "label": "quem sou",
+      "title": "Jefferson de Paula, de Itapeva, SP.",
+      "body": "Trabalho com gestão de TI, infraestrutura, sistemas, dados e BI. Gosto de construir ferramentas úteis, organizar informações e manter projetos pessoais vivos sem transformar tudo em performance.",
+      "highlight": true
+    },
+    {
+      "label": "formação",
+      "title": "ADS, BI/Big Data/IA e Engenharia de Computação"
+    },
+    {
+      "label": "idiomas",
+      "title": "Português e inglês profissional"
+    }
+  ],
+  "closing": "Menos palco, mais registro. Menos algoritmo, mais memória própria."
+}

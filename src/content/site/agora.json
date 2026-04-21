@@ -1,0 +1,38 @@
+{
+  "title": "agora - jefferson",
+  "description": "O que anda ocupando a cabeça, a rotina e o caderno agora.",
+  "eyebrow": "agora",
+  "heroTitle": "O que anda ocupando minha cabeça.",
+  "heroLead": "Uma página simples para registrar o momento atual sem transformar tudo em anúncio.",
+  "sections": {
+    "now": {
+      "eyebrow": "estado atual",
+      "title": "em curso",
+      "body": "Coisas que talvez mudem em breve. Essa é a graça."
+    }
+  },
+  "cards": [
+    {
+      "label": "trabalho",
+      "title": "Organizar dados, rotina e decisões com menos ruído.",
+      "body": "BI, infraestrutura, sistemas e pequenas ferramentas que ajudam pessoas reais a enxergar melhor o que está acontecendo.",
+      "highlight": true
+    },
+    {
+      "label": "estudo",
+      "title": "Dados, IA aplicada e arquitetura simples.",
+      "body": "Interessa menos a novidade pela novidade e mais aquilo que entra na rotina sem pedir espetáculo."
+    },
+    {
+      "label": "vida",
+      "title": "Corrida quando cabe, leitura quando sobra, silêncio quando precisa.",
+      "body": "O caderno existe para lembrar dessas partes pequenas antes que elas sumam no fluxo."
+    },
+    {
+      "label": "projetos",
+      "title": "Um site pessoal feito com calma.",
+      "body": "Sem tentar virar rede social, currículo ou vitrine. Só um lugar próprio, editável e publicável."
+    }
+  ],
+  "closing": "Se fizer sentido agora, fica. Se não fizer, pode mudar depois."
+}

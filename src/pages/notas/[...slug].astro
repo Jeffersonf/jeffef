@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection, render } from 'astro:content';
+import { formatDate, noteSlug } from '../../lib/notas';
+
+export async function getStaticPaths() {
+  const notas = await getCollection('notas', ({ data }) => !data.draft);
+  return notas.map((nota) => ({
+    params: { slug: noteSlug(nota.id) },
+    props: { nota }
+  }));
+}
+
+const { nota } = Astro.props;
+const { Content } = await render(nota);
+---
+
+<BaseLayout title={`${nota.data.title} - jefferson`} description={nota.data.summary ?? nota.data.title}>
+    <main class="shell post">
+      <a class="back-link" href="/notas/">voltar para notas</a>
+      <p class="eyebrow">{formatDate(nota.data.date)}</p>
+      <span class="kind">{nota.data.kind}</span>
+      <h1>{nota.data.title}</h1>
+      {nota.data.summary && <p class="lead">{nota.data.summary}</p>}
+      <div class="tags">
+        {nota.data.place && <span class="place">{nota.data.place}</span>}
+        {nota.data.tags.map((tag) => <span class="tag">{tag}</span>)}
+      </div>
+
+      {nota.data.photo && (
+        <figure class="post-cover">
+          <img src={nota.data.photo} alt={nota.data.photoAlt ?? ''} />
+        </figure>
+      )}
+
+      <article class="prose">
+        <Content />
+      </article>
+    </main>
+</BaseLayout>

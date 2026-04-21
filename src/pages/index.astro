@@ -1,0 +1,161 @@
+---
+import { getEntry } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { accentForKind, dateParts, getPublishedNotas, noteSlug } from '../lib/notas';
+
+const home = await getEntry('site', 'home');
+if (!home) throw new Error('Missing site/home.json');
+const agora = await getEntry('site', 'agora');
+
+const data = home.data;
+const agoraData = agora?.data;
+const notas = await getPublishedNotas();
+const destaques = notas.filter((nota) => nota.data.photo).slice(0, 2);
+const recentes = notas.slice(0, 6);
+const nowCards = agoraData?.cards?.slice(0, 3) ?? [];
+
+const chipColor = {
+  blue: 'var(--blue)',
+  green: 'var(--green)',
+  rose: 'var(--rose)',
+  gold: 'var(--gold)',
+  sky: 'var(--sky)'
+};
+
+const emphasisClosing = data.closing?.replace('memória própria', '<em>memória própria</em>');
+---
+
+<BaseLayout title={data.title} description={data.description}>
+  <main>
+    <section class="shell hero">
+      <div class="hero-copy">
+        <h1 set:html={data.heroTitle?.replace('movimento', '<em>movimento</em>')} />
+        <p class="lead">{data.heroLead}</p>
+        <p class="hero-note">{data.heroNote}</p>
+        <div class="status-row" aria-label="Temas atuais do caderno">
+          {data.chips.map((chip) => (
+            <span class="chip" style={`--chip-c: ${chipColor[chip.color]}`}>{chip.label}</span>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="shell section" id="cenas">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">{data.sections?.photos?.eyebrow}</p>
+          <h2>{data.sections?.photos?.title}</h2>
+        </div>
+        <p>{data.sections?.photos?.body}</p>
+      </div>
+
+      <div class="section-body">
+        {destaques.length > 0 ? (
+          <div class="photo-grid">
+            {destaques.map((nota) => (
+              <a class="feature-photo" href={`/notas/${noteSlug(nota.id)}/`}>
+                <figure>
+                  <img src={nota.data.photo} alt={nota.data.photoAlt ?? ''} />
+                  <figcaption>{nota.data.title}</figcaption>
+                </figure>
+              </a>
+            ))}
+          </div>
+        ) : (
+          <p class="empty-state">As cenas vao aparecer aqui quando alguma nota tiver foto.</p>
+        )}
+        <p class="more-link"><a href="/cenas/">ver todas as cenas</a></p>
+      </div>
+    </section>
+
+    <section class="shell section" id="notas">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">{data.sections?.notes?.eyebrow}</p>
+          <h2>{data.sections?.notes?.title}</h2>
+        </div>
+        <p>{data.sections?.notes?.body}</p>
+      </div>
+
+      <div class="section-body">
+        {recentes.length > 0 ? (
+          <div class="note-list">
+            {recentes.map((nota) => (
+              <a class="note-row" href={`/notas/${noteSlug(nota.id)}/`} style={`--accent: var(--${accentForKind(nota.data.kind)})`}>
+                <time class="date-block" datetime={nota.data.date.toISOString()}>
+                  <span>{dateParts(nota.data.date).day}</span>
+                  <strong>{dateParts(nota.data.date).month}</strong>
+                  <small>{dateParts(nota.data.date).year}</small>
+                </time>
+                <article>
+                  <span class="kind">{nota.data.kind}</span>
+                  <h3>{nota.data.title}</h3>
+                  {nota.data.summary && <p>{nota.data.summary}</p>}
+                  <div class="tags">
+                    {nota.data.place && <span class="place">{nota.data.place}</span>}
+                    {nota.data.tags.map((tag) => <span class="tag">{tag}</span>)}
+                  </div>
+                </article>
+              </a>
+            ))}
+          </div>
+        ) : (
+          <p class="empty-state">As primeiras notas ainda nao foram publicadas.</p>
+        )}
+
+        <p class="more-link"><a href="/notas/">ver todas as notas</a></p>
+      </div>
+    </section>
+
+    {nowCards.length > 0 && (
+      <section class="shell section home-now" id="em-curso">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">{agoraData?.sections?.now?.eyebrow}</p>
+            <h2>{agoraData?.sections?.now?.title}</h2>
+          </div>
+          <p>{agoraData?.sections?.now?.body}</p>
+        </div>
+
+        <div class="section-body">
+          <div class="now-strip">
+            {nowCards.map((card) => (
+              <article class:list={['now-card', { highlight: card.highlight }]}>
+                <span>{card.label}</span>
+                <h3>{card.title}</h3>
+                {card.body && <p>{card.body}</p>}
+              </article>
+            ))}
+          </div>
+          <p class="more-link"><a href="/agora/">ver agora</a></p>
+        </div>
+      </section>
+    )}
+
+    <section class="shell section" id="sobre">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">{data.sections?.about?.eyebrow}</p>
+          <h2>{data.sections?.about?.title}</h2>
+        </div>
+        <p>{data.sections?.about?.body}</p>
+      </div>
+
+      <div class="section-body">
+        <div class="profile">
+          {data.cards.map((card, index) => (
+            <article class:list={['panel', { highlight: card.highlight, wide: index === 0 }]}>
+              <span>{card.label}</span>
+              <h3>{card.title}</h3>
+              {card.body && <p>{card.body}</p>}
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <div class="shell">
+      <p class="closing" set:html={emphasisClosing} />
+    </div>
+  </main>
+</BaseLayout>

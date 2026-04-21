@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { accentForKind, dateParts, getPublishedNotas, noteSlug } from '../../lib/notas';
+
+const notas = await getPublishedNotas();
+---
+
+<BaseLayout title="notas - jefferson" description="Arquivo de notas do caderno pessoal de Jefferson.">
+  <main>
+    <section class="shell page-head">
+      <p class="eyebrow">arquivo</p>
+      <h1>Notas</h1>
+      <p class="lead">
+        Um lugar para entradas pequenas, lembranças, trabalho, leitura e movimento.
+      </p>
+    </section>
+
+    <section class="shell section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">arquivo completo</p>
+          <h2>todas as notas</h2>
+        </div>
+        <p>Entradas publicadas, da mais recente para a mais antiga.</p>
+      </div>
+
+      <div class="section-body">
+        {notas.length > 0 ? (
+          <div class="note-list">
+            {notas.map((nota) => (
+              <a class="note-row" href={`/notas/${noteSlug(nota.id)}/`} style={`--accent: var(--${accentForKind(nota.data.kind)})`}>
+                <time class="date-block" datetime={nota.data.date.toISOString()}>
+                  <span>{dateParts(nota.data.date).day}</span>
+                  <strong>{dateParts(nota.data.date).month}</strong>
+                  <small>{dateParts(nota.data.date).year}</small>
+                </time>
+                <article>
+                  <span class="kind">{nota.data.kind}</span>
+                  <h3>{nota.data.title}</h3>
+                  {nota.data.summary && <p>{nota.data.summary}</p>}
+                  <div class="tags">
+                    {nota.data.place && <span class="place">{nota.data.place}</span>}
+                    {nota.data.tags.map((tag) => <span class="tag">{tag}</span>)}
+                  </div>
+                </article>
+              </a>
+            ))}
+          </div>
+        ) : (
+          <p class="empty-state">Nenhuma nota publicada por enquanto.</p>
+        )}
+      </div>
+    </section>
+  </main>
+</BaseLayout>

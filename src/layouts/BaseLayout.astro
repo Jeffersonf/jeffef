@@ -1,0 +1,90 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'jefferson - caderno',
+  description = 'Um pequeno caderno pessoal de notas, cenas, trabalho e vida comum.'
+} = Astro.props;
+
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
+const themeColor = '#02020d';
+---
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta name="theme-color" content={themeColor} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=Exo+2:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script is:inline>
+      const storedTheme = localStorage.getItem('jeffef-theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.dataset.theme = storedTheme || (prefersDark ? 'dark' : 'light');
+    </script>
+    <title>{title}</title>
+  </head>
+  <body>
+    <header class="shell topbar">
+      <a class="brand" href="/">jefferson</a>
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="/notas/">notas</a>
+        <a href="/cenas/">cenas</a>
+        <a href="/agora/">agora</a>
+        <a href="/#sobre">sobre</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Alternar tema" data-theme-toggle>
+        <span class="theme-orb" aria-hidden="true"></span>
+        <span class="theme-text">tema</span>
+      </button>
+    </header>
+
+    <slot />
+
+    <footer class="footer">
+      <div class="shell">
+        <span><strong>jeffef.dev</strong>, caderno pessoal</span>
+        <span>feito com calma</span>
+      </div>
+    </footer>
+    <script is:inline>
+      const button = document.querySelector('[data-theme-toggle]');
+      const syncThemeButton = () => {
+        if (!button) return;
+        const isDark = document.documentElement.dataset.theme === 'dark';
+        button.setAttribute('aria-pressed', String(isDark));
+        button.querySelector('.theme-text').textContent = isDark ? 'dia' : 'noite';
+      };
+      syncThemeButton();
+      button?.addEventListener('click', () => {
+        const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+        const rect = button.getBoundingClientRect();
+        document.documentElement.style.setProperty('--flare-x', `${rect.left + rect.width / 2}px`);
+        document.documentElement.style.setProperty('--flare-y', `${rect.top + rect.height / 2}px`);
+        document.documentElement.classList.remove('theme-flare');
+        void document.documentElement.offsetWidth;
+        document.documentElement.classList.add('theme-flare');
+        document.documentElement.dataset.theme = next;
+        localStorage.setItem('jeffef-theme', next);
+        syncThemeButton();
+        window.setTimeout(() => document.documentElement.classList.remove('theme-flare'), 1300);
+      });
+    </script>
+  </body>
+</html>
