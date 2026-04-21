@@ -51,15 +51,6 @@ const emphasisClosing = data.closing?.replace('memória própria', '<em>memória
               <strong>{heroPhoto.data.title}</strong>
             </figcaption>
           </figure>
-          {secondaryPhotos.length > 0 && (
-            <div class="hero-photo-rail" aria-label="Outras cenas em destaque">
-              {secondaryPhotos.slice(0, 2).map((nota) => (
-                <span>
-                  <img src={resolveAssetPath(nota.data.photo)} alt="" />
-                </span>
-              ))}
-            </div>
-          )}
         </a>
       )}
     </section>
@@ -103,7 +94,7 @@ const emphasisClosing = data.closing?.replace('memória própria', '<em>memória
 
       <div class="section-body">
         {recentes.length > 0 ? (
-          <div class="note-list">
+          <div class="note-list home-note-list">
             {recentes.map((nota) => (
               <a class="note-row" href={url(`/notas/${noteSlug(nota.id)}/`)} style={`--accent: var(--${accentForKind(nota.data.kind)})`}>
                 <time class="date-block" datetime={nota.data.date.toISOString()}>

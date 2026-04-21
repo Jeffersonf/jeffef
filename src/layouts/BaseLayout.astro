@@ -12,7 +12,7 @@ const {
 } = Astro.props;
 
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
-const themeColor = '#02020d';
+const themeColor = '#f8fafb';
 const base = '/jeffef/';
 const url = (path: string) => `${base}${path.replace(/^\/+/, '')}`;
 ---
@@ -34,7 +34,7 @@ const url = (path: string) => `${base}${path.replace(/^\/+/, '')}`;
     <meta name="twitter:description" content={description} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=Exo+2:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
     <script is:inline>
       const storedTheme = localStorage.getItem('jeffef-theme');
       const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -52,7 +52,17 @@ const url = (path: string) => `${base}${path.replace(/^\/+/, '')}`;
         <a href={url('/sobre/')}>sobre</a>
       </nav>
       <button class="theme-toggle" type="button" aria-label="Alternar tema" data-theme-toggle>
-        <span class="theme-orb" aria-hidden="true"></span>
+        <span class="theme-icon theme-icon-sun" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img">
+            <circle cx="12" cy="12" r="4.25"></circle>
+            <path d="M12 2.75v2.1M12 19.15v2.1M4.2 4.2l1.48 1.48M18.32 18.32l1.48 1.48M2.75 12h2.1M19.15 12h2.1M4.2 19.8l1.48-1.48M18.32 5.68l1.48-1.48"></path>
+          </svg>
+        </span>
+        <span class="theme-icon theme-icon-moon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img">
+            <path d="M20.4 14.55A7.85 7.85 0 0 1 9.45 3.6a8.7 8.7 0 1 0 10.95 10.95Z"></path>
+          </svg>
+        </span>
         <span class="theme-text">tema</span>
       </button>
     </header>
@@ -76,16 +86,9 @@ const url = (path: string) => `${base}${path.replace(/^\/+/, '')}`;
       syncThemeButton();
       button?.addEventListener('click', () => {
         const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
-        const rect = button.getBoundingClientRect();
-        document.documentElement.style.setProperty('--flare-x', `${rect.left + rect.width / 2}px`);
-        document.documentElement.style.setProperty('--flare-y', `${rect.top + rect.height / 2}px`);
-        document.documentElement.classList.remove('theme-flare');
-        void document.documentElement.offsetWidth;
-        document.documentElement.classList.add('theme-flare');
         document.documentElement.dataset.theme = next;
         localStorage.setItem('jeffef-theme', next);
         syncThemeButton();
-        window.setTimeout(() => document.documentElement.classList.remove('theme-flare'), 1300);
       });
     </script>
   </body>
