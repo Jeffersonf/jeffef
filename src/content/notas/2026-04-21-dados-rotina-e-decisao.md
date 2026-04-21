@@ -1,10 +1,14 @@
 ---
-title: "Dados, rotina e decisão"
+title: Dados, rotina e decisão
 date: 2026-04-21
-summary: "Quando uma informação deixa de ficar espalhada e começa a ajudar alguém."
-kind: "trabalho"
-place: "trabalho"
-tags: ["trabalho", "dados", "BI"]
+summary: Quando uma informação deixa de ficar espalhada e começa a ajudar alguém.
+kind: trabalho
+place: trabalho
+tags:
+  - trabalho
+  - dados
+  - BI
+photo: 20260420_180418.jpg
 draft: false
 ---
 
