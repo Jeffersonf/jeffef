@@ -8,7 +8,7 @@ tags:
   - movimento
   - corrida
   - memória
-photo: /uploads/img_20260404_190651_326.webp
+photo: public/uploads/img_20260404_190651_326.webp
 photoAlt: Estrada cercada por paisagem natural.
 draft: false
 ---
