@@ -1,0 +1,46 @@
+---
+import { getEntry } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const home = await getEntry('site', 'home');
+if (!home) throw new Error('Missing site/home.json');
+
+const data = home.data;
+const emphasisClosing = data.closing?.replace('memÃ³ria prÃ³pria', '<em>memÃ³ria prÃ³pria</em>');
+---
+
+<BaseLayout title="sobre - jefferson" description={data.sections?.about?.body ?? data.description}>
+  <main>
+    <section class="shell page-head">
+      <p class="eyebrow">{data.sections?.about?.eyebrow}</p>
+      <h1>{data.sections?.about?.title}</h1>
+      <p class="lead">{data.sections?.about?.body}</p>
+    </section>
+
+    <section class="shell section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">contexto</p>
+          <h2>quem eu sou</h2>
+        </div>
+        <p>Um pouco de contexto sobre o caderno e de onde essas notas saem.</p>
+      </div>
+
+      <div class="section-body">
+        <div class="profile">
+          {data.cards.map((card, index) => (
+            <article class:list={['panel', { highlight: card.highlight, wide: index === 0 }]}>
+              <span>{card.label}</span>
+              <h3>{card.title}</h3>
+              {card.body && <p>{card.body}</p>}
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <div class="shell">
+      <p class="closing" set:html={emphasisClosing} />
+    </div>
+  </main>
+</BaseLayout>

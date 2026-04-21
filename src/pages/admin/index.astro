@@ -207,6 +207,11 @@ const url = (path: string) => `${base}${path.replace(/^\/+/, '')}`;
     <script is:inline src={url('/admin/decap-cms.js')}></script>
     <script is:inline>
       (() => {
+        const cms = window.DecapCms;
+        if (cms?.registerPreviewStyle) {
+          cms.registerPreviewStyle('/jeffef/admin/preview.css');
+        }
+
         const root = document.querySelector('.image-lab');
         const toggle = document.querySelector('[data-image-lab-toggle]');
         const fileInput = document.getElementById('image-lab-file');
@@ -249,6 +254,7 @@ const url = (path: string) => `${base}${path.replace(/^\/+/, '')}`;
           preview.innerHTML = '';
           const image = document.createElement('img');
           image.src = src;
+          image.alt = 'Preview da imagem';
           preview.appendChild(image);
         };
 

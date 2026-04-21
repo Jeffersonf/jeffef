@@ -1,0 +1,49 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #f8fafb;
+  color: #334155;
+  font-family: "Geist", Arial, sans-serif;
+}
+
+body {
+  padding: 24px;
+}
+
+main,
+article,
+section,
+.frame-content,
+.nc-previewPane-frame,
+.nc-entryEditor-container,
+.nc-entryPreview-container {
+  max-width: 920px;
+}
+
+img,
+figure img,
+.post-cover img,
+.feature-photo img,
+.scene-card img,
+[src*="/uploads/"] {
+  display: block;
+  max-width: min(100%, 720px);
+  width: auto;
+  height: auto;
+  max-height: 70vh;
+  object-fit: contain;
+}
+
+figure,
+.post-cover,
+.feature-photo,
+.scene-card {
+  max-width: 720px;
+}
+
+pre,
+code {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
