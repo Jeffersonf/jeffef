@@ -42,3 +42,16 @@ export function accentForKind(kind: string) {
     kind === 'foto' ? 'sky' :
     'blue';
 }
+
+export function resolveAssetPath(path?: string) {
+  if (!path) return undefined;
+
+  if (/^https?:\/\//i.test(path)) return path;
+
+  const normalized = path
+    .replace(/^public[\\/]/i, '')
+    .replace(/\\/g, '/')
+    .replace(/^\/+/, '');
+
+  return `/jeffef/${normalized}`;
+}

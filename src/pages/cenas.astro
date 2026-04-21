@@ -1,11 +1,10 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { getPublishedNotas, noteSlug } from '../lib/notas';
+import { getPublishedNotas, noteSlug, resolveAssetPath } from '../lib/notas';
 
 const cenas = (await getPublishedNotas()).filter((nota) => nota.data.photo);
 const base = '/jeffef/';
 const url = (path: string) => `${base}${path.replace(/^\/+/, '')}`;
-const asset = (path?: string) => path?.startsWith('/') ? url(path) : path;
 ---
 
 <BaseLayout title="cenas - jefferson" description="Arquivo visual do caderno pessoal de Jefferson.">
@@ -23,7 +22,7 @@ const asset = (path?: string) => path?.startsWith('/') ? url(path) : path;
         cenas.map((nota, index) => (
           <a class:list={['scene-card', { large: index % 3 === 0 }]} href={url(`/notas/${noteSlug(nota.id)}/`)}>
             <figure>
-              <img src={asset(nota.data.photo)} alt={nota.data.photoAlt ?? ''} />
+              <img src={resolveAssetPath(nota.data.photo)} alt={nota.data.photoAlt ?? ''} />
               <figcaption>
                 <span>{nota.data.place ?? nota.data.kind}</span>
                 <strong>{nota.data.title}</strong>

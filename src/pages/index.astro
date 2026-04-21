@@ -1,7 +1,7 @@
 ---
 import { getEntry } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { accentForKind, dateParts, getPublishedNotas, noteSlug } from '../lib/notas';
+import { accentForKind, dateParts, getPublishedNotas, noteSlug, resolveAssetPath } from '../lib/notas';
 
 const home = await getEntry('site', 'home');
 if (!home) throw new Error('Missing site/home.json');
@@ -15,7 +15,6 @@ const recentes = notas.slice(0, 6);
 const nowCards = agoraData?.cards?.slice(0, 3) ?? [];
 const base = '/jeffef/';
 const url = (path: string) => `${base}${path.replace(/^\/+/, '')}`;
-const asset = (path?: string) => path?.startsWith('/') ? url(path) : path;
 
 const chipColor = {
   blue: 'var(--blue)',
@@ -58,7 +57,7 @@ const emphasisClosing = data.closing?.replace('memória própria', '<em>memória
             {destaques.map((nota) => (
               <a class="feature-photo" href={url(`/notas/${noteSlug(nota.id)}/`)}>
                 <figure>
-                  <img src={asset(nota.data.photo)} alt={nota.data.photoAlt ?? ''} />
+                  <img src={resolveAssetPath(nota.data.photo)} alt={nota.data.photoAlt ?? ''} />
                   <figcaption>{nota.data.title}</figcaption>
                 </figure>
               </a>
