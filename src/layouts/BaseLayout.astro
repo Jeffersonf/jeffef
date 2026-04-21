@@ -13,6 +13,8 @@ const {
 
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
 const themeColor = '#02020d';
+const base = '/jeffef/';
+const url = (path: string) => `${base}${path.replace(/^\/+/, '')}`;
 ---
 
 <!doctype html>
@@ -42,12 +44,12 @@ const themeColor = '#02020d';
   </head>
   <body>
     <header class="shell topbar">
-      <a class="brand" href="/">jefferson</a>
-      <nav class="nav" aria-label="Navegação principal">
-        <a href="/notas/">notas</a>
-        <a href="/cenas/">cenas</a>
-        <a href="/agora/">agora</a>
-        <a href="/#sobre">sobre</a>
+      <a class="brand" href={url('/')}>jefferson</a>
+      <nav class="nav" aria-label="Navegacao principal">
+        <a href={url('/notas/')}>notas</a>
+        <a href={url('/cenas/')}>cenas</a>
+        <a href={url('/agora/')}>agora</a>
+        <a href={url('/#sobre')}>sobre</a>
       </nav>
       <button class="theme-toggle" type="button" aria-label="Alternar tema" data-theme-toggle>
         <span class="theme-orb" aria-hidden="true"></span>

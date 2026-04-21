@@ -13,11 +13,14 @@ export async function getStaticPaths() {
 
 const { nota } = Astro.props;
 const { Content } = await render(nota);
+const base = '/jeffef/';
+const url = (path: string) => `${base}${path.replace(/^\/+/, '')}`;
+const asset = (path?: string) => path?.startsWith('/') ? url(path) : path;
 ---
 
 <BaseLayout title={`${nota.data.title} - jefferson`} description={nota.data.summary ?? nota.data.title}>
     <main class="shell post">
-      <a class="back-link" href="/notas/">voltar para notas</a>
+      <a class="back-link" href={url('/notas/')}>voltar para notas</a>
       <p class="eyebrow">{formatDate(nota.data.date)}</p>
       <span class="kind">{nota.data.kind}</span>
       <h1>{nota.data.title}</h1>
@@ -29,7 +32,7 @@ const { Content } = await render(nota);
 
       {nota.data.photo && (
         <figure class="post-cover">
-          <img src={nota.data.photo} alt={nota.data.photoAlt ?? ''} />
+          <img src={asset(nota.data.photo)} alt={nota.data.photoAlt ?? ''} />
         </figure>
       )}
 

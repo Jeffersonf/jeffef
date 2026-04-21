@@ -13,6 +13,9 @@ const notas = await getPublishedNotas();
 const destaques = notas.filter((nota) => nota.data.photo).slice(0, 2);
 const recentes = notas.slice(0, 6);
 const nowCards = agoraData?.cards?.slice(0, 3) ?? [];
+const base = '/jeffef/';
+const url = (path: string) => `${base}${path.replace(/^\/+/, '')}`;
+const asset = (path?: string) => path?.startsWith('/') ? url(path) : path;
 
 const chipColor = {
   blue: 'var(--blue)',
@@ -53,9 +56,9 @@ const emphasisClosing = data.closing?.replace('memória própria', '<em>memória
         {destaques.length > 0 ? (
           <div class="photo-grid">
             {destaques.map((nota) => (
-              <a class="feature-photo" href={`/notas/${noteSlug(nota.id)}/`}>
+              <a class="feature-photo" href={url(`/notas/${noteSlug(nota.id)}/`)}>
                 <figure>
-                  <img src={nota.data.photo} alt={nota.data.photoAlt ?? ''} />
+                  <img src={asset(nota.data.photo)} alt={nota.data.photoAlt ?? ''} />
                   <figcaption>{nota.data.title}</figcaption>
                 </figure>
               </a>
@@ -64,7 +67,7 @@ const emphasisClosing = data.closing?.replace('memória própria', '<em>memória
         ) : (
           <p class="empty-state">As cenas vao aparecer aqui quando alguma nota tiver foto.</p>
         )}
-        <p class="more-link"><a href="/cenas/">ver todas as cenas</a></p>
+        <p class="more-link"><a href={url('/cenas/')}>ver todas as cenas</a></p>
       </div>
     </section>
 
@@ -81,7 +84,7 @@ const emphasisClosing = data.closing?.replace('memória própria', '<em>memória
         {recentes.length > 0 ? (
           <div class="note-list">
             {recentes.map((nota) => (
-              <a class="note-row" href={`/notas/${noteSlug(nota.id)}/`} style={`--accent: var(--${accentForKind(nota.data.kind)})`}>
+              <a class="note-row" href={url(`/notas/${noteSlug(nota.id)}/`)} style={`--accent: var(--${accentForKind(nota.data.kind)})`}>
                 <time class="date-block" datetime={nota.data.date.toISOString()}>
                   <span>{dateParts(nota.data.date).day}</span>
                   <strong>{dateParts(nota.data.date).month}</strong>
@@ -103,7 +106,7 @@ const emphasisClosing = data.closing?.replace('memória própria', '<em>memória
           <p class="empty-state">As primeiras notas ainda nao foram publicadas.</p>
         )}
 
-        <p class="more-link"><a href="/notas/">ver todas as notas</a></p>
+        <p class="more-link"><a href={url('/notas/')}>ver todas as notas</a></p>
       </div>
     </section>
 
@@ -127,7 +130,7 @@ const emphasisClosing = data.closing?.replace('memória própria', '<em>memória
               </article>
             ))}
           </div>
-          <p class="more-link"><a href="/agora/">ver agora</a></p>
+          <p class="more-link"><a href={url('/agora/')}>ver agora</a></p>
         </div>
       </section>
     )}

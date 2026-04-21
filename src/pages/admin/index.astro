@@ -1,4 +1,6 @@
 ---
+const base = '/jeffef/';
+const url = (path: string) => `${base}${path.replace(/^\/+/, '')}`;
 ---
 
 <!doctype html>
@@ -9,6 +11,6 @@
     <title>Editor - jefferson</title>
   </head>
   <body>
-    <script is:inline src="/admin/decap-cms.js"></script>
+    <script is:inline src={url('/admin/decap-cms.js')}></script>
   </body>
 </html>

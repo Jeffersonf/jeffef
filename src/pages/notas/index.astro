@@ -3,6 +3,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { accentForKind, dateParts, getPublishedNotas, noteSlug } from '../../lib/notas';
 
 const notas = await getPublishedNotas();
+const base = '/jeffef/';
+const url = (path: string) => `${base}${path.replace(/^\/+/, '')}`;
 ---
 
 <BaseLayout title="notas - jefferson" description="Arquivo de notas do caderno pessoal de Jefferson.">
@@ -28,7 +30,7 @@ const notas = await getPublishedNotas();
         {notas.length > 0 ? (
           <div class="note-list">
             {notas.map((nota) => (
-              <a class="note-row" href={`/notas/${noteSlug(nota.id)}/`} style={`--accent: var(--${accentForKind(nota.data.kind)})`}>
+              <a class="note-row" href={url(`/notas/${noteSlug(nota.id)}/`)} style={`--accent: var(--${accentForKind(nota.data.kind)})`}>
                 <time class="date-block" datetime={nota.data.date.toISOString()}>
                   <span>{dateParts(nota.data.date).day}</span>
                   <strong>{dateParts(nota.data.date).month}</strong>
