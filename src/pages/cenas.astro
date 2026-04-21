@@ -9,7 +9,7 @@ const url = (path: string) => `${base}${path.replace(/^\/+/, '')}`;
 
 <BaseLayout title="cenas - jefferson" description="Arquivo visual do caderno pessoal de Jefferson.">
   <main>
-    <section class="shell page-head">
+    <section class="shell page-head scene-head">
       <p class="eyebrow">arquivo visual</p>
       <h1>Cenas</h1>
       <p class="lead">
@@ -20,7 +20,7 @@ const url = (path: string) => `${base}${path.replace(/^\/+/, '')}`;
     <section class="shell scene-archive">
       {cenas.length > 0 ? (
         cenas.map((nota, index) => (
-          <a class:list={['scene-card', { large: index % 3 === 0 }]} href={url(`/notas/${noteSlug(nota.id)}/`)}>
+          <a class:list={['scene-card', { large: index === 0 }]} href={url(`/notas/${noteSlug(nota.id)}/`)}>
             <figure>
               <img src={resolveAssetPath(nota.data.photo)} alt={nota.data.photoAlt ?? ''} />
               <figcaption>

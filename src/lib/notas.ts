@@ -54,5 +54,9 @@ export function resolveAssetPath(path?: string) {
     .replace(/\\/g, '/')
     .replace(/^\/+/, '');
 
+  if (!normalized.includes('/') && /\.(avif|gif|jpe?g|png|webp)$/i.test(normalized)) {
+    return `/jeffef/uploads/${normalized}`;
+  }
+
   return `/jeffef/${normalized}`;
 }
