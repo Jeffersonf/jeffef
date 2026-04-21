@@ -3,7 +3,7 @@ title: Começar pelo simples
 date: 2026-04-20
 summary: Um lugar pequeno para registrar sem transformar tudo em vitrine.
 kind: diario
-place: Itapeva, SP
+place: Botucatu, SP
 tags:
   - vida comum
   - site pessoal
