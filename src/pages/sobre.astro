@@ -6,7 +6,7 @@ const home = await getEntry('site', 'home');
 if (!home) throw new Error('Missing site/home.json');
 
 const data = home.data;
-const emphasisClosing = data.closing?.replace('memÃ³ria prÃ³pria', '<em>memÃ³ria prÃ³pria</em>');
+const emphasisClosing = data.closing?.replace('memória própria', '<em>memória própria</em>');
 ---
 
 <BaseLayout title="sobre - jefferson" description={data.sections?.about?.body ?? data.description}>

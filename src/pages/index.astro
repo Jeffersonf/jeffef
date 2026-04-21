@@ -11,6 +11,8 @@ const data = home.data;
 const agoraData = agora?.data;
 const notas = await getPublishedNotas();
 const destaques = notas.filter((nota) => nota.data.photo).slice(0, 2);
+const heroPhoto = destaques[0];
+const secondaryPhotos = destaques.slice(1);
 const recentes = notas.slice(0, 6);
 const nowCards = agoraData?.cards?.slice(0, 3) ?? [];
 const base = '/jeffef/';
@@ -40,6 +42,17 @@ const emphasisClosing = data.closing?.replace('memória própria', '<em>memória
           ))}
         </div>
       </div>
+      {heroPhoto && (
+        <a class="hero-visual" href={url(`/notas/${noteSlug(heroPhoto.id)}/`)}>
+          <figure>
+            <img src={resolveAssetPath(heroPhoto.data.photo)} alt={heroPhoto.data.photoAlt ?? ''} />
+            <figcaption>
+              <span>{heroPhoto.data.place ?? heroPhoto.data.kind}</span>
+              <strong>{heroPhoto.data.title}</strong>
+            </figcaption>
+          </figure>
+        </a>
+      )}
     </section>
 
     <section class="shell section" id="cenas">
@@ -53,8 +66,8 @@ const emphasisClosing = data.closing?.replace('memória própria', '<em>memória
 
       <div class="section-body">
         {destaques.length > 0 ? (
-          <div class="photo-grid">
-            {destaques.map((nota) => (
+          <div class:list={['photo-grid', { single: secondaryPhotos.length === 0 }]}>
+            {(secondaryPhotos.length > 0 ? secondaryPhotos : destaques).map((nota) => (
               <a class="feature-photo" href={url(`/notas/${noteSlug(nota.id)}/`)}>
                 <figure>
                   <img src={resolveAssetPath(nota.data.photo)} alt={nota.data.photoAlt ?? ''} />
