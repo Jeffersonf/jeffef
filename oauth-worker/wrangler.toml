@@ -1,6 +1,7 @@
 name = "jeffef-decap-oauth"
 main = "worker.js"
 compatibility_date = "2026-04-21"
+account_id = "f20ce7bf89b92aa4a685fbfc60f549ef"
 
 [vars]
 GITHUB_REPO_VISIBILITY = "public"
