@@ -169,20 +169,43 @@ img {
 }
 
 .nav {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 4px;
   justify-content: center;
-  border: 1px solid var(--line);
+  border: 1px solid transparent;
   border-radius: 999px;
   padding: 4px;
-  background: color-mix(in srgb, var(--paper) 78%, transparent);
+  background:
+    linear-gradient(color-mix(in srgb, var(--paper) 86%, transparent), color-mix(in srgb, var(--paper) 86%, transparent)) padding-box,
+    linear-gradient(115deg, color-mix(in srgb, var(--blue) 36%, transparent), color-mix(in srgb, var(--gold) 30%, transparent), color-mix(in srgb, var(--green) 24%, transparent)) border-box;
   color: var(--muted);
   font-size: 12px;
   font-weight: 700;
   letter-spacing: .04em;
   text-transform: uppercase;
-  box-shadow: 0 10px 32px rgba(30, 55, 85, .04);
+  box-shadow: 0 14px 38px rgba(30, 55, 85, .055);
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.nav::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  z-index: -1;
+  border-radius: inherit;
+  background:
+    linear-gradient(100deg, transparent 0 24%, color-mix(in srgb, var(--blue) 10%, transparent) 42%, color-mix(in srgb, var(--gold) 10%, transparent) 58%, transparent 78%);
+  opacity: .55;
+  transform: translateX(-32%);
+  transition: transform .55s cubic-bezier(.16, 1, .3, 1), opacity .22s;
+}
+
+.nav:hover::before {
+  opacity: .9;
+  transform: translateX(32%);
 }
 
 .nav a {
@@ -202,13 +225,15 @@ img {
 
 .nav a:hover {
   color: var(--ink);
-  background: color-mix(in srgb, var(--blue) 9%, transparent);
+  background: color-mix(in srgb, var(--paper) 72%, transparent);
 }
 
 :root[data-theme="dark"] .nav {
-  background: rgba(22, 29, 38, .72);
+  background:
+    linear-gradient(rgba(22, 29, 38, .82), rgba(22, 29, 38, .82)) padding-box,
+    linear-gradient(115deg, rgba(159, 183, 204, .42), rgba(198, 173, 118, .24), rgba(157, 183, 165, .22)) border-box;
   color: var(--muted);
-  box-shadow: none;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, .16);
 }
 
 :root[data-theme="dark"] .nav a {
@@ -220,7 +245,7 @@ img {
 }
 
 :root[data-theme="dark"] .nav a:hover {
-  background: rgba(242, 239, 232, .07);
+  background: rgba(242, 239, 232, .08);
   color: var(--ink);
   box-shadow: none;
 }
@@ -337,12 +362,58 @@ h1 {
 }
 
 h1 em {
-  color: var(--blue);
+  position: relative;
+  display: inline-block;
+  padding-right: .04em;
+  background:
+    linear-gradient(100deg, var(--blue), color-mix(in srgb, var(--green) 55%, var(--blue)), var(--gold), var(--blue));
+  background-size: 260% 100%;
+  background-clip: text;
+  color: transparent;
   font-style: italic;
+  animation: fluidWord 7s ease-in-out infinite alternate;
+}
+
+h1 em::after {
+  content: "";
+  position: absolute;
+  left: .04em;
+  right: .04em;
+  bottom: .02em;
+  height: .08em;
+  border-radius: 999px;
+  background:
+    linear-gradient(90deg, transparent, color-mix(in srgb, var(--blue) 58%, transparent), color-mix(in srgb, var(--gold) 48%, transparent), transparent);
+  opacity: .55;
+  transform: translateX(-2%) scaleX(.86);
+  transform-origin: left;
+  animation: fluidUnderline 5.8s ease-in-out infinite alternate;
 }
 
 :root[data-theme="dark"] h1 em {
-  color: var(--blue);
+  color: transparent;
+}
+
+@keyframes fluidWord {
+  from {
+    background-position: 0% 50%;
+    transform: skewX(-1deg) translateY(0);
+  }
+  to {
+    background-position: 100% 50%;
+    transform: skewX(-4deg) translateY(-.025em);
+  }
+}
+
+@keyframes fluidUnderline {
+  from {
+    transform: translateX(-3%) scaleX(.78);
+    opacity: .36;
+  }
+  to {
+    transform: translateX(8%) scaleX(.96);
+    opacity: .68;
+  }
 }
 
 :root[data-theme="dark"] .eyebrow {
@@ -1322,6 +1393,18 @@ h1 em {
 
   .scene-card figure {
     min-height: 340px;
+  }
+
+  .scene-card figcaption {
+    left: 18px;
+    right: 18px;
+    bottom: 18px;
+  }
+
+  .scene-card figcaption strong {
+    max-width: 15ch;
+    font-size: 30px;
+    line-height: 1;
   }
 
   .profile,
