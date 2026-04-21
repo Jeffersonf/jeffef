@@ -77,10 +77,34 @@ Texto da nota.
 Edite `public/admin/config.yml` e troque:
 
 ```yml
-repo: seu-usuario/jeffef-site
+repo: jeffersonf/jeffef
 ```
 
-pelo repositorio real no GitHub.
+se o repositorio mudar.
+
+Importante: publicar o site no GitHub Pages nao basta para o Decap CMS funcionar em `/admin/`.
+O Pages entrega a interface, mas o backend `github` do Decap precisa de um provedor de autenticacao
+em producao. Sem isso, a tela pode abrir, mas login e gravacao no repositorio nao funcionam.
+
+Opcoes comuns:
+
+- Netlify Identity + Git Gateway
+- um endpoint OAuth proprio para o GitHub
+- usar o `/admin/` apenas localmente com `npm run cms`
+
+Este repositorio agora inclui um esqueleto de worker OAuth em `oauth-worker/` para o caminho
+"GitHub Pages + OAuth proprio". O fluxo esperado fica assim:
+
+1. GitHub Pages continua servindo `https://jeffersonf.github.io/jeffef/admin/`
+2. o popup de login vai para um worker externo em outro dominio/subdominio
+3. o worker faz o OAuth com GitHub e devolve o token para o Decap
+
+Passos resumidos:
+
+1. criar um GitHub OAuth App
+2. publicar o worker de `oauth-worker/`
+3. preencher `base_url` e `auth_endpoint` em `public/admin/config.yml`
+4. fazer deploy do site de novo
 
 O Decap salva:
 
@@ -97,7 +121,11 @@ O site estatico final sai em `dist/`.
 
 ## Publicacao
 
-Funciona bem em Vercel, Netlify, Cloudflare Pages ou GitHub Pages.
+O site publico funciona bem em Vercel, Netlify, Cloudflare Pages ou GitHub Pages.
+
+Para o editor `/admin/`, o caminho mais simples e hospedar com autenticacao em Netlify.
+No GitHub Pages, a interface pode ser publicada normalmente, mas a autenticacao do Decap precisa
+ser configurada separadamente.
 
 Comando de build:
 

@@ -1,0 +1,11 @@
+name = "jeffef-decap-oauth"
+main = "worker.js"
+compatibility_date = "2026-04-21"
+
+# If you attach a custom domain in Cloudflare, uncomment and edit:
+# workers_dev = false
+# route = { pattern = "decap.example.com", zone_name = "example.com", custom_domain = true }
+
+[vars]
+# Set to "private" if the GitHub repository is private.
+GITHUB_REPO_VISIBILITY = "public"

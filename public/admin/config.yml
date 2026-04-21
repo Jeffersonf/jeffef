@@ -2,8 +2,16 @@ local_backend: true
 
 backend:
   name: github
-  repo: seu-usuario/jeffef-site
+  # GitHub Pages can host the admin UI, but Decap still needs an auth provider
+  # in production (for example Netlify Identity/Git Gateway or a custom OAuth
+  # endpoint) before login/publishing will work.
+  repo: jeffersonf/jeffef
   branch: main
+  # When you deploy the external OAuth worker, uncomment and replace the URL
+  # below. Decap will open `${base_url}/${auth_endpoint}` in a popup.
+  #
+  # base_url: https://your-worker.your-subdomain.workers.dev
+  # auth_endpoint: auth
 
 media_folder: "public/uploads"
 public_folder: "/uploads"
