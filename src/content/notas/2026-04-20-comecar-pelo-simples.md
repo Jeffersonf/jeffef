@@ -7,7 +7,7 @@ place: Botucatu, SP
 tags:
   - vida comum
   - site pessoal
-photo: 20221201_163837.jpg
+photo: /jeffef/uploads/20221201_163837.jpg
 photoAlt: Mesa com caderno aberto e notebook.
 draft: false
 ---
