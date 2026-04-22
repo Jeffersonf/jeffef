@@ -172,16 +172,20 @@ img {
 .nav {
   grid-column: 1 / -1;
   position: relative;
+  width: fit-content;
+  max-width: 100%;
   display: flex;
   align-items: center;
   gap: 4px;
   justify-content: center;
+  justify-self: start;
   border: 1px solid transparent;
   border-radius: 999px;
-  padding: 4px;
+  margin-top: 2px;
+  padding: 5px;
   background:
     linear-gradient(color-mix(in srgb, var(--glass-bg) 88%, transparent), color-mix(in srgb, var(--glass-bg) 88%, transparent)) padding-box,
-    linear-gradient(115deg, color-mix(in srgb, var(--blue) 36%, transparent), color-mix(in srgb, var(--gold) 30%, transparent), color-mix(in srgb, var(--green) 24%, transparent)) border-box;
+    linear-gradient(115deg, color-mix(in srgb, var(--blue) 34%, transparent), color-mix(in srgb, var(--rose) 22%, transparent), color-mix(in srgb, var(--green) 26%, transparent)) border-box;
   color: var(--muted);
   font-size: 12px;
   font-weight: 700;
@@ -201,8 +205,8 @@ img {
   z-index: -1;
   border-radius: inherit;
   background:
-    linear-gradient(100deg, transparent 0 24%, color-mix(in srgb, var(--blue) 10%, transparent) 42%, color-mix(in srgb, var(--gold) 10%, transparent) 58%, transparent 78%);
-  opacity: .55;
+    linear-gradient(100deg, transparent 0 20%, color-mix(in srgb, var(--blue) 12%, transparent) 38%, color-mix(in srgb, var(--rose) 10%, transparent) 56%, color-mix(in srgb, var(--green) 10%, transparent) 70%, transparent 84%);
+  opacity: .48;
   transform: translateX(-32%);
   transition: transform .55s cubic-bezier(.16, 1, .3, 1), opacity .22s;
 }
@@ -216,9 +220,9 @@ img {
   position: relative;
   display: inline-flex;
   align-items: center;
-  height: 32px;
+  height: 34px;
   border-radius: 999px;
-  padding: 0 13px;
+  padding: 0 15px;
   text-decoration: none;
   transition: color .18s, background .18s;
 }
@@ -235,7 +239,7 @@ img {
 :root[data-theme="dark"] .nav {
   background:
     linear-gradient(rgba(28, 25, 22, .62), rgba(28, 25, 22, .62)) padding-box,
-    linear-gradient(115deg, rgba(196, 163, 116, .28), rgba(176, 141, 134, .20), rgba(145, 161, 124, .20)) border-box;
+    linear-gradient(115deg, rgba(122, 177, 255, .24), rgba(168, 126, 255, .18), rgba(90, 214, 176, .20)) border-box;
   color: var(--muted);
   box-shadow: 0 16px 48px rgba(0, 0, 0, .22);
 }
@@ -396,17 +400,17 @@ h1 {
   position: relative;
   display: inline-block;
   z-index: 0;
-  padding: 0 0 .08em;
+  padding: 0 0 .12em;
   background:
-    linear-gradient(94deg, #0f78ff 0%, #00d5ff 16%, #6f48ff 30%, #f03ec7 46%, #ff7a1a 64%, #28e29a 82%, #0f78ff 100%);
-  background-size: 620% 100%;
+    linear-gradient(96deg, #2276ff 0%, #29b6ff 20%, #6d5cff 44%, #7d4dff 63%, #2dd4a4 84%, #2276ff 100%);
+  background-size: 420% 100%;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-style: italic;
   text-shadow: none;
   filter: none;
-  animation: livingWord 1.15s linear infinite;
+  animation: livingWord 7.8s ease-in-out infinite alternate;
 }
 
 :is(h1, .closing) em::after {
@@ -414,19 +418,20 @@ h1 {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -.02em;
+  bottom: .02em;
   height: 2px;
   border-radius: 999px;
   background:
-    linear-gradient(90deg, #0f78ff 0%, #6f48ff 34%, #f03ec7 60%, #28e29a 100%);
-  opacity: .95;
+    linear-gradient(90deg, #2276ff 0%, #6d5cff 42%, #2dd4a4 100%);
+  opacity: .92;
+  box-shadow: 0 1px 10px rgba(45, 212, 164, .12);
   pointer-events: none;
 }
 
 :root[data-theme="dark"] :is(h1, .closing) em {
   background:
-    linear-gradient(94deg, #ffe869 0%, #ffd028 16%, #ff80bf 32%, #ffab2f 52%, #dfff6d 72%, #63f0bd 88%, #ffe869 100%);
-  background-size: 620% 100%;
+    linear-gradient(96deg, #8ec5ff 0%, #6be0ff 18%, #b38cff 48%, #8b6fff 68%, #70f0c2 88%, #8ec5ff 100%);
+  background-size: 420% 100%;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -436,7 +441,8 @@ h1 {
 
 :root[data-theme="dark"] :is(h1, .closing) em::after {
   background:
-    linear-gradient(90deg, #ffe869 0%, #ff80bf 34%, #ffab2f 62%, #63f0bd 100%);
+    linear-gradient(90deg, #8ec5ff 0%, #b38cff 46%, #70f0c2 100%);
+  box-shadow: 0 1px 12px rgba(112, 240, 194, .14);
 }
 
 @keyframes livingWord {
@@ -1459,10 +1465,12 @@ h1 {
   .nav {
     width: 100%;
     justify-content: flex-start;
+    justify-self: stretch;
     gap: 2px;
     overflow-x: auto;
     overflow-y: hidden;
     padding: 4px;
+    margin-top: 0;
     scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
     touch-action: pan-x;
