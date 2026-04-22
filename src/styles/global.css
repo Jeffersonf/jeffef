@@ -396,7 +396,7 @@ h1 {
   position: relative;
   display: inline-block;
   z-index: 0;
-  padding: 0;
+  padding: 0 0 .08em;
   background:
     linear-gradient(94deg, #0f78ff 0%, #00d5ff 16%, #6f48ff 30%, #f03ec7 46%, #ff7a1a 64%, #28e29a 82%, #0f78ff 100%);
   background-size: 620% 100%;
@@ -406,7 +406,21 @@ h1 {
   font-style: italic;
   text-shadow: none;
   filter: none;
-  animation: livingWord .42s linear infinite;
+  animation: livingWord 1.15s linear infinite;
+}
+
+:is(h1, .closing) em::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -.02em;
+  height: 2px;
+  border-radius: 999px;
+  background:
+    linear-gradient(90deg, #0f78ff 0%, #6f48ff 34%, #f03ec7 60%, #28e29a 100%);
+  opacity: .95;
+  pointer-events: none;
 }
 
 :root[data-theme="dark"] :is(h1, .closing) em {
@@ -418,6 +432,11 @@ h1 {
   color: transparent;
   text-shadow: none;
   filter: none;
+}
+
+:root[data-theme="dark"] :is(h1, .closing) em::after {
+  background:
+    linear-gradient(90deg, #ffe869 0%, #ff80bf 34%, #ffab2f 62%, #63f0bd 100%);
 }
 
 @keyframes livingWord {
