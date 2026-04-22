@@ -6,6 +6,7 @@ const page = await getEntry('site', 'agora');
 if (!page) throw new Error('Missing site/agora.json');
 
 const data = page.data;
+const emphasisClosing = data.closing?.replace('pode mudar depois', '<em>pode mudar depois</em>');
 ---
 
 <BaseLayout title={data.title} description={data.description}>
@@ -39,7 +40,7 @@ const data = page.data;
     </section>
 
     <div class="shell">
-      <p class="closing">{data.closing}</p>
+      <p class="closing" set:html={emphasisClosing} />
     </div>
   </main>
 </BaseLayout>

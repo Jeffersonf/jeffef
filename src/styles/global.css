@@ -633,8 +633,9 @@ h1 {
 .note-row {
   position: relative;
   display: grid;
-  grid-template-columns: 170px minmax(0, 1fr);
+  grid-template-columns: 132px minmax(0, 1fr);
   gap: 24px;
+  align-items: start;
   padding: 28px 0;
   border-bottom: 1px solid var(--line);
   text-decoration: none;
@@ -665,6 +666,7 @@ h1 {
   display: grid;
   align-content: start;
   gap: 2px;
+  width: fit-content;
   padding-left: 18px;
   color: var(--muted);
   line-height: 1;
@@ -690,11 +692,19 @@ h1 {
   font-weight: 700;
 }
 
+.note-row article {
+  display: grid;
+  align-content: start;
+  justify-items: start;
+}
+
 .note-row h3 {
+  max-width: 22ch;
   font-family: "Instrument Serif", Georgia, serif;
   font-size: 28px;
   font-weight: 400;
-  margin-top: 8px;
+  margin-top: 10px;
+  line-height: 1.06;
 }
 
 .note-row p {
@@ -707,7 +717,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: 16px;
+  margin-top: 14px;
 }
 
 .tag {
