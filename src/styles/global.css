@@ -398,47 +398,26 @@ h1 {
   z-index: 0;
   padding: 0;
   background:
-    linear-gradient(94deg, #1274ff 0%, #14c9ff 18%, #7a51ff 34%, #e248be 50%, #ff8a2a 68%, #42d79c 86%, #1274ff 100%);
-  background-size: 460% 100%;
+    linear-gradient(94deg, #0f78ff 0%, #00d5ff 16%, #6f48ff 30%, #f03ec7 46%, #ff7a1a 64%, #28e29a 82%, #0f78ff 100%);
+  background-size: 620% 100%;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-style: italic;
   text-shadow: none;
   filter: none;
-  animation: livingWord .72s linear infinite;
-}
-
-:is(h1, .closing) em::after {
-  content: "";
-  position: absolute;
-  pointer-events: none;
-  left: -.02em;
-  right: -.02em;
-  bottom: -.14em;
-  height: 3px;
-  border-radius: 3px;
-  background:
-    linear-gradient(90deg, #1274ff 0%, #7a51ff 26%, #ff8a2a 60%, #42d79c 100%);
-  opacity: 1;
-  transform-origin: left;
-  animation: markBreath .56s cubic-bezier(.22, 1, .36, 1) infinite;
+  animation: livingWord .42s linear infinite;
 }
 
 :root[data-theme="dark"] :is(h1, .closing) em {
   background:
-    linear-gradient(94deg, #ffe37c 0%, #ffd14c 18%, #ff8cc8 34%, #ffb144 54%, #d8ee87 74%, #7ce0b5 90%, #ffe37c 100%);
-  background-size: 460% 100%;
+    linear-gradient(94deg, #ffe869 0%, #ffd028 16%, #ff80bf 32%, #ffab2f 52%, #dfff6d 72%, #63f0bd 88%, #ffe869 100%);
+  background-size: 620% 100%;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   text-shadow: none;
   filter: none;
-}
-
-:root[data-theme="dark"] :is(h1, .closing) em::after {
-  background:
-    linear-gradient(90deg, #ffd14c 0%, #ff8cc8 30%, #ffb144 62%, #7ce0b5 100%);
 }
 
 @keyframes livingWord {
@@ -447,17 +426,6 @@ h1 {
   }
   to {
     background-position: 100% 50%;
-  }
-}
-
-@keyframes markBreath {
-  from {
-    transform: translateX(-12%) scaleX(.52) skewX(-12deg);
-    opacity: .88;
-  }
-  to {
-    transform: translateX(12%) scaleX(1.22) skewX(-12deg);
-    opacity: 1;
   }
 }
 
