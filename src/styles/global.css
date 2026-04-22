@@ -21,23 +21,23 @@
 }
 
 :root[data-theme="dark"] {
-  --bg: #11100e;
-  --paper: rgba(28, 25, 22, .74);
-  --ink: #f2efe8;
-  --text: #d7d0c2;
-  --muted: #a49b8c;
-  --line: rgba(241, 237, 227, .11);
-  --line-s: rgba(241, 237, 227, .20);
-  --wash: rgba(196, 163, 116, .10);
+  --bg: #1a1815;
+  --paper: rgba(40, 35, 31, .78);
+  --ink: #f4f0e8;
+  --text: #ddd5c7;
+  --muted: #b0a696;
+  --line: rgba(241, 237, 227, .14);
+  --line-s: rgba(241, 237, 227, .24);
+  --wash: rgba(196, 163, 116, .12);
   --blue: #c4a374;
   --sky: #aaa490;
   --green: #91a17c;
   --rose: #b08d86;
   --gold: #caa665;
-  --glass-bg: rgba(28, 25, 22, .56);
-  --glass-border: rgba(241, 237, 227, .16);
-  --shadow: 0 18px 54px rgba(0, 0, 0, .28);
-  --shadow-lg: 0 28px 82px rgba(0, 0, 0, .38);
+  --glass-bg: rgba(42, 36, 32, .62);
+  --glass-border: rgba(241, 237, 227, .20);
+  --shadow: 0 18px 54px rgba(0, 0, 0, .24);
+  --shadow-lg: 0 28px 82px rgba(0, 0, 0, .32);
   color-scheme: dark;
 }
 
@@ -85,11 +85,11 @@ body::before {
 
 :root[data-theme="dark"] body::before {
   background:
-    radial-gradient(ellipse 34% 26% at 18% 8%, rgba(196, 163, 116, .13), transparent 64%),
-    radial-gradient(ellipse 30% 22% at 84% 16%, rgba(176, 141, 134, .09), transparent 66%),
-    radial-gradient(ellipse 40% 30% at 64% 94%, rgba(145, 161, 124, .07), transparent 70%),
-    linear-gradient(180deg, #11100e 0%, #151310 54%, #0d0c0b 100%);
-  opacity: .96;
+    radial-gradient(ellipse 34% 26% at 18% 8%, rgba(196, 163, 116, .14), transparent 64%),
+    radial-gradient(ellipse 30% 22% at 84% 16%, rgba(176, 141, 134, .10), transparent 66%),
+    radial-gradient(ellipse 40% 30% at 64% 94%, rgba(145, 161, 124, .08), transparent 70%),
+    linear-gradient(180deg, #1a1815 0%, #221d19 54%, #161310 100%);
+  opacity: .98;
 }
 
 body::after {
@@ -106,10 +106,10 @@ body::after {
 
 :root[data-theme="dark"] body::after {
   background:
-    linear-gradient(90deg, rgba(255,255,255,.035), transparent 32%, rgba(255,255,255,.024)),
-    repeating-linear-gradient(90deg, rgba(241, 237, 227, .016) 0 1px, transparent 1px 112px);
+    linear-gradient(90deg, rgba(255,255,255,.045), transparent 32%, rgba(255,255,255,.03)),
+    repeating-linear-gradient(90deg, rgba(241, 237, 227, .02) 0 1px, transparent 1px 112px);
   mask-image: linear-gradient(to bottom, rgba(0,0,0,.38), transparent 74%);
-  opacity: .68;
+  opacity: .74;
 }
 
 @keyframes ambientDrift {
@@ -392,113 +392,85 @@ h1 {
   letter-spacing: 0;
 }
 
-h1 em {
+:is(h1, .closing) em {
   position: relative;
   display: inline-block;
   z-index: 0;
   padding: 0 .055em .018em;
   background:
-    linear-gradient(105deg, var(--blue), var(--rose), var(--gold), var(--green), var(--blue));
-  background-size: 280% 100%;
+    linear-gradient(102deg, #2f68b8 0%, #6f7cff 18%, #b06fb6 38%, #d89a38 58%, #4b9f8c 78%, #2f68b8 100%);
+  background-size: 220% 100%;
   background-clip: text;
   color: transparent;
   font-style: italic;
-  text-shadow: none;
-  animation: livingWord 6.6s ease-in-out infinite alternate;
+  text-shadow:
+    0 0 .02em rgba(255, 255, 255, .22),
+    0 .04em .18em color-mix(in srgb, var(--blue) 18%, transparent);
+  filter: saturate(1.18) brightness(1.04);
+  animation: livingWord 3.1s cubic-bezier(.22, 1, .36, 1) infinite;
 }
 
-h1 em::before,
-h1 em::after {
+:is(h1, .closing) em::after {
   content: "";
   position: absolute;
   pointer-events: none;
-}
-
-h1 em::before {
-  left: -.02em;
-  right: -.035em;
-  bottom: .045em;
-  z-index: -1;
-  height: .34em;
-  border: 1px solid color-mix(in srgb, var(--glass-border) 78%, transparent);
-  border-radius: 7px;
-  background:
-    linear-gradient(100deg, color-mix(in srgb, var(--sky) 18%, transparent), color-mix(in srgb, var(--gold) 30%, transparent), color-mix(in srgb, var(--rose) 16%, transparent));
-  box-shadow:
-    inset 0 1px 0 rgba(255,255,255,.48),
-    0 10px 28px color-mix(in srgb, var(--gold) 16%, transparent);
-  opacity: .90;
-  transform: rotate(-1.2deg) translateY(.015em) scaleX(.96);
-  transform-origin: center;
-  backdrop-filter: blur(8px) saturate(1.35);
-  -webkit-backdrop-filter: blur(8px) saturate(1.35);
-  animation: glassMark 5.8s cubic-bezier(.16, 1, .3, 1) infinite alternate;
-}
-
-h1 em::after {
   left: .08em;
   right: .06em;
   bottom: .025em;
-  height: 2px;
-  border-radius: 2px;
+  height: 3px;
+  border-radius: 999px;
   background:
-    linear-gradient(90deg, transparent, color-mix(in srgb, var(--blue) 84%, var(--ink)), var(--gold), transparent);
-  opacity: .82;
+    linear-gradient(90deg, transparent, #4a82d0 18%, #c688dc 46%, #e6b14d 68%, transparent);
+  box-shadow:
+    0 0 14px color-mix(in srgb, var(--gold) 28%, transparent),
+    0 0 24px color-mix(in srgb, var(--blue) 18%, transparent);
+  opacity: .96;
   transform-origin: left;
-  animation: markBreath 3.9s ease-in-out infinite alternate;
+  animation: markBreath 2.2s cubic-bezier(.22, 1, .36, 1) infinite;
 }
 
-:root[data-theme="dark"] h1 em {
+:root[data-theme="dark"] :is(h1, .closing) em {
   background:
-    linear-gradient(105deg, #dfc8a3, #c6aaa2, #caa665, #aab58d, #dfc8a3);
-  background-size: 280% 100%;
+    linear-gradient(102deg, #f3d9a8 0%, #f0be86 18%, #f0a6c8 38%, #e1b55f 58%, #b9cd90 78%, #f3d9a8 100%);
+  background-size: 220% 100%;
   background-clip: text;
   color: transparent;
-  text-shadow: none;
+  text-shadow:
+    0 0 .03em rgba(242, 239, 232, .16),
+    0 .04em .22em rgba(202, 166, 101, .18);
+  filter: saturate(1.3) brightness(1.06);
 }
 
-:root[data-theme="dark"] h1 em::before {
+:root[data-theme="dark"] :is(h1, .closing) em::after {
   background:
-    linear-gradient(100deg, rgba(170, 164, 144, .14), rgba(196, 163, 116, .24), rgba(176, 141, 134, .12));
+    linear-gradient(90deg, transparent, #e7c27a 18%, #efb1cc 46%, #c7d99f 70%, transparent);
   box-shadow:
-    inset 0 1px 0 rgba(255,255,255,.10),
-    0 12px 34px rgba(196, 163, 116, .09);
-  opacity: .86;
+    0 0 16px rgba(202, 166, 101, .24),
+    0 0 26px rgba(239, 177, 204, .10);
 }
 
 @keyframes livingWord {
   from {
     background-position: 0% 50%;
-    filter: saturate(1.08);
+    filter: saturate(1.2) brightness(1.02);
   }
-  45% {
-    filter: saturate(1.34);
+  50% {
+    filter: saturate(1.55) brightness(1.12);
   }
   to {
     background-position: 100% 50%;
-    filter: saturate(1.18);
-  }
-}
-
-@keyframes glassMark {
-  from {
-    transform: rotate(-1.2deg) translate3d(-1.2%, .015em, 0) scaleX(.90);
-    opacity: .68;
-  }
-  to {
-    transform: rotate(.45deg) translate3d(1.5%, -.005em, 0) scaleX(1.02);
-    opacity: .94;
+    filter: saturate(1.28) brightness(1.05);
   }
 }
 
 @keyframes markBreath {
   from {
-    transform: translateX(-1%) scaleX(.82);
-    opacity: .50;
+    transform: translateX(-2%) scaleX(.78);
+    opacity: .58;
   }
   to {
-    transform: translateX(2%) scaleX(1);
-    opacity: .78;
+    transform: translateX(4%) scaleX(1.06);
+    opacity: 1;
   }
 }
 
@@ -1352,11 +1324,6 @@ h1 em::after {
 
 :root[data-theme="dark"] .closing {
   border-color: var(--line);
-}
-
-.closing em {
-  color: var(--blue);
-  font-style: italic;
 }
 
 :root[data-theme="dark"] .brand {
