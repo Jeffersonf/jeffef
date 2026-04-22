@@ -141,10 +141,10 @@ img {
 }
 
 .topbar {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
-  justify-content: space-between;
-  gap: 20px;
+  gap: 16px 20px;
   padding: 22px 0 18px;
   border-bottom: 1px solid var(--line);
 }
@@ -170,6 +170,7 @@ img {
 }
 
 .nav {
+  grid-column: 1 / -1;
   position: relative;
   display: flex;
   align-items: center;
@@ -258,6 +259,7 @@ img {
   overflow: hidden;
   display: inline-flex;
   align-items: center;
+  justify-self: end;
   gap: 6px;
   height: 32px;
   border: 1px solid var(--line);
@@ -276,11 +278,30 @@ img {
   -webkit-backdrop-filter: blur(16px) saturate(1.22);
 }
 
+.theme-toggle::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  border-radius: inherit;
+  background:
+    linear-gradient(120deg, rgba(255, 255, 255, .32), transparent 34%, rgba(255, 255, 255, .16) 58%, transparent 76%);
+  opacity: .9;
+  transform: translateX(-36%);
+  transition: transform .45s cubic-bezier(.16, 1, .3, 1), opacity .24s ease;
+  pointer-events: none;
+}
+
 .theme-toggle:hover {
   border-color: var(--blue);
   color: var(--ink);
   transform: translateY(-1px);
   background: var(--paper);
+}
+
+.theme-toggle:hover::before,
+.theme-toggle:focus-visible::before {
+  transform: translateX(34%);
+  opacity: 1;
 }
 
 .theme-icon {
@@ -312,6 +333,11 @@ img {
   background: rgba(28, 25, 22, .58);
   color: var(--muted);
   border-color: var(--line);
+}
+
+:root[data-theme="dark"] .theme-toggle::before {
+  background:
+    linear-gradient(120deg, rgba(242, 239, 232, .14), transparent 34%, rgba(196, 163, 116, .12) 58%, transparent 78%);
 }
 
 :root[data-theme="dark"] .theme-toggle:hover {
@@ -1028,6 +1054,8 @@ h1 em::after {
 }
 
 .panel {
+  position: relative;
+  overflow: hidden;
   border: 1px solid var(--line);
   border-radius: var(--r);
   padding: 22px;
@@ -1050,16 +1078,45 @@ h1 em::after {
 }
 
 .panel.highlight {
-  border-color: color-mix(in srgb, var(--blue) 25%, var(--line));
+  border-color: color-mix(in srgb, var(--blue) 34%, var(--line));
   background:
-    linear-gradient(135deg, color-mix(in srgb, var(--blue) 10%, var(--glass-bg)), var(--glass-bg));
+    radial-gradient(circle at top left, color-mix(in srgb, var(--gold) 22%, transparent), transparent 42%),
+    linear-gradient(135deg, color-mix(in srgb, var(--blue) 20%, white 18%), color-mix(in srgb, var(--rose) 12%, var(--glass-bg)) 55%, var(--glass-bg));
+  box-shadow:
+    0 18px 52px color-mix(in srgb, var(--blue) 12%, transparent),
+    var(--shadow);
 }
 
 :root[data-theme="dark"] .panel.highlight {
   background:
-    linear-gradient(135deg, color-mix(in srgb, var(--blue) 10%, transparent), transparent 58%),
-    var(--paper);
-  border-color: color-mix(in srgb, var(--blue) 28%, var(--line));
+    radial-gradient(circle at top left, rgba(202, 166, 101, .18), transparent 38%),
+    linear-gradient(138deg, rgba(196, 163, 116, .22), rgba(176, 141, 134, .10) 52%, rgba(28, 25, 22, .92));
+  border-color: color-mix(in srgb, var(--blue) 48%, var(--line));
+  box-shadow:
+    0 20px 58px rgba(196, 163, 116, .14),
+    0 24px 72px rgba(0, 0, 0, .34);
+}
+
+.panel.highlight::before,
+.now-card.highlight::before,
+.now-item.highlight::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background:
+    linear-gradient(115deg, transparent 12%, rgba(255, 255, 255, .34) 32%, transparent 48%, rgba(255, 255, 255, .14) 64%, transparent 80%);
+  opacity: .82;
+  transform: translateX(-45%);
+  pointer-events: none;
+}
+
+:root[data-theme="dark"] .panel.highlight::before,
+:root[data-theme="dark"] .now-card.highlight::before,
+:root[data-theme="dark"] .now-item.highlight::before {
+  background:
+    linear-gradient(115deg, transparent 10%, rgba(242, 239, 232, .14) 30%, transparent 46%, rgba(202, 166, 101, .18) 62%, transparent 82%);
+  opacity: .96;
 }
 
 .panel > span:first-child {
@@ -1149,6 +1206,8 @@ h1 em::after {
 }
 
 .now-card {
+  position: relative;
+  overflow: hidden;
   display: flex;
   min-height: 240px;
   flex-direction: column;
@@ -1195,10 +1254,28 @@ h1 em::after {
 }
 
 .now-card.highlight {
-  border-color: color-mix(in srgb, var(--blue) 34%, var(--line));
+  border-color: color-mix(in srgb, var(--blue) 42%, var(--line));
+  background:
+    radial-gradient(circle at top left, color-mix(in srgb, var(--gold) 20%, transparent), transparent 40%),
+    linear-gradient(148deg, color-mix(in srgb, var(--blue) 20%, white 12%), color-mix(in srgb, var(--rose) 12%, transparent) 52%, color-mix(in srgb, var(--glass-bg) 94%, transparent));
+  box-shadow:
+    0 16px 44px color-mix(in srgb, var(--blue) 10%, transparent),
+    var(--shadow);
+}
+
+:root[data-theme="dark"] .now-card.highlight {
+  border-color: color-mix(in srgb, var(--blue) 54%, var(--glass-border));
+  background:
+    radial-gradient(circle at top left, rgba(202, 166, 101, .18), transparent 36%),
+    linear-gradient(148deg, rgba(196, 163, 116, .20), rgba(176, 141, 134, .10) 52%, rgba(28, 25, 22, .94));
+  box-shadow:
+    0 20px 54px rgba(196, 163, 116, .14),
+    var(--shadow);
 }
 
 .now-item {
+  position: relative;
+  overflow: hidden;
   display: flex;
   min-height: 270px;
   flex-direction: column;
@@ -1241,6 +1318,26 @@ h1 em::after {
 
 .now-item.highlight h3 {
   color: var(--blue);
+}
+
+.now-item.highlight {
+  border-color: color-mix(in srgb, var(--blue) 38%, var(--line));
+  background:
+    radial-gradient(circle at top left, color-mix(in srgb, var(--gold) 18%, transparent), transparent 38%),
+    linear-gradient(145deg, color-mix(in srgb, var(--blue) 18%, white 10%), color-mix(in srgb, var(--rose) 9%, transparent) 50%, color-mix(in srgb, var(--glass-bg) 92%, transparent));
+  box-shadow:
+    0 18px 48px color-mix(in srgb, var(--blue) 10%, transparent),
+    var(--shadow);
+}
+
+:root[data-theme="dark"] .now-item.highlight {
+  border-color: color-mix(in srgb, var(--blue) 52%, var(--glass-border));
+  background:
+    radial-gradient(circle at top left, rgba(202, 166, 101, .16), transparent 36%),
+    linear-gradient(148deg, rgba(196, 163, 116, .18), rgba(176, 141, 134, .09) 48%, rgba(28, 25, 22, .94));
+  box-shadow:
+    0 20px 56px rgba(196, 163, 116, .13),
+    var(--shadow);
 }
 
 .closing {
@@ -1389,13 +1486,26 @@ h1 em::after {
 }
 
 @media (max-width: 760px) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  body::before {
+    inset: -8vmax;
+    background-size: 150% 150%;
+    animation-duration: 42s;
+    opacity: .9;
+  }
+
+  body::after {
+    opacity: .48;
+  }
+
   .shell {
     width: calc(100% - 32px);
   }
 
   .topbar {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
     gap: 14px 10px;
     padding: 16px 0 14px;
   }
@@ -1406,7 +1516,6 @@ h1 em::after {
   }
 
   .nav {
-    grid-column: 1 / -1;
     width: 100%;
     justify-content: flex-start;
     gap: 2px;
@@ -1414,6 +1523,8 @@ h1 em::after {
     overflow-y: hidden;
     padding: 4px;
     scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
   }
 
   .nav::-webkit-scrollbar {
@@ -1673,6 +1784,15 @@ h1 em::after {
 
   .post {
     padding-top: 42px;
+  }
+}
+
+@media (hover: hover) {
+  .panel.highlight:hover::before,
+  .now-card.highlight:hover::before,
+  .now-item.highlight:hover::before {
+    transform: translateX(18%);
+    transition: transform .7s cubic-bezier(.16, 1, .3, 1);
   }
 }
 

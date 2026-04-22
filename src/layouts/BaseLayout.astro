@@ -45,12 +45,6 @@ const url = (path: string) => `${base}${path.replace(/^\/+/, '')}`;
   <body>
     <header class="shell topbar">
       <a class="brand" href={url('/')}>jefferson</a>
-      <nav class="nav" aria-label="Navegacao principal">
-        <a href={url('/notas/')}>notas</a>
-        <a href={url('/cenas/')}>cenas</a>
-        <a href={url('/agora/')}>agora</a>
-        <a href={url('/sobre/')}>sobre</a>
-      </nav>
       <button class="theme-toggle" type="button" aria-label="Alternar tema" data-theme-toggle>
         <span class="theme-icon theme-icon-sun" aria-hidden="true">
           <svg viewBox="0 0 24 24" role="img">
@@ -65,6 +59,12 @@ const url = (path: string) => `${base}${path.replace(/^\/+/, '')}`;
         </span>
         <span class="theme-text">tema</span>
       </button>
+      <nav class="nav" aria-label="Navegacao principal">
+        <a href={url('/notas/')}>notas</a>
+        <a href={url('/cenas/')}>cenas</a>
+        <a href={url('/agora/')}>agora</a>
+        <a href={url('/sobre/')}>sobre</a>
+      </nav>
     </header>
 
     <slot />
