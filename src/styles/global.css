@@ -178,7 +178,7 @@ img {
   align-items: center;
   gap: 4px;
   justify-content: center;
-  justify-self: start;
+  justify-self: center;
   border: 1px solid transparent;
   border-radius: 999px;
   margin-top: 2px;
