@@ -54,7 +54,7 @@ After deploy, edit `public/admin/config.yml` and `public/config.yml` and uncomme
 ```yml
 backend:
   name: github
-  repo: jeffersonf/jeffef
+  repo: Jeffersonf/jeffef
   branch: main
   base_url: https://your-worker.your-subdomain.workers.dev
   auth_endpoint: auth

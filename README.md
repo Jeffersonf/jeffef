@@ -77,7 +77,7 @@ Texto da nota.
 Edite `public/admin/config.yml` e troque:
 
 ```yml
-repo: jeffersonf/jeffef
+repo: Jeffersonf/jeffef
 ```
 
 se o repositorio mudar.
