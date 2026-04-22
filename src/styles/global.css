@@ -396,70 +396,67 @@ h1 {
   position: relative;
   display: inline-block;
   z-index: 0;
-  padding: 0 .055em .03em;
+  padding: 0 0 .035em;
   background:
-    linear-gradient(98deg, #2e74d8 0%, #43b0ff 16%, #8a68ff 32%, #cf63be 48%, #f09b39 66%, #4cb790 84%, #2e74d8 100%);
-  background-size: 300% 100%;
+    linear-gradient(96deg, #1f7fff 0%, #34d1ff 14%, #7b61ff 30%, #d94ec1 46%, #ff9340 64%, #4fd6a2 82%, #1f7fff 100%);
+  background-size: 380% 100%;
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
   font-style: italic;
   text-shadow: none;
-  filter: saturate(1.34) brightness(1.08);
-  animation: livingWord 1.7s linear infinite;
+  filter: none;
+  animation: livingWord .95s linear infinite;
 }
 
 :is(h1, .closing) em::after {
   content: "";
   position: absolute;
   pointer-events: none;
-  left: 0;
-  right: 0;
-  bottom: -.02em;
-  height: 4px;
+  left: -.01em;
+  right: -.01em;
+  bottom: -.05em;
+  height: 5px;
   border-radius: 999px;
   background:
-    linear-gradient(90deg, #2e74d8 0%, #8a68ff 28%, #f09b39 62%, #4cb790 100%);
+    linear-gradient(90deg, #1f7fff 0%, #7b61ff 26%, #ff9340 58%, #4fd6a2 100%);
   opacity: 1;
   transform-origin: left;
-  animation: markBreath 1.15s cubic-bezier(.22, 1, .36, 1) infinite;
+  animation: markBreath .72s cubic-bezier(.22, 1, .36, 1) infinite;
 }
 
 :root[data-theme="dark"] :is(h1, .closing) em {
   background:
-    linear-gradient(98deg, #ffd88c 0%, #ffd06f 16%, #ffb4d2 34%, #f3c661 52%, #d6df92 72%, #8bd9b2 88%, #ffd88c 100%);
-  background-size: 300% 100%;
+    linear-gradient(96deg, #ffe18f 0%, #ffd56e 14%, #ff96d0 32%, #ffb356 54%, #dbeb93 76%, #8fe0bb 90%, #ffe18f 100%);
+  background-size: 380% 100%;
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
   text-shadow: none;
-  filter: saturate(1.46) brightness(1.12);
+  filter: none;
 }
 
 :root[data-theme="dark"] :is(h1, .closing) em::after {
   background:
-    linear-gradient(90deg, #ffd06f 0%, #ffb4d2 34%, #d8c96f 68%, #8bd9b2 100%);
+    linear-gradient(90deg, #ffd56e 0%, #ff96d0 30%, #ffb356 62%, #8fe0bb 100%);
 }
 
 @keyframes livingWord {
   from {
     background-position: 0% 50%;
-    filter: saturate(1.28) brightness(1.03);
-  }
-  50% {
-    filter: saturate(1.7) brightness(1.16);
   }
   to {
     background-position: 100% 50%;
-    filter: saturate(1.42) brightness(1.1);
   }
 }
 
 @keyframes markBreath {
   from {
-    transform: translateX(-6%) scaleX(.72);
-    opacity: .72;
+    transform: translateX(-8%) scaleX(.64) skewX(-10deg);
+    opacity: .84;
   }
   to {
-    transform: translateX(8%) scaleX(1.14);
+    transform: translateX(10%) scaleX(1.18) skewX(-10deg);
     opacity: 1;
   }
 }
