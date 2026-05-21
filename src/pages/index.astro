@@ -17,6 +17,71 @@ const recentes = notas.slice(0, 6);
 const nowCards = agoraData?.cards?.slice(0, 3) ?? [];
 const base = '/jeffef/';
 const url = (path: string) => `${base}${path.replace(/^\/+/, '')}`;
+const projects = [
+  {
+    name: 'Finanza',
+    folder: 'finanza',
+    status: 'ativo',
+    body: 'Controle financeiro pessoal, vencimentos, listas, importacoes e rotina de decisao diaria.',
+    kind: 'produto'
+  },
+  {
+    name: 'Finanza v3',
+    folder: 'finanzav3',
+    status: 'legado vivo',
+    body: 'Versao anterior mantida como base de consulta, comparacao e reaproveitamento de ideias.',
+    kind: 'arquivo'
+  },
+  {
+    name: 'Finfit',
+    folder: 'finfit',
+    status: 'em construcao',
+    body: 'Organizacao de treinos, saude e acompanhamento pessoal com fluxo simples.',
+    kind: 'app'
+  },
+  {
+    name: 'Finvita',
+    folder: 'finvita',
+    status: 'em construcao',
+    body: 'Projeto de rotina, cuidado e informacoes pessoais conectado ao ecossistema de ferramentas.',
+    kind: 'app'
+  },
+  {
+    name: 'Painel URE2',
+    folder: 'painelure2',
+    status: 'em uso',
+    body: 'Painel operacional para dados, acompanhamento e organizacao de trabalho.',
+    kind: 'painel'
+  },
+  {
+    name: 'Setec Hub',
+    folder: 'setechub',
+    status: 'em construcao',
+    body: 'Hub para organizar informacoes, processos e ferramentas da area tecnica.',
+    kind: 'hub'
+  },
+  {
+    name: 'Banda Marcial',
+    folder: 'bandamarcial',
+    status: 'em construcao',
+    body: 'Projeto para presenca digital e organizacao de conteudo da banda.',
+    kind: 'site'
+  },
+  {
+    name: 'Arena Futvolei',
+    folder: 'arena-futvolei',
+    status: 'iniciado hoje',
+    body: 'App leve para escola de futvolei: alunos, aulas, presencas, pagamentos e recados.',
+    kind: 'novo'
+  },
+  {
+    name: 'jeffef.dev',
+    folder: 'jeffef-site',
+    status: 'caderno aberto',
+    body: 'Este caderno pessoal, com notas, cenas, contexto e a vitrine calma dos projetos.',
+    kind: 'site'
+  }
+];
 
 const chipColor = {
   blue: 'var(--blue)',
@@ -146,6 +211,32 @@ const emphasisClosing = data.closing?.replace('memória própria', '<em>memória
         </div>
       </section>
     )}
+
+    <section class="shell section" id="projetos">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">projetos</p>
+          <h2>o que esta em andamento</h2>
+        </div>
+        <p>Um mapa simples dos projetos que estao na raiz da pasta de trabalho, entre produtos, paineis, sites e experimentos vivos.</p>
+      </div>
+
+      <div class="section-body">
+        <div class="project-grid">
+          {projects.map((project) => (
+            <article class="project-card">
+              <div class="project-card-top">
+                <span>{project.kind}</span>
+                <strong>{project.status}</strong>
+              </div>
+              <h3>{project.name}</h3>
+              <p>{project.body}</p>
+              <code>{project.folder}</code>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
 
     <section class="shell section" id="sobre">
       <div class="section-head">

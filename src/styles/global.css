@@ -1225,6 +1225,91 @@ h1 {
     var(--shadow);
 }
 
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 230px;
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  padding: 18px;
+  background:
+    linear-gradient(145deg, color-mix(in srgb, var(--green) 8%, transparent), transparent 54%),
+    color-mix(in srgb, var(--glass-bg) 88%, transparent);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(18px) saturate(1.16);
+  -webkit-backdrop-filter: blur(18px) saturate(1.16);
+  transition: border-color .2s, box-shadow .2s, transform .2s;
+}
+
+.project-card:hover {
+  border-color: color-mix(in srgb, var(--green) 34%, var(--line));
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+:root[data-theme="dark"] .project-card {
+  border-color: var(--glass-border);
+  background:
+    linear-gradient(145deg, color-mix(in srgb, var(--green) 8%, transparent), transparent 56%),
+    var(--glass-bg);
+}
+
+.project-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.project-card-top span,
+.project-card-top strong {
+  color: var(--blue);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .10em;
+  text-transform: uppercase;
+}
+
+.project-card-top strong {
+  color: var(--muted);
+  letter-spacing: .04em;
+}
+
+.project-card h3 {
+  margin-top: 28px;
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: clamp(28px, 2.6vw, 38px);
+  font-weight: 400;
+  line-height: 1.02;
+}
+
+.project-card p {
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.58;
+}
+
+.project-card code {
+  display: inline-flex;
+  width: fit-content;
+  margin-top: 18px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 4px 9px;
+  color: var(--green);
+  background: color-mix(in srgb, var(--glass-bg) 72%, transparent);
+  font-family: "Geist", ui-sans-serif, system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+}
+
 :root[data-theme="dark"] .now-card.highlight {
   border-color: color-mix(in srgb, var(--blue) 54%, var(--glass-border));
   background:
@@ -1638,7 +1723,8 @@ h1 {
 
   .now-grid,
   .now-strip,
-  .now-board {
+  .now-board,
+  .project-grid {
     grid-template-columns: 1fr;
   }
 
