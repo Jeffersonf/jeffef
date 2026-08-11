@@ -59,7 +59,7 @@ const technologies = [...new Set(projects.flatMap(project => project.tech))].sor
     </section>
 
     <section class="projects-shell project-filters" aria-label="Filtrar projetos">
-      <label class="filter-search"><span>buscar</span><input type="search" data-filter-search placeholder="Nome, resumo ou linguagem…" /></label>
+      <label class="filter-search"><span>nome do projeto</span><input type="search" data-filter-search placeholder="Buscar projeto pelo nome…" aria-label="Buscar projeto pelo nome" /></label>
       <label><span>status</span><select data-filter-status><option value="">todos</option>{statuses.map(status => <option value={status}>{status}</option>)}</select></label>
       <label><span>tecnologia</span><select data-filter-tech><option value="">todas</option>{technologies.map(tech => <option value={tech}>{tech}</option>)}</select></label>
       <label><span>ordenar</span><select data-filter-sort><option value="recent">mais recentes</option><option value="oldest">mais antigos</option><option value="name">nome A–Z</option></select></label>
@@ -122,7 +122,7 @@ const technologies = [...new Set(projects.flatMap(project => project.tech))].sor
     const applyFilters = () => {
       const query = searchInput.value.trim().toLocaleLowerCase('pt-BR'), status = statusInput.value, tech = techInput.value, sort = sortInput.value;
       const visible = projectCards.filter(card => {
-        const text = `${card.dataset.name} ${card.dataset.summary} ${card.dataset.tech}`.toLocaleLowerCase('pt-BR');
+        const text = card.dataset.name.toLocaleLowerCase('pt-BR');
         const match = (!query || text.includes(query)) && (!status || card.dataset.status === status) && (!tech || card.dataset.tech.split('|').includes(tech));
         card.hidden = !match; return match;
       });
