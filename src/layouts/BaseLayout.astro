@@ -57,6 +57,11 @@ const url = (path: string) => `${base}${path.replace(/^\/+/, '')}`;
             <path d="M20.4 14.55A7.85 7.85 0 0 1 9.45 3.6a8.7 8.7 0 1 0 10.95 10.95Z"></path>
           </svg>
         </span>
+        <span class="theme-icon theme-icon-tripnext" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img">
+            <path d="M12 2.8l1.35 4.5a4.8 4.8 0 0 0 3.3 3.3l4.55 1.4-4.55 1.4a4.8 4.8 0 0 0-3.3 3.3L12 21.2l-1.35-4.5a4.8 4.8 0 0 0-3.3-3.3L2.8 12l4.55-1.4a4.8 4.8 0 0 0 3.3-3.3L12 2.8Z"></path>
+          </svg>
+        </span>
         <span class="theme-text">tema</span>
       </button>
       <nav class="nav" aria-label="Navegacao principal">
@@ -80,13 +85,16 @@ const url = (path: string) => `${base}${path.replace(/^\/+/, '')}`;
       const button = document.querySelector('[data-theme-toggle]');
       const syncThemeButton = () => {
         if (!button) return;
-        const isDark = document.documentElement.dataset.theme === 'dark';
-        button.setAttribute('aria-pressed', String(isDark));
-        button.querySelector('.theme-text').textContent = isDark ? 'dia' : 'noite';
+        const theme = document.documentElement.dataset.theme || 'light';
+        const labels = { light: 'claro', dark: 'escuro', tripnext: 'tripnext' };
+        button.setAttribute('aria-label', `Tema atual: ${labels[theme]}. Alternar tema`);
+        button.querySelector('.theme-text').textContent = labels[theme];
       };
       syncThemeButton();
       button?.addEventListener('click', () => {
-        const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+        const themes = ['light', 'dark', 'tripnext'];
+        const current = document.documentElement.dataset.theme || 'light';
+        const next = themes[(themes.indexOf(current) + 1) % themes.length];
         document.documentElement.dataset.theme = next;
         localStorage.setItem('jeffef-theme', next);
         syncThemeButton();
