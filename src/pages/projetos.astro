@@ -1,0 +1,78 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const projects = [
+  { id:'finanza', name:'Finanza', kind:'produto', status:'ativo', color:'teal', pc:'file:///C:/Users/jeffe/finanza', github:'https://github.com/Jeffersonf/finanza', summary:'Controle financeiro pessoal para organizar vencimentos, listas, importações e decisões do dia a dia.', ready:['Aplicação web e mobile','Sincronização e banco de dados','Build para Android','Fluxos de contas e vencimentos'], roadmap:['Consolidar a experiência mobile','Refinar importações e relatórios','Ampliar testes e automações'] },
+  { id:'finanzav3', name:'Finanza v3', kind:'arquivo', status:'legado vivo', color:'amber', pc:'file:///C:/Users/jeffe/finanzav3', github:'https://github.com/Jeffersonf/finanza', summary:'Versão anterior do Finanza, preservada como referência de produto, código e ideias.', ready:['Base web funcional','Aplicativo Android','Estrutura de banco','Histórico do produto'], roadmap:['Catalogar o que ainda vale migrar','Arquivar fluxos substituídos','Manter apenas correções essenciais'] },
+  { id:'finfit', name:'Finfit', kind:'app', status:'em construção', color:'rose', pc:'file:///C:/Users/jeffe/finfit', github:null, summary:'Organização de treinos, saúde e acompanhamento pessoal em um fluxo direto e leve.', ready:['Direção inicial do produto','Pasta local e protótipo de app'], roadmap:['Definir o MVP','Criar rotina de treinos','Adicionar histórico e evolução'] },
+  { id:'finvita', name:'Finvita', kind:'app', status:'em construção', color:'rose', pc:'file:///C:/Users/jeffe/finvita', github:'https://github.com/Jeffersonf/finvita', summary:'Rotina, cuidado e informações pessoais conectados ao ecossistema de ferramentas.', ready:['Aplicação web','Servidor próprio','Projeto Android','Ferramentas de build'], roadmap:['Unificar os fluxos principais','Melhorar a experiência mobile','Preparar uma versão estável'] },
+  { id:'painelure2', name:'Painel URE2', kind:'painel', status:'em uso', color:'teal', pc:'file:///C:/Users/jeffe/painelure2', github:'https://github.com/Jeffersonf/painelure', summary:'Painel operacional para dados, acompanhamento e organização do trabalho da URE.', ready:['Painel em operação','Banco e migrações','Módulos de trabalho','Rotinas de verificação'], roadmap:['Aprimorar indicadores','Simplificar rotinas recorrentes','Documentar operações críticas'] },
+  { id:'setechub', name:'Setec Hub', kind:'hub', status:'em construção', color:'amber', pc:'file:///C:/Users/jeffe/setechub', github:'https://github.com/Jeffersonf/painelurelegado', summary:'Hub para centralizar informações, processos e ferramentas da área técnica.', ready:['Frontend e servidor','Integração com Supabase','Sincronização de dados','Testes iniciais'], roadmap:['Consolidar módulos prioritários','Revisar a migração de dados','Publicar a primeira versão estável'] },
+  { id:'bandamarcial', name:'Banda Marcial', kind:'site', status:'em construção', color:'rose', pc:'file:///C:/Users/jeffe/bandamarcial', github:null, summary:'Presença digital e organização do conteúdo, história e atividades da banda marcial.', ready:['Estrutura local iniciada','Direção geral do site'], roadmap:['Definir identidade e conteúdo','Construir páginas principais','Publicar a primeira versão'] },
+  { id:'arena', name:'Arena Futevôlei', kind:'produto', status:'ativo', color:'teal', pc:'file:///C:/Users/jeffe/arena-futvolei', github:'https://github.com/Jeffersonf/arena-futvolei', summary:'App leve para escola de futevôlei: alunos, aulas, presenças, pagamentos e recados.', ready:['Gestão de alunos e aulas','Servidor e assets','Auditoria de fluxo e visual','Ambiente de desenvolvimento'], roadmap:['Fechar o fluxo de pagamentos','Melhorar comunicação com alunos','Preparar implantação'] },
+  { id:'jeffef', name:'jeffef.dev', kind:'site', status:'caderno aberto', color:'amber', pc:'file:///C:/Users/jeffe/jeffef-site', github:'https://github.com/Jeffersonf/jeffef', summary:'Caderno pessoal com notas, cenas, contexto e uma visão viva dos projetos.', ready:['Site Astro responsivo','Notas em Markdown','Editor Decap CMS','Temas claro e escuro'], roadmap:['Evoluir a área de projetos','Ampliar o arquivo de notas','Refinar a publicação pelo CMS'] }
+];
+---
+<BaseLayout title="projetos — jefferson" description="Projetos, status, entregas e próximos passos de Jefferson.">
+  <main class="projects-page">
+    <section class="projects-shell projects-hero">
+      <div>
+        <p class="projects-kicker">painel de bordo</p>
+        <h1>Projetos</h1>
+        <p>Produtos, ferramentas e experimentos em um só lugar. Abra um cartão para ver o que já está pronto e o que vem depois.</p>
+      </div>
+      <div class="projects-stats" aria-label="Resumo dos projetos">
+        <strong>{projects.length}</strong><span>projetos mapeados</span>
+      </div>
+    </section>
+
+    <section class="projects-shell projects-grid" aria-label="Lista de projetos">
+      {projects.map((project, index) => (
+        <details class={`project-board-card accent-${project.color}`} open={index === 0} data-project={project.id}>
+          <summary>
+            <div class="project-summary-top"><span class="project-kind">{project.kind}</span><span class="project-status"><i></i>{project.status}</span></div>
+            <div class="project-title-row"><div class="project-mark">{String(index + 1).padStart(2,'0')}</div><div><h2>{project.name}</h2><p>{project.summary}</p></div></div>
+            <span class="project-expand">ver detalhes <b>⌄</b></span>
+          </summary>
+          <div class="project-detail">
+            <div class="project-links">
+              <a href={project.pc} title="Abrir pasta local"><span>▣</span> abrir no PC</a>
+              {project.github ? <a href={project.github} target="_blank" rel="noreferrer"><span>↗</span> GitHub</a> : <span class="link-disabled">GitHub não configurado</span>}
+            </div>
+            <div class="project-columns">
+              <section><h3><span class="done-dot">✓</span> O que está pronto</h3><ul>{project.ready.map(item => <li>{item}</li>)}</ul></section>
+              <section><h3><span class="road-dot">→</span> Roadmap</h3><ol>{project.roadmap.map(item => <li>{item}</li>)}</ol></section>
+            </div>
+            <section class="ideas-box">
+              <div><h3>Banco de ideias</h3><p>Rascunhos salvos neste navegador.</p></div>
+              <form data-idea-form={project.id}><input name="idea" autocomplete="off" placeholder={`Nova ideia para ${project.name}...`} aria-label={`Nova ideia para ${project.name}`} /><button type="submit" aria-label="Adicionar ideia">+</button></form>
+              <ul data-idea-list={project.id}></ul>
+            </section>
+          </div>
+        </details>
+      ))}
+    </section>
+  </main>
+  <script is:inline>
+    document.documentElement.dataset.theme = 'dark';
+    const key = 'jeffef-project-ideas';
+    let ideas = {};
+    try { ideas = JSON.parse(localStorage.getItem(key) || '{}'); } catch {}
+    const render = (id) => {
+      const list = document.querySelector(`[data-idea-list="${id}"]`);
+      if (!list) return;
+      list.innerHTML = '';
+      (ideas[id] || []).forEach((text, index) => {
+        const li = document.createElement('li');
+        const label = document.createElement('span'); label.textContent = text;
+        const remove = document.createElement('button'); remove.type = 'button'; remove.textContent = '×'; remove.setAttribute('aria-label','Remover ideia');
+        remove.addEventListener('click', () => { ideas[id].splice(index, 1); localStorage.setItem(key, JSON.stringify(ideas)); render(id); });
+        li.append(label, remove); list.append(li);
+      });
+    };
+    document.querySelectorAll('[data-idea-form]').forEach(form => {
+      const id = form.dataset.ideaForm; render(id);
+      form.addEventListener('submit', event => { event.preventDefault(); const input = form.elements.idea; const value = input.value.trim(); if (!value) return; (ideas[id] ||= []).push(value); localStorage.setItem(key, JSON.stringify(ideas)); input.value = ''; render(id); });
+    });
+  </script>
+</BaseLayout>

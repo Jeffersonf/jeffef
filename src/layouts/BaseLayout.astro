@@ -34,7 +34,7 @@ const url = (path: string) => `${base}${path.replace(/^\/+/, '')}`;
     <meta name="twitter:description" content={description} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
     <script is:inline>
       const storedTheme = localStorage.getItem('jeffef-theme');
       const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -62,7 +62,7 @@ const url = (path: string) => `${base}${path.replace(/^\/+/, '')}`;
       <nav class="nav" aria-label="Navegacao principal">
         <a href={url('/notas/')}>notas</a>
         <a href={url('/cenas/')}>cenas</a>
-        <a href={url('/#projetos')}>projetos</a>
+        <a href={url('/projetos/')}>projetos</a>
         <a href={url('/agora/')}>agora</a>
         <a href={url('/sobre/')}>sobre</a>
       </nav>

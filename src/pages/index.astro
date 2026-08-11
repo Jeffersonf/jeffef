@@ -17,10 +17,12 @@ const recentes = notas.slice(0, 6);
 const nowCards = agoraData?.cards?.slice(0, 3) ?? [];
 const base = '/jeffef/';
 const url = (path: string) => `${base}${path.replace(/^\/+/, '')}`;
+const githubPagesBase = 'https://jeffersonf.github.io';
 const projects = [
   {
     name: 'Finanza',
     folder: 'finanza',
+    href: `${githubPagesBase}/finanza/`,
     status: 'ativo',
     body: 'Controle financeiro pessoal, vencimentos, listas, importacoes e rotina de decisao diaria.',
     kind: 'produto'
@@ -28,6 +30,7 @@ const projects = [
   {
     name: 'Finanza v3',
     folder: 'finanzav3',
+    href: `${githubPagesBase}/finanzav3/`,
     status: 'legado vivo',
     body: 'Versao anterior mantida como base de consulta, comparacao e reaproveitamento de ideias.',
     kind: 'arquivo'
@@ -35,6 +38,7 @@ const projects = [
   {
     name: 'Finfit',
     folder: 'finfit',
+    href: `${githubPagesBase}/finfit/`,
     status: 'em construcao',
     body: 'Organizacao de treinos, saude e acompanhamento pessoal com fluxo simples.',
     kind: 'app'
@@ -42,6 +46,7 @@ const projects = [
   {
     name: 'Finvita',
     folder: 'finvita',
+    href: `${githubPagesBase}/finvita/`,
     status: 'em construcao',
     body: 'Projeto de rotina, cuidado e informacoes pessoais conectado ao ecossistema de ferramentas.',
     kind: 'app'
@@ -49,6 +54,7 @@ const projects = [
   {
     name: 'Painel URE2',
     folder: 'painelure2',
+    href: `${githubPagesBase}/painelure2/`,
     status: 'em uso',
     body: 'Painel operacional para dados, acompanhamento e organizacao de trabalho.',
     kind: 'painel'
@@ -56,6 +62,7 @@ const projects = [
   {
     name: 'Setec Hub',
     folder: 'setechub',
+    href: `${githubPagesBase}/setechub/`,
     status: 'em construcao',
     body: 'Hub para organizar informacoes, processos e ferramentas da area tecnica.',
     kind: 'hub'
@@ -63,6 +70,7 @@ const projects = [
   {
     name: 'Banda Marcial',
     folder: 'bandamarcial',
+    href: `${githubPagesBase}/bandamarcial/`,
     status: 'em construcao',
     body: 'Projeto para presenca digital e organizacao de conteudo da banda.',
     kind: 'site'
@@ -70,6 +78,7 @@ const projects = [
   {
     name: 'Arena Futvolei',
     folder: 'arena-futvolei',
+    href: `${githubPagesBase}/arena-futvolei/`,
     status: 'iniciado hoje',
     body: 'App leve para escola de futvolei: alunos, aulas, presencas, pagamentos e recados.',
     kind: 'novo'
@@ -77,6 +86,7 @@ const projects = [
   {
     name: 'jeffef.dev',
     folder: 'jeffef-site',
+    href: `${githubPagesBase}/jeffef/`,
     status: 'caderno aberto',
     body: 'Este caderno pessoal, com notas, cenas, contexto e a vitrine calma dos projetos.',
     kind: 'site'
@@ -224,15 +234,18 @@ const emphasisClosing = data.closing?.replace('memória própria', '<em>memória
       <div class="section-body">
         <div class="project-grid">
           {projects.map((project) => (
-            <article class="project-card">
+            <a class="project-card" href={project.href} target="_blank" rel="noreferrer" aria-label={`Abrir ${project.name} no GitHub Pages`}>
               <div class="project-card-top">
                 <span>{project.kind}</span>
                 <strong>{project.status}</strong>
               </div>
               <h3>{project.name}</h3>
               <p>{project.body}</p>
-              <code>{project.folder}</code>
-            </article>
+              <div class="project-card-foot">
+                <code>{project.folder}</code>
+                <span>abrir</span>
+              </div>
+            </a>
           ))}
         </div>
       </div>
