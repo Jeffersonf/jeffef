@@ -1,0 +1,11 @@
+{
+  "id": "finanza-android",
+  "total": 1,
+  "commits": [
+    {
+      "date": "2026-07-19T16:26:00-03:00",
+      "message": "Adicionados testes de gestos de navegação no aplicativo.",
+      "author": "alteração local"
+    }
+  ]
+}

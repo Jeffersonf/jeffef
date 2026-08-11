@@ -1,0 +1,1595 @@
+{
+  "id": "painelure2",
+  "total": 227,
+  "commits": [
+    {
+      "sha": "3e26c34",
+      "date": "2026-08-04T12:16:01Z",
+      "message": "Fechar notificacoes automaticamente",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/3e26c3466cf217f0720374ca5066d9d78d0a656a"
+    },
+    {
+      "sha": "c05fd20",
+      "date": "2026-08-04T12:13:29Z",
+      "message": "Corrigir layout e manter pesquisa visivel",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/c05fd206e3b251596fa5fc57ec04536aae579e47"
+    },
+    {
+      "sha": "0a03f1f",
+      "date": "2026-08-04T12:11:00Z",
+      "message": "Ocultar pesquisa para perfis nao administradores",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/0a03f1fe076a0a5e7a2d12479165e5997239f852"
+    },
+    {
+      "sha": "2b28a81",
+      "date": "2026-08-04T12:09:40Z",
+      "message": "Restringir pesquisa aos administradores",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/2b28a818d1506081dd780fb30793e93beac7e361"
+    },
+    {
+      "sha": "a2562fe",
+      "date": "2026-08-04T12:01:10Z",
+      "message": "Corrigir categoria de pesquisa",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/a2562fe445f66e024eb6e4226ea19223fa40646e"
+    },
+    {
+      "sha": "5141517",
+      "date": "2026-08-04T11:54:54Z",
+      "message": "Melhorar leitura das justificativas",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/51415173b762ddf9fb5a4fe0a12ffa42d1fa8198"
+    },
+    {
+      "sha": "5ec3239",
+      "date": "2026-08-03T14:39:43Z",
+      "message": "Liberar supervisao para Vanessa",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/5ec3239620ebff4dda5fac5d1874f610e684019b"
+    },
+    {
+      "sha": "e49846a",
+      "date": "2026-08-03T14:32:10Z",
+      "message": "Simplificar aviso sem dados de supervisao",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/e49846a0d59d0dd0a86d507c1d2ab4fa4f713607"
+    },
+    {
+      "sha": "4ab4db7",
+      "date": "2026-08-03T14:26:10Z",
+      "message": "Corrigir sessao ao salvar justificativas",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/4ab4db7898ac0b1c35f376ee8decf655451c7822"
+    },
+    {
+      "sha": "b7b5768",
+      "date": "2026-08-03T14:22:22Z",
+      "message": "Melhorar autenticacao e sincronizacao",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/b7b576864fad8618739728d1a3611dddfc7cc50c"
+    },
+    {
+      "sha": "7084465",
+      "date": "2026-08-03T14:14:44Z",
+      "message": "Compactar justificativas da supervisao",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/708446555e1bf1863f635828d4ee8d14d42bb0f1"
+    },
+    {
+      "sha": "cf570a3",
+      "date": "2026-08-03T14:10:23Z",
+      "message": "Adicionar justificativas na supervisao",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/cf570a3f98a9a1edabb5112a93e835bb9690ed61"
+    },
+    {
+      "sha": "974f506",
+      "date": "2026-07-17T12:39:52Z",
+      "message": "Adicionar importador de DVRs das escolas",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/974f5062f075fc8ac84e9325c2e4aa73927a1ccf"
+    },
+    {
+      "sha": "a31fb52",
+      "date": "2026-07-02T17:29:38Z",
+      "message": "Permitir login livre para supervisores",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/a31fb5255c78c32d33604ee71def873c9d6c8545"
+    },
+    {
+      "sha": "3ac95bf",
+      "date": "2026-06-22T19:10:33Z",
+      "message": "Atualiza acessos CTC e painel de supervisao",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/3ac95bf98d7c546cc998d4af0490c40e79efc939"
+    },
+    {
+      "sha": "9693cd3",
+      "date": "2026-06-12T17:22:49Z",
+      "message": "chore: limpa css obsoleto",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/9693cd37408da758068adee603295bde9426f49b"
+    },
+    {
+      "sha": "f5e23ee",
+      "date": "2026-06-12T13:47:07Z",
+      "message": "fix: diferencia sessao expirada de permissao do cafe",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/f5e23ee3e584dd712af8c01a61ce83a1e42d095a"
+    },
+    {
+      "sha": "0e41bf6",
+      "date": "2026-06-12T13:42:04Z",
+      "message": "fix: normaliza dados de redes",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/0e41bf68ef237ba771ff5dfe1c3c0165879d422d"
+    },
+    {
+      "sha": "d4f4da8",
+      "date": "2026-06-12T13:19:00Z",
+      "message": "fix: garante abertura do painel admin",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/d4f4da8c4f65c3b349b176e69ee60e2f5db4436d"
+    },
+    {
+      "sha": "48ca3c7",
+      "date": "2026-06-12T12:57:52Z",
+      "message": "fix: evita piscar login e protege abertura de paginas",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/48ca3c7ac19e03f965505587c33951ef8db5f51d"
+    },
+    {
+      "sha": "36b5e4d",
+      "date": "2026-06-12T12:21:56Z",
+      "message": "fix: preserva acessos essenciais do admin",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/36b5e4d6383305047e0ee87de16ffc06b1261f9e"
+    },
+    {
+      "sha": "d9fdfe2",
+      "date": "2026-06-12T12:19:13Z",
+      "message": "feat: libera cafe para CTC",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/d9fdfe2cd1a99f690b1d4bbea5b456504911e157"
+    },
+    {
+      "sha": "dad2930",
+      "date": "2026-06-11T17:13:25Z",
+      "message": "feat: adiciona busca na rifa",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/dad2930ae469d575d3755098f0c7cab8dc5cd8c6"
+    },
+    {
+      "sha": "3c3647f",
+      "date": "2026-06-11T17:11:01Z",
+      "message": "feat: atualiza cartela da rifa para 100 nomes",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/3c3647f598ac5274797237a2bbee5560f1a6c7dd"
+    },
+    {
+      "sha": "34f9a82",
+      "date": "2026-06-11T14:58:36Z",
+      "message": "fix: expira sessao invalida no save do cafe",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/34f9a82588d74cc9c908d800abcec98264858d1b"
+    },
+    {
+      "sha": "7934377",
+      "date": "2026-06-11T14:52:11Z",
+      "message": "feat: ajusta meta da vaquinha do cafe",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/793437794a146bfb33d2cde32df0934672ec4ae4"
+    },
+    {
+      "sha": "b470674",
+      "date": "2026-06-11T14:31:33Z",
+      "message": "fix: suaviza sync do cafe e ajusta atalhos",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/b470674db62721db2ca550fd211e9d81198def9e"
+    },
+    {
+      "sha": "defef82",
+      "date": "2026-06-11T14:26:28Z",
+      "message": "fix: fallback para salvar cafe na api atual",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/defef824bbf9f0f8ef773078e5009a6e40643ca1"
+    },
+    {
+      "sha": "c088cc9",
+      "date": "2026-06-11T14:17:42Z",
+      "message": "feat: adiciona cafe interno e BI de satisfacao",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/c088cc98919fc335af4f28b108d02667e0876b27"
+    },
+    {
+      "sha": "25d58ce",
+      "date": "2026-06-11T13:26:22Z",
+      "message": "Add internal raffle and coffee controls",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/25d58ce022fb85d567751291b158583e09eb33d6"
+    },
+    {
+      "sha": "90d09c3",
+      "date": "2026-06-09T11:46:04Z",
+      "message": "feat: refina BI equipamentos analitico",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/90d09c3c253652af4326bd46079db9c1abc6fdb6"
+    },
+    {
+      "sha": "7b2973a",
+      "date": "2026-06-08T19:18:19Z",
+      "message": "feat: adiciona dashboard de satisfacao",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/7b2973a3f640a3f6cfee54999dba65472adae8eb"
+    },
+    {
+      "sha": "2900a22",
+      "date": "2026-06-08T18:51:09Z",
+      "message": "feat: remodela BI Equipamentos",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/2900a2224445d301f55e18ad4dd2e133270df022"
+    },
+    {
+      "sha": "b66c72f",
+      "date": "2026-06-08T18:41:53Z",
+      "message": "feat: atualiza BI equipamentos pelo inventario CSV",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/b66c72fafe45c0360ef4ada12396922a1ae11d96"
+    },
+    {
+      "sha": "fa033d6",
+      "date": "2026-06-08T15:02:30Z",
+      "message": "feat: adiciona BI Equipamentos admin",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/fa033d63eab3f39345a5f0dbb5974863044f8f4b"
+    },
+    {
+      "sha": "d45f047",
+      "date": "2026-06-02T13:42:09Z",
+      "message": "Corrige redes e atualizacao da satisfacao",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/d45f047b7062dda723f554007ecdad6b0e46f0e4"
+    },
+    {
+      "sha": "8c4dd78",
+      "date": "2026-06-02T13:20:11Z",
+      "message": "Garante fonte oficial da satisfacao",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/8c4dd78a87d4dfe683bc0134ff8b4a80a14433ea"
+    },
+    {
+      "sha": "c136394",
+      "date": "2026-06-02T13:07:46Z",
+      "message": "Liga pesquisa de satisfacao ao SharePoint",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/c1363946e7dacdde15a681aee56311c366a477b3"
+    },
+    {
+      "sha": "8d45513",
+      "date": "2026-06-02T12:41:37Z",
+      "message": "Abre admin pelo avatar",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/8d45513f32c7da2fafe98d024fab0643de001d15"
+    },
+    {
+      "sha": "4139b80",
+      "date": "2026-06-02T12:37:26Z",
+      "message": "Unifica chamados CTC e ajusta navegacao",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/4139b8074a5b31fd7a70c817bb839432f886cd0e"
+    },
+    {
+      "sha": "d037929",
+      "date": "2026-06-02T12:10:03Z",
+      "message": "Adiciona resumo mensal da supervisao",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/d03792974bccc56bfcf8454ca746d9ce912c15bc"
+    },
+    {
+      "sha": "89ccb5f",
+      "date": "2026-06-02T11:59:06Z",
+      "message": "Foca tela inicial em acoes do admin",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/89ccb5f1f93e5c9778ca6a0a86518ec2b5aab105"
+    },
+    {
+      "sha": "bf84a28",
+      "date": "2026-06-02T11:52:38Z",
+      "message": "Mostra divergencias na ficha escolar",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/bf84a28026dd94c67bced5b536dca00292492934"
+    },
+    {
+      "sha": "87adcf9",
+      "date": "2026-06-02T11:49:28Z",
+      "message": "Mostra pendencias do roadmap no admin",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/87adcf9134154831469bf8332b8c7c0e20bb0c2c"
+    },
+    {
+      "sha": "96729c3",
+      "date": "2026-06-01T16:50:51Z",
+      "message": "Adiciona filtros de triagem do inventario",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/96729c350751cc15d1092f90c8a83b37f59477c5"
+    },
+    {
+      "sha": "8e090a3",
+      "date": "2026-06-01T16:49:09Z",
+      "message": "Salva roadmap ativo e diagnostico de qualidade",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/8e090a3924861b902d082eaaa360a8f195e5b55b"
+    },
+    {
+      "sha": "005f80c",
+      "date": "2026-06-01T16:40:44Z",
+      "message": "Mapeia escolas do inventario",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/005f80c893b1b79bc48af935d1a1bce7cd1f4dae"
+    },
+    {
+      "sha": "1aeac35",
+      "date": "2026-06-01T13:00:52Z",
+      "message": "Remove logo e adiciona checkpoints admin",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/1aeac35d57eaf6f4ebdd8fda94eb07ea05056d14"
+    },
+    {
+      "sha": "2dc5ae7",
+      "date": "2026-06-01T12:37:44Z",
+      "message": "Remodela widgets do painel inicial",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/2dc5ae7dd3d001f9d19b122363369caf5c33dee2"
+    },
+    {
+      "sha": "daa7632",
+      "date": "2026-06-01T12:25:32Z",
+      "message": "Conecta inventario SharePoint",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/daa7632835d0c51fbc1fd5e36060487b9deab9c1"
+    },
+    {
+      "sha": "b13dd4f",
+      "date": "2026-06-01T12:14:06Z",
+      "message": "Move logo para sidebar",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/b13dd4f6f84989cfca3a1c47634b867e8b3e709b"
+    },
+    {
+      "sha": "8e4e09e",
+      "date": "2026-06-01T12:07:53Z",
+      "message": "Centraliza logo no painel inicial",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/8e4e09ed37e7957310867392a355cefe8759d264"
+    },
+    {
+      "sha": "e558998",
+      "date": "2026-06-01T12:01:11Z",
+      "message": "Melhora marca do painel inicial",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/e558998b140a505fac547c2efc0e034cf2b40729"
+    },
+    {
+      "sha": "107bc4b",
+      "date": "2026-06-01T11:48:49Z",
+      "message": "Agrupa supervisao por mes dos registros",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/107bc4b818cde0bac5f2155de47b7f506748a193"
+    },
+    {
+      "sha": "cb2b2b4",
+      "date": "2026-06-01T11:44:23Z",
+      "message": "Corrige supervisao e sidebar",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/cb2b2b4d57daa6d67460d13c079c321c06fabb1b"
+    },
+    {
+      "sha": "411d79a",
+      "date": "2026-05-29T17:12:12Z",
+      "message": "Fix supervisor alias scoping",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/411d79ae19881c3735b72c42a6d69f251283de6e"
+    },
+    {
+      "sha": "181acb3",
+      "date": "2026-05-28T18:33:05Z",
+      "message": "Fix network navigation and URE logo",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/181acb35cb425296add8cc8f5514702ced0d3a13"
+    },
+    {
+      "sha": "d4d56d0",
+      "date": "2026-05-28T18:24:25Z",
+      "message": "Stabilize access sync and project guidance",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/d4d56d0549aaafbbdde71c3e747ea10abf0aefa2"
+    },
+    {
+      "sha": "72b4955",
+      "date": "2026-05-28T18:16:31Z",
+      "message": "Fix CTC filter alignment",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/72b4955b3d79c7d841dae3a07a8eb40dc71a65b7"
+    },
+    {
+      "sha": "21994a5",
+      "date": "2026-05-28T18:13:03Z",
+      "message": "Bump pre-c52 CTC build",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/21994a54738cf5b13d745f75f876595366dfcba2"
+    },
+    {
+      "sha": "097c4a9",
+      "date": "2026-05-28T13:29:57Z",
+      "message": "Simplify CTC row subtitles",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/097c4a9384c0236d30489e2f7cfcb3d9bd9eea24"
+    },
+    {
+      "sha": "8e1ccf4",
+      "date": "2026-05-28T13:25:43Z",
+      "message": "Clean CTC call row text",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/8e1ccf45a98b1f6c4a146e3c95817f73e119afd1"
+    },
+    {
+      "sha": "c75bf82",
+      "date": "2026-05-28T13:21:03Z",
+      "message": "Clean up CTC overview",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/c75bf820031de8e968984537211394feefcb3b6e"
+    },
+    {
+      "sha": "1b6bd4a",
+      "date": "2026-05-28T12:38:57Z",
+      "message": "Rework CTC calls layout",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/1b6bd4a44ef5e493cfc6e3a5ce210fb1a540ae58"
+    },
+    {
+      "sha": "d780e1d",
+      "date": "2026-05-28T18:08:03Z",
+      "message": "Bump rollback build cache",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/d780e1dfab1f7db8d531d1e11c16fdcc120a0268"
+    },
+    {
+      "sha": "320bc71",
+      "date": "2026-05-28T18:07:10Z",
+      "message": "Revert \"Rework CTC calls layout\"",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/320bc71eb02a3494e47c811ce6a3e41d185ffcca"
+    },
+    {
+      "sha": "f7085e2",
+      "date": "2026-05-28T18:07:10Z",
+      "message": "Revert \"Clean up CTC overview\"",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/f7085e24727c502be0004826eb5e0b9f46903455"
+    },
+    {
+      "sha": "bd8c65c",
+      "date": "2026-05-28T18:07:10Z",
+      "message": "Revert \"Clean CTC call row text\"",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/bd8c65c3035791f3ae1c868b69fe06530f8e5a85"
+    },
+    {
+      "sha": "f3cf414",
+      "date": "2026-05-28T18:07:10Z",
+      "message": "Revert \"Simplify CTC row subtitles\"",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/f3cf414047cc95a9346c9952f6abb5504fb0c74b"
+    },
+    {
+      "sha": "98601f9",
+      "date": "2026-05-28T18:07:10Z",
+      "message": "Revert \"Paginate CTC calls and refine filters\"",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/98601f9617a04472e24c0944ec2201f0fdb3d99e"
+    },
+    {
+      "sha": "e205b98",
+      "date": "2026-05-28T18:07:10Z",
+      "message": "Revert \"Fix CTC internal navigation\"",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/e205b9830ebd5f0f77cc099bcea92fd05437236b"
+    },
+    {
+      "sha": "103cc7d",
+      "date": "2026-05-28T18:07:10Z",
+      "message": "Revert \"Allow CTC report access\"",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/103cc7d6fd68c95a34fa63b5734dbd2a43dda908"
+    },
+    {
+      "sha": "6e8341e",
+      "date": "2026-05-28T18:07:10Z",
+      "message": "Revert \"Fix online CTC calls scope\"",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/6e8341e4795b1166dffb4d31acfaed390fcce9b9"
+    },
+    {
+      "sha": "e76407c",
+      "date": "2026-05-28T18:07:10Z",
+      "message": "Revert \"Unlock CTC calls page\"",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/e76407c8b706eaac1c1114b2c831aefbf6852c47"
+    },
+    {
+      "sha": "28c7fb3",
+      "date": "2026-05-28T17:36:21Z",
+      "message": "Unlock CTC calls page",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/28c7fb396498bb291583b2bd3f973fe9e752afcb"
+    },
+    {
+      "sha": "c7cb435",
+      "date": "2026-05-28T17:06:34Z",
+      "message": "Fix online CTC calls scope",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/c7cb4351b19a900f6fc45941df0b53444c8848f7"
+    },
+    {
+      "sha": "b6817fd",
+      "date": "2026-05-28T17:01:36Z",
+      "message": "Allow CTC report access",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/b6817fd2cc603fea8328077ee56128475637af76"
+    },
+    {
+      "sha": "a965d39",
+      "date": "2026-05-28T16:53:07Z",
+      "message": "Fix CTC internal navigation",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/a965d396ad2f0ffb892a836c6898fc6138a05aee"
+    },
+    {
+      "sha": "c52eca1",
+      "date": "2026-05-28T13:35:55Z",
+      "message": "Paginate CTC calls and refine filters",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/c52eca12470d03612fb3f176830b27bf39ca790f"
+    },
+    {
+      "sha": "b1f4f3a",
+      "date": "2026-05-28T13:29:57Z",
+      "message": "Simplify CTC row subtitles",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/b1f4f3acfa4d475bdd3bb13e97f62048f18369ab"
+    },
+    {
+      "sha": "f0ce897",
+      "date": "2026-05-28T13:25:43Z",
+      "message": "Clean CTC call row text",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/f0ce897261034950854412b1c173e53a012a1248"
+    },
+    {
+      "sha": "80ee5fe",
+      "date": "2026-05-28T13:21:03Z",
+      "message": "Clean up CTC overview",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/80ee5fec25f7a2093dd0c989342f38e739d2d3fa"
+    },
+    {
+      "sha": "a88e082",
+      "date": "2026-05-28T12:38:57Z",
+      "message": "Rework CTC calls layout",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/a88e08209821c866eb21505979795dcb6134193d"
+    },
+    {
+      "sha": "0688d44",
+      "date": "2026-05-28T12:24:23Z",
+      "message": "Move TI calls into CTC",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/0688d4464653367adbd12e2a5c6e365d7b080b33"
+    },
+    {
+      "sha": "6f619db",
+      "date": "2026-05-28T11:58:57Z",
+      "message": "Add TI calls report data",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/6f619db69b2ebbb540b39bf6be49a5e3fc2879e9"
+    },
+    {
+      "sha": "6ae4f4f",
+      "date": "2026-05-27T19:13:53Z",
+      "message": "Fix supervision source and indicators",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/6ae4f4f24056111c97f58b01659d74ececacb535"
+    },
+    {
+      "sha": "d8b3751",
+      "date": "2026-05-27T19:03:16Z",
+      "message": "Fix supervision sync and SEINTEC access",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/d8b37518e9f2b2b84af585e7512172cc17b1d0d3"
+    },
+    {
+      "sha": "735f2be",
+      "date": "2026-05-27T18:39:33Z",
+      "message": "Polish admin inventory and copy",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/735f2be76da88881ff416ba6725dcf8429ba225f"
+    },
+    {
+      "sha": "a809dfd",
+      "date": "2026-05-27T18:08:31Z",
+      "message": "Wire forgot PIN help action",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/a809dfdd45c54fdafc02321ecb48bc46bc8791c2"
+    },
+    {
+      "sha": "ebaa108",
+      "date": "2026-05-27T17:51:35Z",
+      "message": "Clarify admin PIN reset action",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/ebaa108f3d17b16a60c1558b6ccb08a4ddccb4a7"
+    },
+    {
+      "sha": "6b9aeee",
+      "date": "2026-05-27T17:29:15Z",
+      "message": "Use school cards on network page",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/6b9aeeeaaef025a8ad65179b603b67da82e64ce4"
+    },
+    {
+      "sha": "6032a67",
+      "date": "2026-05-27T17:25:29Z",
+      "message": "Redesign network detail widgets",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/6032a6709e8a1d38674b06b5b0726ffc2d685cc7"
+    },
+    {
+      "sha": "d77960e",
+      "date": "2026-05-27T17:19:39Z",
+      "message": "Make command logo transparent",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/d77960e675ac3ac63f5548994f5102d9a00b621e"
+    },
+    {
+      "sha": "beb04f2",
+      "date": "2026-05-27T17:13:48Z",
+      "message": "Update reports focus and URE logo",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/beb04f284947c876a248533ea68fa71bb8a014b6"
+    },
+    {
+      "sha": "a4ca1f5",
+      "date": "2026-05-27T17:01:07Z",
+      "message": "Redesign operational pages",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/a4ca1f57aa40d80d0f9a9f49c11d9f8fa28d4742"
+    },
+    {
+      "sha": "4ee93f9",
+      "date": "2026-05-27T15:03:31Z",
+      "message": "Fix sidebar labels and text encoding",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/4ee93f9313ae8508ad0e1d2b7e541cca5e4e7d5a"
+    },
+    {
+      "sha": "dbe7f46",
+      "date": "2026-05-27T14:48:58Z",
+      "message": "Keep session on refresh",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/dbe7f4645eddacd746e0fb59c0ba5f371d5f36ee"
+    },
+    {
+      "sha": "a839e1d",
+      "date": "2026-05-27T14:13:12Z",
+      "message": "Use clean page URLs",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/a839e1d82671f4cfa135349e3a46a287ea7dee74"
+    },
+    {
+      "sha": "5e2bca3",
+      "date": "2026-05-27T13:50:06Z",
+      "message": "Fix loading state and text encoding",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/5e2bca310753a80fef89d3d6b6eb628f4c8fe596"
+    },
+    {
+      "sha": "214322e",
+      "date": "2026-05-27T12:54:43Z",
+      "message": "Add satisfaction survey category",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/214322e1677e5021dfbec10a230bde1f16e876f5"
+    },
+    {
+      "sha": "db7e414",
+      "date": "2026-05-27T12:41:41Z",
+      "message": "Update car source and align booking cards",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/db7e4141f3227d0381709fd0108028d136248596"
+    },
+    {
+      "sha": "0b61570",
+      "date": "2026-05-26T18:26:12Z",
+      "message": "Add car data diagnostics and safe imports",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/0b6157004371593da4641d790d07dccd789612bd"
+    },
+    {
+      "sha": "22ba914",
+      "date": "2026-05-26T18:04:04Z",
+      "message": "Add staged source sync and sector car access",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/22ba91470d833c70f3f30436cab52346c1019ff4"
+    },
+    {
+      "sha": "932a535",
+      "date": "2026-05-26T15:59:27Z",
+      "message": "Sync official sources during login",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/932a5357431e9e5fe3a7a05a27705a13eeb3cd1d"
+    },
+    {
+      "sha": "4db7cac",
+      "date": "2026-05-26T15:30:35Z",
+      "message": "Make logout immediate",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/4db7cac0bd0e03420d203569a673b8f92ce67235"
+    },
+    {
+      "sha": "422a764",
+      "date": "2026-05-26T12:03:27Z",
+      "message": "Improve admin sync and notifications",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/422a764583b2cc838aa4ed0472c037864a440bfe"
+    },
+    {
+      "sha": "dc0a664",
+      "date": "2026-05-26T11:50:50Z",
+      "message": "Update admin role calendar access",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/dc0a66416e1d725554dfea1fc9fdfb1f97913706"
+    },
+    {
+      "sha": "4437ad3",
+      "date": "2026-05-25T17:08:11Z",
+      "message": "Add sector-scoped car users",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/4437ad3af4fdfa547d0f522e3c63d85174258efe"
+    },
+    {
+      "sha": "b6e4f16",
+      "date": "2026-05-25T15:29:53Z",
+      "message": "Add role-based dashboard widgets",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/b6e4f16a4fed58284ad14cc39edb94031db4c821"
+    },
+    {
+      "sha": "bc37e9c",
+      "date": "2026-05-25T13:18:40Z",
+      "message": "Link car calendar to booking cards",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/bc37e9c0dfc58810348a5ff20b54e0fd66a85b87"
+    },
+    {
+      "sha": "26fd782",
+      "date": "2026-05-25T12:41:24Z",
+      "message": "Add admin access and maintenance controls",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/26fd7823581747cd272929468823228a8bf75f6b"
+    },
+    {
+      "sha": "67110aa",
+      "date": "2026-05-25T12:13:28Z",
+      "message": "Polish car booking visibility",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/67110aa0de41e6f0afb6b7491eeb9af71959657f"
+    },
+    {
+      "sha": "73bd0d7",
+      "date": "2026-05-25T11:57:01Z",
+      "message": "Add car-only users and polish supervision table",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/73bd0d73747851c5bf21dfecd47f132242a778e0"
+    },
+    {
+      "sha": "fcc41ed",
+      "date": "2026-05-25T11:42:31Z",
+      "message": "Release site and restrict car booking details",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/fcc41ed698e17b060dbed20659517e9bf3488797"
+    },
+    {
+      "sha": "3513a9b",
+      "date": "2026-05-22T19:55:01Z",
+      "message": "Keep schools static outside app state",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/3513a9b838cb8f56705be72a88994cb3c28fd9cc"
+    },
+    {
+      "sha": "de459fa",
+      "date": "2026-05-22T19:46:23Z",
+      "message": "Fix schools category route",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/de459fa920f910d7e8258aae965da1b91e3cfde3"
+    },
+    {
+      "sha": "5ce4c2d",
+      "date": "2026-05-22T19:38:34Z",
+      "message": "Fix schools navigation",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/5ce4c2da633ff7ba054119fc8811e052d4bb10f8"
+    },
+    {
+      "sha": "6dc06a0",
+      "date": "2026-05-22T19:27:19Z",
+      "message": "Revert \"update de sexta\"",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/6dc06a02a19c815b45f061f28c4896afc7b99fc8"
+    },
+    {
+      "sha": "f0334dd",
+      "date": "2026-05-22T17:32:36Z",
+      "message": "update de sexta",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/f0334ddd5bce6021f9a499bb1f154c21789e37db"
+    },
+    {
+      "sha": "95c3bfe",
+      "date": "2026-05-22T17:10:50Z",
+      "message": "Restore page catalog emojis safely",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/95c3bfeab2b11b39ef6c1a068fc7c8d8cfa0ab6c"
+    },
+    {
+      "sha": "f3ba45c",
+      "date": "2026-05-22T17:00:59Z",
+      "message": "Polish generated Portuguese copy",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/f3ba45cea0cb3f3e7093222d074be44c709000de"
+    },
+    {
+      "sha": "18d49ad",
+      "date": "2026-05-22T16:57:01Z",
+      "message": "Polish typography and Portuguese copy",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/18d49adaceb623b2356ae48f9c84133fa8832c68"
+    },
+    {
+      "sha": "2553eea",
+      "date": "2026-05-22T16:44:17Z",
+      "message": "Redesign official admin panel",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/2553eeaa80373f0e7494d8fc0f162b612edfef55"
+    },
+    {
+      "sha": "d9ef6a3",
+      "date": "2026-05-22T14:56:54Z",
+      "message": "Use clean GitHub Pages routes",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/d9ef6a3a5afd33dd717a221e8f975e266d7503c8"
+    },
+    {
+      "sha": "64863b9",
+      "date": "2026-05-22T14:53:40Z",
+      "message": "Add admin maintenance bypass",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/64863b95c352fc1e93a4bbe4f9b4a691a7a9e02c"
+    },
+    {
+      "sha": "09a5fc1",
+      "date": "2026-05-22T14:48:41Z",
+      "message": "Add maintenance notice",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/09a5fc1ed1370df21acbc652be57425a51680064"
+    },
+    {
+      "sha": "d5031ef",
+      "date": "2026-05-22T14:36:25Z",
+      "message": "Prepare PainelURE official cutover",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/d5031ef67ae65940eeb761fdd1ac1c809f3ebf67"
+    },
+    {
+      "sha": "21a4f8b",
+      "date": "2026-05-21T17:25:56Z",
+      "message": "fix: improve login and sync feedback",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/21a4f8b1de323efc5ae4f29b888a24402f8dcee2"
+    },
+    {
+      "sha": "69231b0",
+      "date": "2026-05-21T15:00:26Z",
+      "message": "fix: stabilize supervision indicator columns",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/69231b0d45c188e9e1b085c19f142c987bec2f06"
+    },
+    {
+      "sha": "c0b17fd",
+      "date": "2026-05-21T14:39:08Z",
+      "message": "fix: scope supervision metrics by selected month",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/c0b17fd71fa1c60cc9704dae58a14bf0a2ec1465"
+    },
+    {
+      "sha": "547bce7",
+      "date": "2026-05-21T14:24:57Z",
+      "message": "fix: align supervision table with setechub",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/547bce7a7ee24007a0dc6ba559ca9b7afce79452"
+    },
+    {
+      "sha": "3d764e3",
+      "date": "2026-05-21T14:05:41Z",
+      "message": "fix: keep official sources after backend sync",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/3d764e3f00f065eb913ebe3b7b29f446e51cc1f8"
+    },
+    {
+      "sha": "aabe23c",
+      "date": "2026-05-21T13:57:49Z",
+      "message": "fix: match supervisor sheet panel rules",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/aabe23c99f0811831fae4d274e002d36bc96bcd9"
+    },
+    {
+      "sha": "b77ac73",
+      "date": "2026-05-21T13:13:25Z",
+      "message": "feat: manage official sources in admin",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/b77ac7379fdc56be0786ef683a91de4c4963aaf9"
+    },
+    {
+      "sha": "bff18fb",
+      "date": "2026-05-21T13:10:08Z",
+      "message": "fix: improve local session and supervision alignment",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/bff18fbfc881775b4b5541a01ef5b2f2a43b7915"
+    },
+    {
+      "sha": "96b3382",
+      "date": "2026-05-21T12:16:31Z",
+      "message": "fix: restore supervision summary cards",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/96b33827a747c4889329329501c35675b410bf29"
+    },
+    {
+      "sha": "da80482",
+      "date": "2026-05-21T12:12:01Z",
+      "message": "feat: match supervision panel layout",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/da804821c348a2ee77c536c270e2eebb017b2f98"
+    },
+    {
+      "sha": "970528f",
+      "date": "2026-05-20T18:34:43Z",
+      "message": "feat: connect inventory source",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/970528f03a03fe348b4b5e2833f49634ebe11d93"
+    },
+    {
+      "sha": "c194373",
+      "date": "2026-05-20T18:26:06Z",
+      "message": "feat: show server connection status",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/c1943739b67981ef763fd643f0a7458d4ad56dcf"
+    },
+    {
+      "sha": "f4c56fd",
+      "date": "2026-05-19T19:01:20Z",
+      "message": "painel ure1",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/f4c56fd3c449cd0e285021c4abb14d9d6d5eff75"
+    },
+    {
+      "sha": "30ae807",
+      "date": "2026-05-19T18:28:39Z",
+      "message": "refactor: split supervision rendering",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/30ae807ed59be9f1254a16a14a14fb4879e49c91"
+    },
+    {
+      "sha": "9b2aa2d",
+      "date": "2026-05-19T18:10:06Z",
+      "message": "feat: align supervision with setechub",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/9b2aa2d8a3ae5116050ce9db3c5fcd913fd0c3ff"
+    },
+    {
+      "sha": "7e94618",
+      "date": "2026-05-19T17:27:26Z",
+      "message": "fix: refine access states and car visibility",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/7e9461820202a7b6379a271274d61a8ec60e0773"
+    },
+    {
+      "sha": "a921311",
+      "date": "2026-05-19T13:41:52Z",
+      "message": "Copia design de supervisao do SetecHub",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/a921311f560f32ebc51c241b0a2cd6d88a580eb5"
+    },
+    {
+      "sha": "ab13aea",
+      "date": "2026-05-19T12:44:10Z",
+      "message": "Refina widgets da agenda de carros",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/ab13aea20e6490ecd4384939407400ce908a6507"
+    },
+    {
+      "sha": "13d5fe1",
+      "date": "2026-05-19T12:09:32Z",
+      "message": "Ajusta calendario e widgets de carros",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/13d5fe19af51f34115a5d5906d26fbca43c5e7ed"
+    },
+    {
+      "sha": "a826a1b",
+      "date": "2026-05-19T12:02:18Z",
+      "message": "Refina layout de carros",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/a826a1bf35960e18005a464034311e4ac3a8e2c0"
+    },
+    {
+      "sha": "3972378",
+      "date": "2026-05-19T11:53:59Z",
+      "message": "Ajusta widgets e tabela de carros",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/397237854fef860417501d77b732b6ed4f98dcd3"
+    },
+    {
+      "sha": "bcd8c40",
+      "date": "2026-05-19T11:36:58Z",
+      "message": "Melhora design e carregamento de carros",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/bcd8c40c7b90eaf824f827c53c0c9b8a7074e7c1"
+    },
+    {
+      "sha": "430d0e9",
+      "date": "2026-05-19T11:31:06Z",
+      "message": "Atualiza painel e agenda de carros",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/430d0e99e7af243b82feb4cab1915011090e9131"
+    },
+    {
+      "sha": "c198879",
+      "date": "2026-05-14T16:23:53Z",
+      "message": "feat: add official car scheduling page",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/c1988793e90ae989e5d83c7096d46e8931a7ecdd"
+    },
+    {
+      "sha": "c6f9275",
+      "date": "2026-05-14T14:31:09Z",
+      "message": "fix: polish inventory visual system",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/c6f9275de47f58b71913877d1008c132a5dbd793"
+    },
+    {
+      "sha": "89fb4fb",
+      "date": "2026-05-14T14:04:42Z",
+      "message": "fix: restore emoji icons across v2 surfaces",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/89fb4fbb552b28e6de87bacd31885e4abc2e11c1"
+    },
+    {
+      "sha": "fca8ee6",
+      "date": "2026-05-14T13:13:28Z",
+      "message": "feat: redesign school detail page",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/fca8ee6b70ace83f46fab9e34b24215254916a21"
+    },
+    {
+      "sha": "f202489",
+      "date": "2026-05-14T12:52:54Z",
+      "message": "feat: rebuild supervision and schools views",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/f20248975cf3afdf1182961592437012d3bef1f5"
+    },
+    {
+      "sha": "f693fde",
+      "date": "2026-05-14T11:54:13Z",
+      "message": "fix: recalibrate v2 supervision and labels",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/f693fded37fbf74cbb282fad7e72ffbbe45eb5d8"
+    },
+    {
+      "sha": "4d37b79",
+      "date": "2026-05-13T20:06:46Z",
+      "message": "fix: recalibrate navigation and static labels",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/4d37b79878fe132463a7d662b80d74498ad2e453"
+    },
+    {
+      "sha": "8d2895d",
+      "date": "2026-05-13T19:55:48Z",
+      "message": "feat: improve school detail flow",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/8d2895d2aa3800508254f3120b2a8feef7375afd"
+    },
+    {
+      "sha": "920b0f5",
+      "date": "2026-05-13T19:51:27Z",
+      "message": "feat: improve supervision and inventory flows",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/920b0f5faa24f234d08c9bbf9708e95f8b5fb45f"
+    },
+    {
+      "sha": "8be94f7",
+      "date": "2026-05-13T16:45:36Z",
+      "message": "fix: seed local login users",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/8be94f76b7e0904573dd03b2f7d5d754963ca59f"
+    },
+    {
+      "sha": "140e89f",
+      "date": "2026-05-13T16:38:34Z",
+      "message": "feat: improve school inventory and calendar UX",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/140e89f82653f669ef2dc93a3de26cae6311bd48"
+    },
+    {
+      "sha": "6b79ca8",
+      "date": "2026-05-13T16:28:57Z",
+      "message": "docs: add v2 checklist",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/6b79ca855ec03a32839a22154a976ec0ee17c1f1"
+    },
+    {
+      "sha": "c483569",
+      "date": "2026-05-13T16:21:04Z",
+      "message": "fix: tighten summary density and font loading",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/c4835695c8926d6476a5105969a85d5fa268ecf6"
+    },
+    {
+      "sha": "67f6fc4",
+      "date": "2026-05-13T14:53:50Z",
+      "message": "feat: refine detail decision summaries",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/67f6fc4fb679db710526643b09c3709378b1cc80"
+    },
+    {
+      "sha": "6c4994a",
+      "date": "2026-05-13T14:48:16Z",
+      "message": "feat: complete operational summaries",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/6c4994ae4a53247828737134b287ba49d305df47"
+    },
+    {
+      "sha": "1f5966e",
+      "date": "2026-05-13T14:38:57Z",
+      "message": "feat: add operational summaries",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/1f5966e0b50050361800f155d51428466e0e42a0"
+    },
+    {
+      "sha": "61e9c2f",
+      "date": "2026-05-13T14:11:58Z",
+      "message": "Persiste secoes dobraveis do admin",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/61e9c2f1797cbe628fa9e681be0d7696e790fde0"
+    },
+    {
+      "sha": "126a288",
+      "date": "2026-05-13T14:00:24Z",
+      "message": "Enxuga admin com secoes dobraveis",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/126a288955efdf50dc6b4932d7ced6df01a0e1de"
+    },
+    {
+      "sha": "04b33c1",
+      "date": "2026-05-13T13:42:08Z",
+      "message": "Adiciona historico de importacoes no admin",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/04b33c1516a5a38c0c28ee1f960a7668ceace2cf"
+    },
+    {
+      "sha": "cbba4fd",
+      "date": "2026-05-13T12:55:53Z",
+      "message": "Refina diagnostico administrativo",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/cbba4fd562154bab522d87bd6b7b748d3c3f6a08"
+    },
+    {
+      "sha": "ca20ef8",
+      "date": "2026-05-13T12:46:00Z",
+      "message": "Adiciona testes de escopo e metadados de fontes",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/ca20ef800382210353eebf171d0eabda162ed10c"
+    },
+    {
+      "sha": "7d40e1e",
+      "date": "2026-05-13T12:16:05Z",
+      "message": "Fecha escopo de credenciais e refina escolas",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/7d40e1edff454441ceab92fc4f37b55196a0487a"
+    },
+    {
+      "sha": "093ef53",
+      "date": "2026-05-13T12:01:32Z",
+      "message": "Avanca fundamentos visuais por perfil",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/093ef53b8f6ed8509c9bb1a4bf17ef3f9909c826"
+    },
+    {
+      "sha": "3af09ba",
+      "date": "2026-05-13T11:18:56Z",
+      "message": "Aplica escopo de dados no backend",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/3af09ba62293b8d4e52ae719fce183e7ecc39012"
+    },
+    {
+      "sha": "1f63ecf",
+      "date": "2026-05-12T19:50:42Z",
+      "message": "Documenta auditoria de fundamentos",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/1f63ecf563d8786972a30c944dd848ac3711e53b"
+    },
+    {
+      "sha": "e742165",
+      "date": "2026-05-12T19:42:03Z",
+      "message": "Adiciona escopo de acesso por usuario",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/e7421654bdfe3c6d990c3b8c8ea6a1ecf2a53340"
+    },
+    {
+      "sha": "f55bff2",
+      "date": "2026-05-12T19:12:52Z",
+      "message": "Corrige API em preview local",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/f55bff2f75520aa16b166c99533b9b99478ffcda"
+    },
+    {
+      "sha": "7b2cb96",
+      "date": "2026-05-12T19:02:36Z",
+      "message": "Refina fluxo de login e sessao",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/7b2cb9625aa841347e82559bf3198532f65f8a36"
+    },
+    {
+      "sha": "bb35ff5",
+      "date": "2026-05-12T18:48:20Z",
+      "message": "Corrige login por primeiro nome",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/bb35ff55a07230d7c399959ac281fceaa9422ccd"
+    },
+    {
+      "sha": "72cfffb",
+      "date": "2026-05-12T18:34:46Z",
+      "message": "Simplifica tela de login",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/72cfffbc338ab451e61fe270ae6a569557f294be"
+    },
+    {
+      "sha": "71d8207",
+      "date": "2026-05-12T18:32:00Z",
+      "message": "Melhora login de supervisores",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/71d8207723dffd046802d85ab0c8e0d3ecaedac5"
+    },
+    {
+      "sha": "5bde2cb",
+      "date": "2026-05-12T18:22:30Z",
+      "message": "Adiciona mes navegavel e logoff",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/5bde2cb1e2ead12a6b816d89996524e524556ec8"
+    },
+    {
+      "sha": "51653fb",
+      "date": "2026-05-12T18:11:25Z",
+      "message": "Refina conta da sidebar",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/51653fbdefd042fc35a90bde8f273c4d87ca0eb8"
+    },
+    {
+      "sha": "ec01323",
+      "date": "2026-05-12T18:03:26Z",
+      "message": "Melhora controle de PIN no admin",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/ec01323a81bf3bb81ee39f4c3ffe45a08e3107bf"
+    },
+    {
+      "sha": "ee142e0",
+      "date": "2026-05-12T16:48:28Z",
+      "message": "Adiciona login por PIN obrigatorio",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/ee142e0f678f167771e7d24e83d0948b46035b61"
+    },
+    {
+      "sha": "d8ab46d",
+      "date": "2026-05-12T16:22:57Z",
+      "message": "Adiciona seed inicial online",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/d8ab46d3866cbeff0bdd637747398a11f96f0080"
+    },
+    {
+      "sha": "6df5f19",
+      "date": "2026-05-12T14:34:40Z",
+      "message": "Documenta checklist de deploy online",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/6df5f1941564a2469df960069519ca5c30ef7923"
+    },
+    {
+      "sha": "b30a91b",
+      "date": "2026-05-12T14:32:59Z",
+      "message": "Liga frontend ao deploy Render",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/b30a91b110064690c657e0ad35a19b92fb1d33db"
+    },
+    {
+      "sha": "af151da",
+      "date": "2026-05-12T14:05:00Z",
+      "message": "Prepara deploy Render com Postgres externo",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/af151da10a7dcb0c3a24615bde046538696913b3"
+    },
+    {
+      "sha": "49036a6",
+      "date": "2026-05-12T13:55:09Z",
+      "message": "Restaura sessao online ao iniciar",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/49036a68fa6ccb081de868a76b35581447651852"
+    },
+    {
+      "sha": "1acf3e2",
+      "date": "2026-05-12T13:47:57Z",
+      "message": "Adiciona logout online",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/1acf3e21ec91bf353ae63c757ba208c85ace6531"
+    },
+    {
+      "sha": "2259a14",
+      "date": "2026-05-12T13:44:06Z",
+      "message": "Liga sessao online ao perfil",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/2259a140a4c1eb5b6cf3eb2aea0a18f95c0a3852"
+    },
+    {
+      "sha": "88043fa",
+      "date": "2026-05-12T13:23:36Z",
+      "message": "Permite editar usuarios online",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/88043fa8ece78aba008c9b6cbb82329f9afc41f7"
+    },
+    {
+      "sha": "b6a5e97",
+      "date": "2026-05-12T13:17:40Z",
+      "message": "Adiciona usuarios online no admin",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/b6a5e97637bf10d09c10bb1dd00ad05e681b1d57"
+    },
+    {
+      "sha": "b19e3eb",
+      "date": "2026-05-12T13:02:06Z",
+      "message": "Adiciona editor de fontes oficiais",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/b19e3eb485c1a2c9bdd52bc35eb9adfeb742af4c"
+    },
+    {
+      "sha": "afb9649",
+      "date": "2026-05-12T12:24:30Z",
+      "message": "Liga admin ao backend online",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/afb96492ee3730c35a2cb7182cd1776e4161d064"
+    },
+    {
+      "sha": "9ea0886",
+      "date": "2026-05-12T12:03:30Z",
+      "message": "Prepara backend online com fontes e auditoria",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/9ea0886b8643f7628dc9b62e69ce30ded9b2106c"
+    },
+    {
+      "sha": "688f97d",
+      "date": "2026-05-12T11:46:19Z",
+      "message": "Adiciona limpeza rapida de filtros",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/688f97dc1f09ef1c9fcc0263fbc23b14ffa41072"
+    },
+    {
+      "sha": "7a1c1ce",
+      "date": "2026-05-12T11:39:06Z",
+      "message": "Expande busca global para operacao",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/7a1c1cee17f36355f2ab4ca884c9b980eb41b972"
+    },
+    {
+      "sha": "9f956df",
+      "date": "2026-05-12T11:30:51Z",
+      "message": "Melhora foco da busca global",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/9f956df9ecf31b21e2e81fc4137005546e45df12"
+    },
+    {
+      "sha": "91f0766",
+      "date": "2026-05-12T11:22:32Z",
+      "message": "Refina operacao com filtros e acoes rapidas",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/91f0766a414120395f605db8c7ef15ca0fbbf5e5"
+    },
+    {
+      "sha": "38f00ab",
+      "date": "2026-05-11T19:52:54Z",
+      "message": "Refina supervisao com filtros e carteira",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/38f00abd40f44cbc9cb7031df64d0059a0404689"
+    },
+    {
+      "sha": "e8eb129",
+      "date": "2026-05-11T19:42:11Z",
+      "message": "Adiciona filtros operacionais de escolas",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/e8eb12905cd906272faf2004e759f1dcb5395f84"
+    },
+    {
+      "sha": "15c3666",
+      "date": "2026-05-11T19:25:16Z",
+      "message": "Importa fichas escolares e limpa fotos externas",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/15c36669b0e47549777680945d5f3d928c35e511"
+    },
+    {
+      "sha": "bc86a90",
+      "date": "2026-05-11T18:56:56Z",
+      "message": "Vincula usuarios importados aos contatos",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/bc86a9045e88fa5abf4a56fc70c10f5bfc794dde"
+    },
+    {
+      "sha": "bc9be5d",
+      "date": "2026-05-11T18:42:57Z",
+      "message": "Prepara Supabase e centraliza catalogo UI",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/bc9be5d3e2a60712ad5bd44aa920868e5ed60147"
+    },
+    {
+      "sha": "a6513ad",
+      "date": "2026-05-11T18:27:24Z",
+      "message": "Prepara usuarios reais no backend",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/a6513ad78c26d5724234e619ee89ff5928510087"
+    },
+    {
+      "sha": "8615671",
+      "date": "2026-05-11T18:20:51Z",
+      "message": "Adiciona suporte a banco online",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/8615671c39f7c88f8dc7569b0156e0720d888b2a"
+    },
+    {
+      "sha": "ab60eff",
+      "date": "2026-05-11T18:11:03Z",
+      "message": "Adiciona foto de perfil local",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/ab60eff039eae7726e0955d6ecd965202e152c4e"
+    },
+    {
+      "sha": "2069268",
+      "date": "2026-05-11T18:02:09Z",
+      "message": "Refina perfil e admin no padrao Finanza",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/2069268ff63dcdfeb0ba9c044e234b419c5076a2"
+    },
+    {
+      "sha": "bbc337c",
+      "date": "2026-05-11T17:52:42Z",
+      "message": "Permite trocar perfil pela conta",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/bbc337caef33e9f3777d2c0618f6152effa98b85"
+    },
+    {
+      "sha": "54567a8",
+      "date": "2026-05-11T17:43:58Z",
+      "message": "Cria paginas de detalhe e conta",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/54567a8f8b473a6dc1b376c7e1c81311f99bcb4c"
+    },
+    {
+      "sha": "278d698",
+      "date": "2026-05-11T17:32:12Z",
+      "message": "Alinha cabecalho e fontes ao padrao Finanza",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/278d6985435ab3aa71a6563e3f3763cb9e4cb78b"
+    },
+    {
+      "sha": "d65e25c",
+      "date": "2026-05-11T17:23:42Z",
+      "message": "Evita tela sem texto no carregamento",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/d65e25c487446e8ed617a50245701e79e9d93169"
+    },
+    {
+      "sha": "63b03e5",
+      "date": "2026-05-11T17:22:28Z",
+      "message": "Ajusta carregamento visual da v2",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/63b03e5ecce0e9e238c06e1b038d703f6096146e"
+    },
+    {
+      "sha": "900ec03",
+      "date": "2026-05-11T17:15:11Z",
+      "message": "Cria backend inicial da v2",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/900ec035a969e2457d8c86bb4469947dabb45cc1"
+    },
+    {
+      "sha": "3990882",
+      "date": "2026-05-11T17:03:37Z",
+      "message": "Completa pacote de paridade v1 e Finanza",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/39908827e34d1cfd8449370765c75fc564d1bdfc"
+    },
+    {
+      "sha": "aa72376",
+      "date": "2026-05-11T16:57:34Z",
+      "message": "Adiciona busca global e central de dados",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/aa72376cf5aa696dad9f4ee4fb6f6073ca1a879e"
+    },
+    {
+      "sha": "c6d42a0",
+      "date": "2026-05-11T16:49:15Z",
+      "message": "Conecta fluxos e refina telas operacionais",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/c6d42a00abcd8bd8474c25d6c3d20a322be764ec"
+    },
+    {
+      "sha": "5deb061",
+      "date": "2026-05-11T16:46:20Z",
+      "message": "Refina lista de supervisao",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/5deb061e1402e69dbacf5bd86457bd9302042862"
+    },
+    {
+      "sha": "8979a7f",
+      "date": "2026-05-11T16:43:28Z",
+      "message": "Refina cards de escolas",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/8979a7fc5a5941989a187ad199032278e13055ac"
+    },
+    {
+      "sha": "9f05805",
+      "date": "2026-05-11T16:41:21Z",
+      "message": "Enxuga dashboard inicial",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/9f058058e6fc9845eed489deaa0a92ac0c33f8a2"
+    },
+    {
+      "sha": "657edf0",
+      "date": "2026-05-11T15:15:35Z",
+      "message": "Enxuga barra lateral da v2",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/657edf0f2cd0c0d1051021bacd54a76ac2ddec8d"
+    },
+    {
+      "sha": "8c10875",
+      "date": "2026-05-11T14:49:48Z",
+      "message": "Consolida polimento e estado da v2",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/8c1087562ab8c6645bdf27793a68423a764c7cff"
+    },
+    {
+      "sha": "8d00d33",
+      "date": "2026-05-11T14:39:19Z",
+      "message": "Refina tema claro no padrao Finanza",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/8d00d33385780cdbc3c1f260bd179237786f1bbf"
+    },
+    {
+      "sha": "3c2e7fe",
+      "date": "2026-05-11T14:26:59Z",
+      "message": "Ajusta tema e tipografia da v2",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/3c2e7fe84fc2981d28b9d3613a689297aeb04d6a"
+    },
+    {
+      "sha": "3f7282e",
+      "date": "2026-05-11T14:15:08Z",
+      "message": "Publica PainelURE 2.0 inicial",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/painelure/commit/3f7282e8f1c1b33adf7ebda5d3a3fdd676a0c3e4"
+    }
+  ]
+}

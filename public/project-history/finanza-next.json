@@ -1,0 +1,335 @@
+{
+  "id": "finanza-next",
+  "total": 47,
+  "commits": [
+    {
+      "sha": "7c58cc8",
+      "date": "2026-08-10T17:43:32Z",
+      "message": "feat: advance Finext Android parity",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/7c58cc89c49a162b39945cf4baedcbd4d8ee6c56"
+    },
+    {
+      "sha": "221de2a",
+      "date": "2026-07-21T19:10:41Z",
+      "message": "refine: unify Finext themes and analysis",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/221de2a67e666340a8d4b9d4a134aa9ccddf28e3"
+    },
+    {
+      "sha": "6c806e2",
+      "date": "2026-07-21T18:34:51Z",
+      "message": "test: protect Finanza mobile shell",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/6c806e298203f51f15695d67fcf418cfaa486db7"
+    },
+    {
+      "sha": "30167fc",
+      "date": "2026-07-21T18:31:49Z",
+      "message": "docs: record Finanza mobile visual validation",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/30167fc680aaa87049a4969f7c628e20492058d3"
+    },
+    {
+      "sha": "4d5324e",
+      "date": "2026-07-21T18:28:34Z",
+      "message": "refine: fit Finanza mobile screen headers",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/4d5324eefc94690644571df74f8bd6ead65d1ff0"
+    },
+    {
+      "sha": "baf069d",
+      "date": "2026-07-21T18:25:02Z",
+      "message": "perf: unify pager tab state updates",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/baf069d45b09cf281eb98e40dcd6f00387cfe85c"
+    },
+    {
+      "sha": "847ad89",
+      "date": "2026-07-21T18:23:54Z",
+      "message": "refine: streamline Finanza accounts view",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/847ad89deee3bae29a7cbd278daf7941a9243ce0"
+    },
+    {
+      "sha": "7606618",
+      "date": "2026-07-21T18:22:32Z",
+      "message": "refine: align Finanza dashboard summary grid",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/760661826db2e954d0f43bc3515b1bdd4dcd59e9"
+    },
+    {
+      "sha": "e93bf7a",
+      "date": "2026-07-21T18:20:44Z",
+      "message": "refine: simplify Finanza dashboard header",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/e93bf7aea57aae89cda24f6490c0d4b7d0d3045f"
+    },
+    {
+      "sha": "7befa4c",
+      "date": "2026-07-21T18:18:13Z",
+      "message": "refine: apply Finanza web typography",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/7befa4c8fe4edd735c31a7094471ee94a62e9599"
+    },
+    {
+      "sha": "8f18804",
+      "date": "2026-07-21T18:14:14Z",
+      "message": "refine: add Finanza transaction badges",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/8f188043672a28398b96b85a152485b854891ede"
+    },
+    {
+      "sha": "e53130b",
+      "date": "2026-07-21T18:12:46Z",
+      "message": "docs: record pager performance decision",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/e53130b17c2cf26ced4b2f4ddea18228d51ad87c"
+    },
+    {
+      "sha": "574ed74",
+      "date": "2026-07-21T18:10:08Z",
+      "message": "fix: align Finanza web color tokens",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/574ed747ec5046b5055dec275d69770fd2c1aef9"
+    },
+    {
+      "sha": "a94304c",
+      "date": "2026-07-21T18:08:08Z",
+      "message": "refine: align Finanza settings heading",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/a94304cbbc82dfc04c6aed663ac1429de70df3a8"
+    },
+    {
+      "sha": "4366736",
+      "date": "2026-07-21T18:06:29Z",
+      "message": "feat: use Finanza account card grid",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/43667361f2b305e0ead5079958559ebfba926de5"
+    },
+    {
+      "sha": "24ad38e",
+      "date": "2026-07-21T18:03:47Z",
+      "message": "refine: clarify account list context",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/24ad38e57d23c136e737f083d2ed333ba1e2d7f0"
+    },
+    {
+      "sha": "031ad8f",
+      "date": "2026-07-21T17:58:54Z",
+      "message": "refine: simplify Finanza dashboard glass navigation",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/031ad8f19e745f9bb27bba1a888b55c4676608d6"
+    },
+    {
+      "sha": "6a43152",
+      "date": "2026-07-21T17:55:27Z",
+      "message": "fix: polish Finanza Portuguese labels",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/6a431526061095d8ddad6182c1b23ae1b7ff58d6"
+    },
+    {
+      "sha": "b4d4fc8",
+      "date": "2026-07-21T17:45:36Z",
+      "message": "fix: keep module editor actions reachable",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/b4d4fc8dadf240ae8c6d123b5a2b79c87afd93d2"
+    },
+    {
+      "sha": "da72547",
+      "date": "2026-07-21T17:43:47Z",
+      "message": "feat: compact Finanza feature items",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/da72547601223ff2bc616afced4d23e42c26f953"
+    },
+    {
+      "sha": "e41c894",
+      "date": "2026-07-21T17:41:33Z",
+      "message": "feat: improve Finanza empty states",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/e41c89445b3808059ecf71e38de0f9e9911916aa"
+    },
+    {
+      "sha": "60a4df9",
+      "date": "2026-07-21T17:37:35Z",
+      "message": "feat: compact Finanza resource center",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/60a4df93a11f88fa4b657fca91fbbfc3504ba1ac"
+    },
+    {
+      "sha": "e2f5e2c",
+      "date": "2026-07-21T17:32:33Z",
+      "message": "test: cover login across visual themes",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/e2f5e2c050f3dd0e0bdfe204903e8d517e9946d2"
+    },
+    {
+      "sha": "f51e5b8",
+      "date": "2026-07-21T17:29:42Z",
+      "message": "feat: bring Finanza analysis visuals closer to web",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/f51e5b8e750800916c6a7790dc908d25b991a3be"
+    },
+    {
+      "sha": "3421e24",
+      "date": "2026-07-21T17:23:47Z",
+      "message": "feat: align Finanza dashboard with web",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/3421e2410665de711bced7d6dc4c893b9f553997"
+    },
+    {
+      "sha": "f200b4a",
+      "date": "2026-07-21T17:12:08Z",
+      "message": "fix: remove native Next action bar",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/f200b4a150bccad151f291f7f2e64a5f2f6f14dc"
+    },
+    {
+      "sha": "641337e",
+      "date": "2026-07-21T16:54:23Z",
+      "message": "test: stabilize theme and navigation assertions",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/641337e4ff7e6dac45c9907d9f0e633daa05e3bd"
+    },
+    {
+      "sha": "b8a9bc2",
+      "date": "2026-07-21T16:49:43Z",
+      "message": "feat: align Finanza account and analysis headers",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/b8a9bc2af1a205d68ec8a90bd1566647aacde90d"
+    },
+    {
+      "sha": "ec358f6",
+      "date": "2026-07-21T16:44:33Z",
+      "message": "feat: prioritize Finanza financial dashboard",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/ec358f6f491030987c1c61f04e314afcc996a141"
+    },
+    {
+      "sha": "41555fe",
+      "date": "2026-07-21T16:42:55Z",
+      "message": "fix: unify thebox navigation and system bars",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/41555fe501ec6768b86b8a716c75dd3b0ccdca1f"
+    },
+    {
+      "sha": "0d2b731",
+      "date": "2026-07-21T16:31:18Z",
+      "message": "test: cover direct bottom navigation",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/0d2b731084b7d2ea72420ce1614ab80824f791e7"
+    },
+    {
+      "sha": "fdde9e6",
+      "date": "2026-07-21T16:30:07Z",
+      "message": "fix: apply visual theme to quick capture and login",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/fdde9e6799fdfc1359790eb7cba233e8a85505b3"
+    },
+    {
+      "sha": "6d853ad",
+      "date": "2026-07-21T16:27:16Z",
+      "message": "feat: align Finanza dashboard header with web",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/6d853ada5b4fabcf3767bebceafcf28b4a3c0d77"
+    },
+    {
+      "sha": "c917611",
+      "date": "2026-07-21T16:24:47Z",
+      "message": "fix: align Finanza surfaces across core screens",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/c91761129918baab0c5529bc2c5960d781182f4c"
+    },
+    {
+      "sha": "dd69685",
+      "date": "2026-07-21T15:05:07Z",
+      "message": "feat: unify Finanza themes and stabilize navigation",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/dd69685af92f8131fe2045f59b8e76624b27f2aa"
+    },
+    {
+      "sha": "445dfb4",
+      "date": "2026-06-28T16:21:22Z",
+      "message": "feat: finish daily Next experience and Android app",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/445dfb432a28df21680dbc414eb347408e36c753"
+    },
+    {
+      "sha": "7f95200",
+      "date": "2026-06-25T17:30:43Z",
+      "message": "Refine Next Box-style visual system",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/7f95200d26948436f30b9c02696bd92ae9cb477d"
+    },
+    {
+      "sha": "b314dfa",
+      "date": "2026-06-25T14:59:39Z",
+      "message": "visual",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/b314dfa547190bf332aa519726cf598719acbd18"
+    },
+    {
+      "sha": "dd9d7d3",
+      "date": "2026-06-25T14:35:24Z",
+      "message": "Redesign all Next screens and add accent themes",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/dd9d7d39bfe69a54deec96760c8333acc4273bd2"
+    },
+    {
+      "sha": "f77b3e6",
+      "date": "2026-06-25T14:16:02Z",
+      "message": "Rebuild Next visual shell",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/f77b3e6903be814bc915d2bf12ae5e7c55f652d3"
+    },
+    {
+      "sha": "eb18c59",
+      "date": "2026-06-25T13:57:07Z",
+      "message": "Apply stronger Finanza Next visual standard",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/eb18c5990524f7e5e9d3f5d65cb2b1fbd1f06a05"
+    },
+    {
+      "sha": "80130c1",
+      "date": "2026-06-25T13:44:59Z",
+      "message": "Fix Next login state migration",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/80130c117c8e2f9cbbb31f7f5564110a7cd5c70e"
+    },
+    {
+      "sha": "e806831",
+      "date": "2026-06-25T13:37:13Z",
+      "message": "Clean Next visual layer and restore normal access",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/e806831b5cf1a28c31932cf714efad8e9f34af87"
+    },
+    {
+      "sha": "37bf43a",
+      "date": "2026-06-25T13:18:55Z",
+      "message": "Restore full Finanza app with refined Next lab skin",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/37bf43a9464e0a9d387130e03c41eafb35e05fd2"
+    },
+    {
+      "sha": "5ed7753",
+      "date": "2026-06-25T12:15:49Z",
+      "message": "Rebuild Finanza Next as a new app",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/5ed7753e05048a0df4f7a6a86ff7e24a26d181ce"
+    },
+    {
+      "sha": "7602ac0",
+      "date": "2026-06-25T12:08:03Z",
+      "message": "Add desktop Next skin and native Kotlin app",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/7602ac0441e78ba37c0e9c4441c3a5841b6bed2a"
+    },
+    {
+      "sha": "e8cd479",
+      "date": "2026-06-24T16:47:07Z",
+      "message": "Initial Finanza Next static app",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza-next/commit/e8cd47922196fd09f1b15134a93e1f6ecfadc746"
+    }
+  ]
+}

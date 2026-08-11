@@ -1,0 +1,440 @@
+{
+  "id": "jeffef",
+  "total": 62,
+  "commits": [
+    {
+      "sha": "ea04e01",
+      "date": "2026-08-11T14:21:03Z",
+      "message": "Update Páginas “project-settings”",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/ea04e018de5db63dbad2685c13bb86bc766e4e9f"
+    },
+    {
+      "sha": "99bd2a6",
+      "date": "2026-08-11T14:20:48Z",
+      "message": "Adiciona historico e paginas individuais de projetos",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/99bd2a679b8c8e4f4c62ad32e1dc43218933fd29"
+    },
+    {
+      "sha": "72b5a7f",
+      "date": "2026-08-11T14:16:42Z",
+      "message": "Corrige abertura de projetos locais",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/72b5a7fa4e8e2709f2a3223bd0bb21f773bd31ab"
+    },
+    {
+      "sha": "6e24808",
+      "date": "2026-08-11T14:15:58Z",
+      "message": "Permite gerenciar projetos pelo editor",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/6e248082c73be7f6911e4de2ab70967dcb397ce9"
+    },
+    {
+      "sha": "4d5c694",
+      "date": "2026-08-11T14:10:59Z",
+      "message": "Completa catalogo de projetos locais e do GitHub",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/4d5c694d502597f8ad3e67dda147d1b7300a618d"
+    },
+    {
+      "sha": "6587992",
+      "date": "2026-08-11T13:34:13Z",
+      "message": "Restaura temas originais e adiciona tema TripNext",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/6587992bdbb9de58ecf2baba3041c63090977212"
+    },
+    {
+      "sha": "3cdce46",
+      "date": "2026-08-11T13:02:21Z",
+      "message": "Adiciona visualizacoes e tecnologias aos projetos",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/3cdce4698cffd6bf9744d9c45f9473cbf3b59a59"
+    },
+    {
+      "sha": "4cc907c",
+      "date": "2026-08-11T12:49:48Z",
+      "message": "Cria painel detalhado de projetos",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/4cc907c175e16dc9bd72d3b1fc2ff8b99a8fbdb1"
+    },
+    {
+      "sha": "21e316c",
+      "date": "2026-05-21T18:12:12Z",
+      "message": "Adiciona secao de projetos",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/21e316cb4a660f2acc2bc5b06287e8f9eae6fe9a"
+    },
+    {
+      "sha": "9f4abb6",
+      "date": "2026-04-22T18:16:59Z",
+      "message": "Alinha lista de notas e destaca rodape do agora",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/9f4abb6b5cee7bb003c695f9549e47227f41c525"
+    },
+    {
+      "sha": "4e991be",
+      "date": "2026-04-22T18:12:14Z",
+      "message": "Centraliza navbar no desktop",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/4e991bec207a46c6e1dda04f87677e7e253f4420"
+    },
+    {
+      "sha": "ee53963",
+      "date": "2026-04-22T18:11:40Z",
+      "message": "Atualiza referencias para o repositorio renomeado",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/ee5396317481ac3cc1e9855eed2c54e01aac8325"
+    },
+    {
+      "sha": "59106f5",
+      "date": "2026-04-22T18:00:10Z",
+      "message": "Refina navbar e suaviza destaque cromatico",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/59106f53ebc08cc084bca6e85a8db4c0fbfd0bf5"
+    },
+    {
+      "sha": "201a5ca",
+      "date": "2026-04-22T17:47:53Z",
+      "message": "Suaviza o gradiente e restaura sublinhado limpo",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/201a5ca62552d6dec27fc7a685db73e0d53efabf"
+    },
+    {
+      "sha": "b134ea7",
+      "date": "2026-04-22T17:29:11Z",
+      "message": "Concentra o destaque editorial nas letras",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/b134ea7adb464a0f9c294bb5af60aec329c1f12a"
+    },
+    {
+      "sha": "aa16eb8",
+      "date": "2026-04-22T17:23:10Z",
+      "message": "Afasta o sublinhado e reforca os destaques",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/aa16eb8526cfaab0725001d12ece1f6a6aba62c9"
+    },
+    {
+      "sha": "59615c5",
+      "date": "2026-04-22T17:20:19Z",
+      "message": "Remove vidro dos destaques editoriais",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/59615c56e7b75e572ca55c499041ba1ce79aa05b"
+    },
+    {
+      "sha": "d563a08",
+      "date": "2026-04-22T17:05:04Z",
+      "message": "Torna destaques editoriais mais vivos",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/d563a08798e90763db2aedd844c024586b11dfad"
+    },
+    {
+      "sha": "fcd5727",
+      "date": "2026-04-22T15:14:53Z",
+      "message": "Refina destaque tipografico e clareia tema escuro",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/fcd5727a66fff23a1c09746ecd16b2dc2efd9587"
+    },
+    {
+      "sha": "e5d8707",
+      "date": "2026-04-22T15:09:01Z",
+      "message": "Refina header, destaques e scroll mobile",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/e5d8707777a51a69b348e76bb6a9f4df7d90d5dc"
+    },
+    {
+      "sha": "09b760b",
+      "date": "2026-04-22T14:51:34Z",
+      "message": "Tune visual theme refinements",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/09b760b6d77e2202c3809b156f9be6fc64d29995"
+    },
+    {
+      "sha": "f7ff7be",
+      "date": "2026-04-22T14:40:19Z",
+      "message": "Refine mobile styling and dark theme",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/f7ff7be174e6206a8bb44359dd21b138f5642e2b"
+    },
+    {
+      "sha": "cb4e4c8",
+      "date": "2026-04-21T19:42:13Z",
+      "message": "Add gradient nav and fluid hero motion",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/cb4e4c888dea26b35a655561c188dd520407120c"
+    },
+    {
+      "sha": "f1bc2ee",
+      "date": "2026-04-21T19:29:14Z",
+      "message": "Update Nota “2026-04-21-dados-rotina-e-decisao”",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/f1bc2eeacb1ac2feb6f71f460925daf6610c0a71"
+    },
+    {
+      "sha": "c41d9fe",
+      "date": "2026-04-21T19:24:23Z",
+      "message": "Calm theme and mobile home polish",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/c41d9fe4ce6444ca35726a5be5c96a8248a88ee8"
+    },
+    {
+      "sha": "e12ca36",
+      "date": "2026-04-21T19:04:56Z",
+      "message": "Polish photo and now layouts",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/e12ca36cb6584423828182a142a9204d9fee4cd9"
+    },
+    {
+      "sha": "8c23734",
+      "date": "2026-04-21T18:54:55Z",
+      "message": "Update Nota “2026-04-20-comecar-pelo-simples”",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/8c23734e6c49897a46ce99005d8e0631a90acf13"
+    },
+    {
+      "sha": "04e1a88",
+      "date": "2026-04-21T18:52:35Z",
+      "message": "Improve home hero and photo highlights",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/04e1a88496a7d0d0e9ad7d0e653433cb01e148d6"
+    },
+    {
+      "sha": "7c8d44a",
+      "date": "2026-04-21T18:36:59Z",
+      "message": "Update Nota “2026-04-20-comecar-pelo-simples”",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/7c8d44ad803d3c55ea62c43ce0c83079a218dafa"
+    },
+    {
+      "sha": "4af24b5",
+      "date": "2026-04-21T18:36:43Z",
+      "message": "Update Nota “2026-04-20-comecar-pelo-simples”",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/4af24b50e60d6d3848fc4609a20ee409b67a1cf3"
+    },
+    {
+      "sha": "ccf36a9",
+      "date": "2026-04-21T18:23:54Z",
+      "message": "Update Nota “2026-04-22-caminhos-continuam-aqui”",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/ccf36a960019938de046c853cc2e139dd0d45f5b"
+    },
+    {
+      "sha": "a7bf3bb",
+      "date": "2026-04-21T18:19:06Z",
+      "message": "Fix admin preview sizing and add sobre page",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/a7bf3bb815daae9c98dd00d7855cafd9a7cd6299"
+    },
+    {
+      "sha": "2513346",
+      "date": "2026-04-21T18:15:25Z",
+      "message": "Update Nota “2026-04-22-caminhos-continuam-aqui”",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/2513346fb090dfb39968fa6830da24063a159667"
+    },
+    {
+      "sha": "60792cb",
+      "date": "2026-04-21T18:14:44Z",
+      "message": "Delete “public/uploads/img-20260102-wa0209.jpg”",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/60792cb410933d7e958b55f43412a89db9e65cdb"
+    },
+    {
+      "sha": "5f7dc2f",
+      "date": "2026-04-21T16:21:47Z",
+      "message": "Add image resize lab to admin",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/5f7dc2fe0e1b7e2fa61df0f435358c58b99d2c7c"
+    },
+    {
+      "sha": "b307390",
+      "date": "2026-04-21T16:17:55Z",
+      "message": "Fix Decap media paths and note image controls",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/b307390f636d22db873b906d43e70c2b273d3bf6"
+    },
+    {
+      "sha": "ab678ef",
+      "date": "2026-04-21T16:13:18Z",
+      "message": "Update Nota “2026-04-22-caminhos-continuam-aqui”",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/ab678efa19d4c7591e9200715f361bd7bb8c42d2"
+    },
+    {
+      "sha": "1b60e95",
+      "date": "2026-04-21T16:11:43Z",
+      "message": "Delete “public/uploads/20260404_181459.jpg”",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/1b60e9511816e710d47c3ea336aeb2735a9722ae"
+    },
+    {
+      "sha": "ce272ff",
+      "date": "2026-04-21T15:54:30Z",
+      "message": "Enable Decap note preview",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/ce272ff44cfa6c2a4babc68618ee44ff851991c3"
+    },
+    {
+      "sha": "fb3954c",
+      "date": "2026-04-21T15:43:49Z",
+      "message": "Update Nota “2026-04-22-caminhos-continuam-aqui”",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/fb3954cf1785f6a91f5e05f71587dbe30ec97fa6"
+    },
+    {
+      "sha": "7154c80",
+      "date": "2026-04-21T15:42:02Z",
+      "message": "Update Nota “2026-04-22-caminhos-continuam-aqui”",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/7154c80445b4e11038313af4f0014a4cc7e354a5"
+    },
+    {
+      "sha": "914c117",
+      "date": "2026-04-21T15:41:19Z",
+      "message": "Delete “public/uploads/20260420_180418.jpg”",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/914c1170e9b78c440de67718aef8ac3dd0317c9d"
+    },
+    {
+      "sha": "1ed2003",
+      "date": "2026-04-21T15:41:05Z",
+      "message": "Delete Nota “2026-04-21-teste”",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/1ed2003c8e4c6d1277f3f0cac637a2ab85afaf87"
+    },
+    {
+      "sha": "16d78af",
+      "date": "2026-04-21T15:35:17Z",
+      "message": "Normalize Decap CMS upload paths",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/16d78af045d2ffcc43c55c316a4404a469b134a4"
+    },
+    {
+      "sha": "2bc674f",
+      "date": "2026-04-21T15:29:54Z",
+      "message": "Create Nota “2026-04-21-teste”",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/2bc674fe9d0de56ca32c8eea7f74f4f858885cda"
+    },
+    {
+      "sha": "31f9b5e",
+      "date": "2026-04-21T15:29:02Z",
+      "message": "Update Nota “2026-04-22-caminhos-continuam-aqui”",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/31f9b5e7337317f14e0851b256090909c6b2631d"
+    },
+    {
+      "sha": "c50349f",
+      "date": "2026-04-21T15:28:46Z",
+      "message": "Delete Nota “2026-04-22-caminhos-continuam-aqui-1”",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/c50349ff1a5c9b8495f46112e52768ce2cb42899"
+    },
+    {
+      "sha": "26f1afa",
+      "date": "2026-04-21T15:28:41Z",
+      "message": "Delete Nota “2026-04-22-caminhos-continuam-aqui-2”",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/26f1afa0eee2899c5996dc2194f36276a7057951"
+    },
+    {
+      "sha": "502f290",
+      "date": "2026-04-21T15:28:28Z",
+      "message": "Upload “public/uploads/20260420_180418.jpg”",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/502f290381aba6e8ba45754c31e57baaba50b269"
+    },
+    {
+      "sha": "044808c",
+      "date": "2026-04-21T15:28:07Z",
+      "message": "Delete “public/uploads/20260404_181459.jpg”",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/044808cb0850d4062d0901c0f367f7c0fe6e5ae7"
+    },
+    {
+      "sha": "47e2477",
+      "date": "2026-04-21T15:27:19Z",
+      "message": "Update Nota “2026-04-22-caminhos-continuam-aqui-2”",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/47e2477613f62c140edef435a7eeeb95dc6b3fd6"
+    },
+    {
+      "sha": "f5de1a2",
+      "date": "2026-04-21T15:26:53Z",
+      "message": "Delete “public/uploads/img_20260404_190651_326.webp”",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/f5de1a28fc41c85138c1f0d6d31e880c29d361ad"
+    },
+    {
+      "sha": "6c1c2d3",
+      "date": "2026-04-21T15:25:52Z",
+      "message": "Update Nota “2026-04-22-caminhos-continuam-aqui-2”",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/6c1c2d33db1152c28e15b9f8fc1caf4e8f23a7df"
+    },
+    {
+      "sha": "ae01f06",
+      "date": "2026-04-21T15:25:31Z",
+      "message": "Create Nota “2026-04-22-caminhos-continuam-aqui-2”",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/ae01f065eb24d647760c6cc647d87de1af921a71"
+    },
+    {
+      "sha": "c1502ab",
+      "date": "2026-04-21T15:25:15Z",
+      "message": "Create Nota “2026-04-22-caminhos-continuam-aqui-1”",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/c1502ab536aa6bd2dfb86893a891d14115374e6b"
+    },
+    {
+      "sha": "0375a38",
+      "date": "2026-04-21T15:24:52Z",
+      "message": "Update Nota “2026-04-22-caminhos-continuam-aqui”",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/0375a380427a18bdeaf1adcbbf9a9c118e9a4af4"
+    },
+    {
+      "sha": "89a6514",
+      "date": "2026-04-21T15:22:12Z",
+      "message": "Update Nota “2026-04-22-caminhos-continuam-aqui”",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/89a6514ab82c050831ef28d8c01216adeb76768a"
+    },
+    {
+      "sha": "2e03928",
+      "date": "2026-04-21T15:21:41Z",
+      "message": "Upload “public/uploads/img_20260404_190651_326.webp”",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/2e039281531e55295198b3d4353720f2eae218e4"
+    },
+    {
+      "sha": "22ce709",
+      "date": "2026-04-21T15:15:16Z",
+      "message": "Point Decap CMS to deployed OAuth worker",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/22ce709b683d97714438586da0498f7cf38b78aa"
+    },
+    {
+      "sha": "31dea9d",
+      "date": "2026-04-21T15:08:14Z",
+      "message": "Prepare Decap OAuth worker for GitHub Pages",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/31dea9d290d491644434a78cf038d8b2626d186f"
+    },
+    {
+      "sha": "0871411",
+      "date": "2026-04-21T14:46:59Z",
+      "message": "Fix GitHub Pages asset paths",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/08714118e4ab0fd69b18a4da1a20270a5137ccc2"
+    },
+    {
+      "sha": "733209b",
+      "date": "2026-04-21T14:21:17Z",
+      "message": "Prepare site for GitHub Pages",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/733209bb8cf2b7d88cc4e6038ef98859c6188c83"
+    }
+  ]
+}

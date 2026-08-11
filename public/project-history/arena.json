@@ -1,0 +1,853 @@
+{
+  "id": "arena",
+  "total": 121,
+  "commits": [
+    {
+      "sha": "8e68ea1",
+      "date": "2026-06-24T14:48:43Z",
+      "message": "refactor: limpar camadas css redundantes",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/8e68ea1bed04d615ff5f543621c63dad203a6eb9"
+    },
+    {
+      "sha": "ba4ad24",
+      "date": "2026-06-22T11:35:50Z",
+      "message": "style: compactar visual no padrao finanza",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/ba4ad246d3d50f3c35df969bf41ba0d3fa826c9f"
+    },
+    {
+      "sha": "67ffaf6",
+      "date": "2026-06-19T18:19:00Z",
+      "message": "style: copiar linguagem visual do finanza",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/67ffaf68ab1848592897dd1a53da60d2f6673f36"
+    },
+    {
+      "sha": "166c2ba",
+      "date": "2026-06-19T17:47:32Z",
+      "message": "style: polir hierarquia visual do painel",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/166c2bae879c4bf6c8d426f3053bd79ac14ce22f"
+    },
+    {
+      "sha": "95ce2cc",
+      "date": "2026-06-19T12:27:54Z",
+      "message": "style: aproximar visual do finanza",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/95ce2cce1ef2d5eff1ea3684a6726ae92da51e88"
+    },
+    {
+      "sha": "f096fe6",
+      "date": "2026-06-19T12:21:46Z",
+      "message": "test: auditar fluxos principais",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/f096fe683f938689f1b649a0b67b1c5af494ebd2"
+    },
+    {
+      "sha": "301b03b",
+      "date": "2026-06-18T14:38:30Z",
+      "message": "feat: registrar acoes operacionais no servidor",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/301b03be9e4599e4f6958b2f41a695e340a018ff"
+    },
+    {
+      "sha": "e1fad3c",
+      "date": "2026-06-17T15:10:54Z",
+      "message": "refactor: remover camadas antigas de visual",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/e1fad3cd5aecd5d0f6aa48b3b05f198627a595c5"
+    },
+    {
+      "sha": "af430c3",
+      "date": "2026-06-17T15:04:25Z",
+      "message": "style: refinar botoes widgets e listas",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/af430c32fd6e53f831c4edb81131868020fc91b1"
+    },
+    {
+      "sha": "60c4ad4",
+      "date": "2026-06-17T14:30:59Z",
+      "message": "perf: cachear renders de telas pesadas",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/60c4ad4dafeeb0e3a37c81cab47d801e894f029a"
+    },
+    {
+      "sha": "07c0f4d",
+      "date": "2026-06-16T19:18:16Z",
+      "message": "perf: reduzir renders durante filtros",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/07c0f4d8b634bb0e16916050b07c777a0d13eef8"
+    },
+    {
+      "sha": "0a9a4d1",
+      "date": "2026-06-16T19:13:05Z",
+      "message": "perf: limpar camadas visuais acumuladas",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/0a9a4d1654f2a3b058649992502dc2be7770e5c6"
+    },
+    {
+      "sha": "187b5da",
+      "date": "2026-06-16T17:21:38Z",
+      "message": "style: refinar botoes e widgets",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/187b5da3c2b5b575aad8653ea2df0e86aa7e8172"
+    },
+    {
+      "sha": "676ea7e",
+      "date": "2026-06-16T16:42:48Z",
+      "message": "style: refazer visual inspirado no finanza",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/676ea7eff5bd02b6c8332ee85f1ae3e9404e29f0"
+    },
+    {
+      "sha": "b1d6408",
+      "date": "2026-06-16T16:35:25Z",
+      "message": "fix: categorizar acoes operacionais",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/b1d64080c5debabef6f7fb272d1e669e651dd452"
+    },
+    {
+      "sha": "334ed3f",
+      "date": "2026-06-16T16:31:33Z",
+      "message": "feat: persistir acoes operacionais no servidor",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/334ed3fd9ef73e7220fca529e2c74156b1b9b71d"
+    },
+    {
+      "sha": "125e610",
+      "date": "2026-06-16T16:27:54Z",
+      "message": "feat: registrar copias operacionais",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/125e610e5d05f8af6b6cd2ff31382418b47503f3"
+    },
+    {
+      "sha": "2f0db28",
+      "date": "2026-06-16T13:21:54Z",
+      "message": "fix: atualizar service worker pelo botao atualizar",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/2f0db285fa2858cc29a9e354b3642ce52eb67650"
+    },
+    {
+      "sha": "e61f5ee",
+      "date": "2026-06-16T13:18:34Z",
+      "message": "perf: cachear historico de presenca do aluno",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/e61f5eed4be5a3cde4a1d621d424fc085906ab32"
+    },
+    {
+      "sha": "4de6a66",
+      "date": "2026-06-16T13:14:23Z",
+      "message": "perf: cachear dados de aulas e frequencia",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/4de6a6601015e0c5156ddded554c041d7c54a89f"
+    },
+    {
+      "sha": "36b1550",
+      "date": "2026-06-16T13:11:12Z",
+      "message": "style: priorizar fluxo de presenca",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/36b1550af576f528412300cab3d6456410acbaac"
+    },
+    {
+      "sha": "401bca3",
+      "date": "2026-06-16T12:58:18Z",
+      "message": "style: organizar edicao de aluno no mobile",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/401bca3d8cacce3c4b6f02646465a58701b82b75"
+    },
+    {
+      "sha": "fa716c1",
+      "date": "2026-06-16T12:46:05Z",
+      "message": "feat: mostrar acoes recentes na ficha do aluno",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/fa716c15dd4743b0ff492707795b89e44ce2bce6"
+    },
+    {
+      "sha": "d29e18a",
+      "date": "2026-06-16T12:35:12Z",
+      "message": "style: melhorar aulas e alunos no mobile",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/d29e18acb4ff1844e8f103324b1c1ace19cbe3f4"
+    },
+    {
+      "sha": "41bb1ee",
+      "date": "2026-06-16T12:09:24Z",
+      "message": "feat: destacar acoes por origem",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/41bb1eeb455a0f2f4d47a086217c406279baa76a"
+    },
+    {
+      "sha": "4e2c909",
+      "date": "2026-06-16T11:53:27Z",
+      "message": "feat: priorizar cobrancas urgentes",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/4e2c909a527f230925f6e5d45cf3f3cbf2e14b0d"
+    },
+    {
+      "sha": "1fa8b68",
+      "date": "2026-06-15T18:35:43Z",
+      "message": "feat: prever agenda fixa do aluno",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/1fa8b68d67fbd14c1f87a63fd57d2e38833e0ff9"
+    },
+    {
+      "sha": "ad4e1d3",
+      "date": "2026-06-11T19:41:41Z",
+      "message": "refactor: remover camada visual redundante",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/ad4e1d3efd22d010b68d3ce502bcbd3fcdac9de0"
+    },
+    {
+      "sha": "edc3ae5",
+      "date": "2026-06-11T19:37:19Z",
+      "message": "feat: categorizar central de acoes",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/edc3ae5d390601e62c0dd428828cd4d1c3dd16e6"
+    },
+    {
+      "sha": "792d52d",
+      "date": "2026-06-11T19:33:10Z",
+      "message": "style: aproximar visual do finanza",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/792d52daea2d828dbbef28a1b992931aece4ca59"
+    },
+    {
+      "sha": "4824797",
+      "date": "2026-06-11T19:28:21Z",
+      "message": "perf: indexar estado para renderizacoes",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/482479770afa2d66044c9d03dd00bf78411ff2d6"
+    },
+    {
+      "sha": "effad7c",
+      "date": "2026-06-10T20:35:08Z",
+      "message": "feat: resumir confirmacoes do aluno",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/effad7c30a33d651df1f5ad6af557ee3abb146a1"
+    },
+    {
+      "sha": "b3fc6c7",
+      "date": "2026-06-10T20:31:19Z",
+      "message": "feat: priorizar lista de espera",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/b3fc6c7d30e2be5e8a3db2a707c968734db5d020"
+    },
+    {
+      "sha": "f036829",
+      "date": "2026-06-10T20:27:40Z",
+      "message": "chore: remover exclusao direta da espera",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/f0368290638789da52c90e38b47475b2fa19d244"
+    },
+    {
+      "sha": "ede7b7e",
+      "date": "2026-06-10T20:17:38Z",
+      "message": "feat: destacar acao sugerida do aluno",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/ede7b7e7b8f7d05267549044152f7086aa5bf2f8"
+    },
+    {
+      "sha": "789e82d",
+      "date": "2026-06-10T20:13:20Z",
+      "message": "feat: priorizar lista de cobrancas",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/789e82d4428d57ce92249167ef336883673261a4"
+    },
+    {
+      "sha": "81c41b5",
+      "date": "2026-06-10T14:13:15Z",
+      "message": "feat: destacar status operacional das aulas",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/81c41b5cea394a5d90d7ff9060cbd67137ac0531"
+    },
+    {
+      "sha": "5fcb336",
+      "date": "2026-06-10T14:08:43Z",
+      "message": "feat: melhorar leitura da central de acoes",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/5fcb3360b0f66dbd5864a5af6812d783f752b7c9"
+    },
+    {
+      "sha": "ce612f5",
+      "date": "2026-06-10T14:03:20Z",
+      "message": "style: consolidar css visual",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/ce612f5ece15cf62fea5abefc62fd0eacbea9688"
+    },
+    {
+      "sha": "1663706",
+      "date": "2026-06-10T13:59:26Z",
+      "message": "style: refinar shell visual claro",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/1663706f3cc111cecd120560bf6d185728912c17"
+    },
+    {
+      "sha": "1923ece",
+      "date": "2026-06-10T13:48:55Z",
+      "message": "perf: suavizar buscas no mobile",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/1923ecea786e3f942b1229d2e6c75557af28ebb4"
+    },
+    {
+      "sha": "def85bb",
+      "date": "2026-06-10T13:45:31Z",
+      "message": "perf: agrupar render local",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/def85bb36ede3f8d6aef02d72a975fe512e47572"
+    },
+    {
+      "sha": "146ebd0",
+      "date": "2026-06-10T12:27:02Z",
+      "message": "feat: sincronizar demo entre abas",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/146ebd0de7e77fd9dcfb62a14cd025ff33e38324"
+    },
+    {
+      "sha": "8034d74",
+      "date": "2026-06-10T12:23:10Z",
+      "message": "feat: atualizar central de acoes em tempo leve",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/8034d74276de08b2a607195658beadffab0d7e88"
+    },
+    {
+      "sha": "bb4952c",
+      "date": "2026-06-09T15:12:37Z",
+      "message": "feat: persistir origem das acoes",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/bb4952c304f4b85ae44c698e5628276176a468a9"
+    },
+    {
+      "sha": "fd6609e",
+      "date": "2026-06-09T15:07:35Z",
+      "message": "feat: adicionar central de acoes",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/fd6609ec6a9631a860d56bc2da489adf25f926f9"
+    },
+    {
+      "sha": "db08820",
+      "date": "2026-06-09T14:38:44Z",
+      "message": "perf: renderizar tela ativa e suavizar visual",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/db0882042a134ae73d5dac6a111f10995e5393a6"
+    },
+    {
+      "sha": "dc0b096",
+      "date": "2026-06-09T14:30:38Z",
+      "message": "perf: remove codigo morto e aliviar mobile",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/dc0b0964251a3cb55dffcf9d794b539082227871"
+    },
+    {
+      "sha": "80a81f4",
+      "date": "2026-06-09T13:09:33Z",
+      "message": "Documenta operacao real do sistema",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/80a81f4e1c26d87440695718ffb776f5ae252ab1"
+    },
+    {
+      "sha": "ca6e766",
+      "date": "2026-06-09T13:07:07Z",
+      "message": "Compacta fluxo publico no mobile",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/ca6e76633d7bedbf48d554b685055ea3d371fd7c"
+    },
+    {
+      "sha": "42591b2",
+      "date": "2026-06-09T13:03:19Z",
+      "message": "Foca cobranca mobile nas pendencias",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/42591b2085fb783c0eab1de3e4ef78658105fd18"
+    },
+    {
+      "sha": "237395e",
+      "date": "2026-06-09T12:57:34Z",
+      "message": "Compacta presenca no mobile",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/237395e0ac3fa1c914fff698fcf2123fff8508c1"
+    },
+    {
+      "sha": "45154b8",
+      "date": "2026-06-08T18:00:31Z",
+      "message": "Prioriza agenda fixa no modal de aluno",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/45154b8b73ac394c86d3465f1e02b5c4365ff0d5"
+    },
+    {
+      "sha": "5834dec",
+      "date": "2026-06-08T17:54:07Z",
+      "message": "Compacta lista de alunos no mobile",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/5834decfd6c69e39ed27be83b993207a33e994b5"
+    },
+    {
+      "sha": "3ac1762",
+      "date": "2026-06-08T14:25:43Z",
+      "message": "Enxuga topo mobile nas paginas internas",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/3ac1762338444ff478ac88b663174c6fb64be21f"
+    },
+    {
+      "sha": "784f2f8",
+      "date": "2026-06-08T14:22:57Z",
+      "message": "Compacta aviso local no mobile",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/784f2f88764ac182c59511435875af5f40d770f9"
+    },
+    {
+      "sha": "17e7f94",
+      "date": "2026-06-08T14:20:03Z",
+      "message": "Limpa atalhos antigos da lateral",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/17e7f946d0eacbc4fd93be70a06f22cc634f86dc"
+    },
+    {
+      "sha": "b15a2be",
+      "date": "2026-06-08T14:17:39Z",
+      "message": "Remove telas antigas de dados e roadmap",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/b15a2be8ae72fee7032181f92712c17ea98546cc"
+    },
+    {
+      "sha": "92707ff",
+      "date": "2026-06-08T14:10:02Z",
+      "message": "Amplia auditoria visual dos fluxos",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/92707fff1e5739a41d3663a8636b030d787220c2"
+    },
+    {
+      "sha": "d009dcc",
+      "date": "2026-06-08T14:05:56Z",
+      "message": "Adiciona fechamento operacional mensal",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/d009dcc07fed40d4a05ce58c30e19b5aefcd16a6"
+    },
+    {
+      "sha": "3f82a8f",
+      "date": "2026-06-08T13:10:29Z",
+      "message": "Detalha registro de pagamentos",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/3f82a8fa2c377ca3d81eebbc900a902830c7170a"
+    },
+    {
+      "sha": "82c7004",
+      "date": "2026-06-08T13:06:22Z",
+      "message": "Explicita modo real e demo local",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/82c7004c944f76ebad2e8bd87d62764b476fd5f0"
+    },
+    {
+      "sha": "dcfddbe",
+      "date": "2026-06-08T12:57:45Z",
+      "message": "Refina chamada e fechamento de aula",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/dcfddbe8192dc194f90d7aefed83e754a92d7f66"
+    },
+    {
+      "sha": "1e2a917",
+      "date": "2026-06-08T12:31:53Z",
+      "message": "Melhora selecao de alunos e cobranca",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/1e2a917efd6c541dac3fada636fe4e74e68de750"
+    },
+    {
+      "sha": "a1fd53a",
+      "date": "2026-06-08T12:22:38Z",
+      "message": "Refina fluxo operacional e agenda fixa",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/a1fd53a9880432284fcf9d7e47e5f32e0c288267"
+    },
+    {
+      "sha": "b1cd09a",
+      "date": "2026-06-08T12:00:56Z",
+      "message": "Adiciona confirmacao publica de aulas",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/b1cd09a4ca1c63ca510a4828c3c47cc26883246a"
+    },
+    {
+      "sha": "db9fda2",
+      "date": "2026-06-03T19:31:31Z",
+      "message": "Redesenha visual claro do painel",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/db9fda2a565ba1559efc2b84641d6f1c62e435bd"
+    },
+    {
+      "sha": "a0e28b1",
+      "date": "2026-06-03T17:54:52Z",
+      "message": "Refina dashboard visual responsivo",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/a0e28b1f566cb2f4ad847ced948681049ec6494f"
+    },
+    {
+      "sha": "698a304",
+      "date": "2026-06-03T17:50:29Z",
+      "message": "Refina navegacao mobile do painel",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/698a3048a1c2ac29d8bad40272a12a268de990e8"
+    },
+    {
+      "sha": "cd2ff14",
+      "date": "2026-06-03T17:44:48Z",
+      "message": "Refina modais e amplia QA visual",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/cd2ff144389c84ead55b0f36c249bda70b9539ce"
+    },
+    {
+      "sha": "155a8e7",
+      "date": "2026-06-03T17:36:57Z",
+      "message": "Amplia cobertura visual automatizada",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/155a8e7fe3814dfb055284110c9199ddca5990ae"
+    },
+    {
+      "sha": "2df8018",
+      "date": "2026-06-03T17:33:56Z",
+      "message": "Refina cards de aula no mobile",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/2df80181096e550c4dfc38a79e7b5e6415eb300c"
+    },
+    {
+      "sha": "4861fea",
+      "date": "2026-06-03T15:18:05Z",
+      "message": "Refina ficha do aluno no glass",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/4861fea20f4fa98b77ceaa5a0543f98293e8be55"
+    },
+    {
+      "sha": "b986db8",
+      "date": "2026-06-03T15:09:36Z",
+      "message": "Acalma hierarquia visual do painel",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/b986db8ee32cc87dc12e95264a099185a5e560e8"
+    },
+    {
+      "sha": "a2d3ba3",
+      "date": "2026-06-03T15:04:42Z",
+      "message": "Corrige cache da camada visual",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/a2d3ba3958f8fd00271044e45dbe3487c6eea1a1"
+    },
+    {
+      "sha": "e5b7537",
+      "date": "2026-06-03T15:00:50Z",
+      "message": "Refina camada visual glass do painel",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/e5b753705242543053ddf2d5ff2e082c5ca859c9"
+    },
+    {
+      "sha": "94c4298",
+      "date": "2026-06-03T14:23:09Z",
+      "message": "Compacta listas mobile e atualiza roadmap",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/94c42985593f802091351cd903e11af17de44eef"
+    },
+    {
+      "sha": "f3fd18c",
+      "date": "2026-06-03T14:18:24Z",
+      "message": "Refina mobile e pedidos de agendamento",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/f3fd18c9f57d14cb749f0b29493abd81e977fbb6"
+    },
+    {
+      "sha": "d9addf6",
+      "date": "2026-06-03T14:13:43Z",
+      "message": "Adiciona fluxo de agendamento de aulas",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/d9addf6d9c7a0ea241a07008068ecd079b8b7aeb"
+    },
+    {
+      "sha": "479be0a",
+      "date": "2026-06-02T19:55:23Z",
+      "message": "Reorganiza usabilidade de alunos aulas e cobrancas",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/479be0a4fc52ef5b25015e53e51be05d399ef7e1"
+    },
+    {
+      "sha": "9124a78",
+      "date": "2026-06-02T18:38:00Z",
+      "message": "Simplifica visual e melhora usabilidade dos modais",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/9124a789700ac3a8de762173d014987f9fa2c67b"
+    },
+    {
+      "sha": "9357e81",
+      "date": "2026-06-02T18:19:19Z",
+      "message": "Refina acabamento glass para mobile e desktop",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/9357e818b996bdce04a3fdced651c45ce996bd1a"
+    },
+    {
+      "sha": "851e4f6",
+      "date": "2026-06-02T18:14:08Z",
+      "message": "Aplica base visual glassmorfica",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/851e4f669916dc78b04f142a4402b130508ec23b"
+    },
+    {
+      "sha": "0dbb2ff",
+      "date": "2026-06-02T17:57:22Z",
+      "message": "Documenta fechamento da publicacao",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/0dbb2ff18affc63ceca8740d079a2271b1e61b07"
+    },
+    {
+      "sha": "9c6fda8",
+      "date": "2026-06-02T17:55:12Z",
+      "message": "Atualiza roteiro e QA local",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/9c6fda8e752381690234a4a2d8b1f64c07ac96e5"
+    },
+    {
+      "sha": "20b0901",
+      "date": "2026-06-02T17:51:56Z",
+      "message": "Polimento de login e QA visual",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/20b0901449ab6fc1fe10b351ed9ead15f3ff9aab"
+    },
+    {
+      "sha": "6142f08",
+      "date": "2026-06-02T17:48:26Z",
+      "message": "Ajusta responsivo mobile e adiciona QA visual",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/6142f08da3c1ff1be6d86ed4ab7e026d14b61e32"
+    },
+    {
+      "sha": "9fb3892",
+      "date": "2026-06-02T17:43:17Z",
+      "message": "Polimento de modais e telas secundarias",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/9fb38924586ff74adc35a3c84e4a3f4d2d288da2"
+    },
+    {
+      "sha": "545cb27",
+      "date": "2026-06-02T17:40:31Z",
+      "message": "Refina cobranca e espera",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/545cb27e70ff93a82d351b3661465fe2bf957661"
+    },
+    {
+      "sha": "2376703",
+      "date": "2026-06-02T17:39:04Z",
+      "message": "Refina cards de agenda",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/23767030d78b62a436bd25c30f466e38c340e63a"
+    },
+    {
+      "sha": "49ad610",
+      "date": "2026-06-02T17:37:05Z",
+      "message": "Atualiza resumo das melhorias visuais",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/49ad610f7963bf5fdc8fe29c3e812ae60d00d803"
+    },
+    {
+      "sha": "74f7ec2",
+      "date": "2026-06-02T17:36:23Z",
+      "message": "Refina fluxo de presenca",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/74f7ec2fabaa4766935f64605d105cc55e754676"
+    },
+    {
+      "sha": "2c543f9",
+      "date": "2026-06-02T17:33:54Z",
+      "message": "Refina ficha do aluno",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/2c543f906bc0b9a6c6dad9b6cfffffebd40d2f93"
+    },
+    {
+      "sha": "152aee7",
+      "date": "2026-06-02T17:32:08Z",
+      "message": "Refina estados e grids do design",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/152aee7d997431db35c4e00932d6e340e26bbef3"
+    },
+    {
+      "sha": "026642d",
+      "date": "2026-06-02T17:26:39Z",
+      "message": "Melhora hierarquia do dashboard",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/026642da29c7b018a53aa178353a375201dacefc"
+    },
+    {
+      "sha": "b42772a",
+      "date": "2026-06-02T17:24:27Z",
+      "message": "Polimento visual global",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/b42772a02a9d31684cf68ecdb80a8953e93d8698"
+    },
+    {
+      "sha": "94f7cd2",
+      "date": "2026-06-02T14:14:10Z",
+      "message": "Refina cards no mobile",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/94f7cd2360e1ccd56ed13337cf035be14847634e"
+    },
+    {
+      "sha": "e0e851f",
+      "date": "2026-06-02T13:44:18Z",
+      "message": "Simplifica navegacao mobile",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/e0e851f8fd5bca31409be8c6471e4d9b74f78d97"
+    },
+    {
+      "sha": "3729b20",
+      "date": "2026-06-02T13:22:31Z",
+      "message": "Adiciona foco operacional no dashboard",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/3729b205e4e29c34fe70761905c66b77bf7c6fe6"
+    },
+    {
+      "sha": "9836e2c",
+      "date": "2026-06-02T13:08:21Z",
+      "message": "Melhora navegacao e modais",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/9836e2c5044cf42518392ab7379ffe0784424c8d"
+    },
+    {
+      "sha": "b7c2b8c",
+      "date": "2026-06-02T12:04:23Z",
+      "message": "Compacta layout mobile",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/b7c2b8cd62003003002f69146329ab3e84d65171"
+    },
+    {
+      "sha": "6e01962",
+      "date": "2026-06-02T12:01:13Z",
+      "message": "Refaz navegacao mobile",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/6e01962be65e7bbee3470668e09370c8963b751f"
+    },
+    {
+      "sha": "66d573b",
+      "date": "2026-06-02T11:51:08Z",
+      "message": "Adiciona filtros operacionais de aulas",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/66d573b70f9ec41026a51b180c9671b763904ae0"
+    },
+    {
+      "sha": "8d7abe5",
+      "date": "2026-06-01T19:39:26Z",
+      "message": "Adiciona tipos de aula e presenca",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/8d7abe58437a4c92af1e9335bc70cb4db7e5ef81"
+    },
+    {
+      "sha": "4d6f269",
+      "date": "2026-06-01T19:35:36Z",
+      "message": "Otimiza experiencia mobile",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/4d6f269b61ae3b19daedf9458abceb7f084a3647"
+    },
+    {
+      "sha": "0f44ab0",
+      "date": "2026-06-01T19:29:25Z",
+      "message": "Melhora rotina de aula e cobranca",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/0f44ab0c458cf6883d6af49dbead39bc8a696de7"
+    },
+    {
+      "sha": "461494c",
+      "date": "2026-06-01T16:56:20Z",
+      "message": "Refina demo rapida para apresentacao",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/461494c2562c0f9184f24c13218cc2f69c351754"
+    },
+    {
+      "sha": "d8d6076",
+      "date": "2026-06-01T16:44:44Z",
+      "message": "Prepara deploy do servidor",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/d8d607674bbf8a32ed5158af371a10e1abcbfadf"
+    },
+    {
+      "sha": "146272d",
+      "date": "2026-06-01T12:58:51Z",
+      "message": "Adiciona backup automatico no servidor",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/146272df2f6b7769afa904a9a77c7cf35650909d"
+    },
+    {
+      "sha": "acd0409",
+      "date": "2026-06-01T12:53:00Z",
+      "message": "Remove funcoes duplicadas do app",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/acd04099c23b09c5d5add61f1782661e82702721"
+    },
+    {
+      "sha": "bc9fce8",
+      "date": "2026-06-01T12:48:46Z",
+      "message": "Melhora financeiro mensal",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/bc9fce8cd2170ee063dc4ecca5ff4a3f0c6cd15d"
+    },
+    {
+      "sha": "b476342",
+      "date": "2026-06-01T12:37:18Z",
+      "message": "Adiciona vencimentos e aulas recorrentes",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/b47634226afe874115a26e7721e8ffabb4862e15"
+    },
+    {
+      "sha": "e561e87",
+      "date": "2026-06-01T12:13:55Z",
+      "message": "Melhora experiencia mobile e operacao diaria",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/e561e87f797236b71e15f24118283af173ae9980"
+    },
+    {
+      "sha": "a277788",
+      "date": "2026-05-31T13:34:52Z",
+      "message": "Adiciona relatorio do aluno e agenda operacional",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/a2777881d87a4298c8bcea8bc26d220c28790b38"
+    },
+    {
+      "sha": "bb50ade",
+      "date": "2026-05-31T13:19:35Z",
+      "message": "Amplia massa demo para apresentacao",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/bb50ade8b5d1bc8e5d3e9d77b3bf07a03dff801a"
+    },
+    {
+      "sha": "910efc8",
+      "date": "2026-05-31T13:16:02Z",
+      "message": "Forca atualizacao da demo no Pages",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/910efc8e4592e248c13012f3c0a3328400402fbe"
+    },
+    {
+      "sha": "fbaa475",
+      "date": "2026-05-31T13:13:54Z",
+      "message": "Corrige demo estatica no GitHub Pages",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/fbaa475002a71299ff672c2b4c6ba65c0373bb6d"
+    },
+    {
+      "sha": "654d3ce",
+      "date": "2026-05-31T13:03:13Z",
+      "message": "Prepara MVP Team Lucao para demo e piloto",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/654d3ce5c56ea279c9e53593946310031b9a9eb5"
+    },
+    {
+      "sha": "19c66ed",
+      "date": "2026-05-21T19:03:51Z",
+      "message": "Configura GitHub Pages",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/19c66edece53cd6dee05193115401d5374dc5d49"
+    },
+    {
+      "sha": "76cffbf",
+      "date": "2026-05-21T18:54:48Z",
+      "message": "Adapta Arena para base FinClinica",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/76cffbf4b11d9ce732c3dbcc6589bbbccfbad35e"
+    },
+    {
+      "sha": "170fc4f",
+      "date": "2026-05-21T18:12:58Z",
+      "message": "Cria Arena Futvolei",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/arena-futvolei/commit/170fc4f5c30fb8abe761374e253301a0b0a9a45f"
+    }
+  ]
+}

@@ -1,0 +1,839 @@
+{
+  "id": "finanzav3",
+  "total": 119,
+  "commits": [
+    {
+      "sha": "12f7a0b",
+      "date": "2026-05-18T17:07:18Z",
+      "message": "Tighten monthly chart layout",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/12f7a0b269e9e302a52adc491f0059af37913706"
+    },
+    {
+      "sha": "382f1f1",
+      "date": "2026-05-18T17:01:55Z",
+      "message": "Use thousand gridlines on monthly chart",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/382f1f121f6c8b858dce37f3dd0043370dec6734"
+    },
+    {
+      "sha": "0ba11e0",
+      "date": "2026-05-18T17:01:19Z",
+      "message": "Align monthly chart axes",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/0ba11e07a3aa82f7b75a4e88c9f6dc2b0d97d115"
+    },
+    {
+      "sha": "07dc342",
+      "date": "2026-05-18T16:44:25Z",
+      "message": "Reduce monthly chart axis labels",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/07dc342050bcab789e73273872ae76eb1a71e40f"
+    },
+    {
+      "sha": "9847b03",
+      "date": "2026-05-18T16:40:13Z",
+      "message": "Simplify monthly rhythm chart interaction",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/9847b031c73f1067bdb56f67294caccffcbc7e04"
+    },
+    {
+      "sha": "4a6359b",
+      "date": "2026-05-18T15:19:34Z",
+      "message": "Plot monthly spending against balance",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/4a6359b6e803a0134864536f3dac827d10712555"
+    },
+    {
+      "sha": "9547e02",
+      "date": "2026-05-18T15:15:29Z",
+      "message": "Refine monthly rhythm balance chart",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/9547e02899378b26842959ed5b53441484f9d1ef"
+    },
+    {
+      "sha": "5f21234",
+      "date": "2026-05-18T15:06:22Z",
+      "message": "Use line chart for monthly rhythm",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/5f212344f047ac3926704d182eddc2ea18bfc151"
+    },
+    {
+      "sha": "e6248a3",
+      "date": "2026-05-18T15:02:39Z",
+      "message": "Simplify monthly rhythm chart",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/e6248a364e0c5ad9da0e412c89f1e887ecb51969"
+    },
+    {
+      "sha": "5eb214d",
+      "date": "2026-05-18T14:52:58Z",
+      "message": "Add monthly rhythm charts",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/5eb214df7b3de0932ed0446408cc03371062c1e6"
+    },
+    {
+      "sha": "e952d5b",
+      "date": "2026-05-18T14:48:34Z",
+      "message": "Make rhythm cards actionable",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/e952d5be6c59d29a5c44ef4755f8f9919012e90c"
+    },
+    {
+      "sha": "8413735",
+      "date": "2026-05-18T14:40:45Z",
+      "message": "Clarify monthly rhythm calculations",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/8413735c1336e93468507b57627a360a9eda19d6"
+    },
+    {
+      "sha": "d6adff4",
+      "date": "2026-05-18T14:28:45Z",
+      "message": "Refine daily rhythm compact layout",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/d6adff4b46101aa61e49190b2ef79a906f2da87b"
+    },
+    {
+      "sha": "d50328c",
+      "date": "2026-05-18T14:23:28Z",
+      "message": "Refine daily rhythm card layout",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/d50328c6dcbba19441f4e10a84529722e5041efe"
+    },
+    {
+      "sha": "82dd9d9",
+      "date": "2026-05-18T14:01:56Z",
+      "message": "Match daily rhythm cards to dashboard style",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/82dd9d9704a1346b52302a7cb9db40e12bf5e1b2"
+    },
+    {
+      "sha": "2006a0d",
+      "date": "2026-05-18T13:09:58Z",
+      "message": "Redesign daily rhythm widgets",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/2006a0d985c08621e089b69f374a3227a9fa9cfb"
+    },
+    {
+      "sha": "128f618",
+      "date": "2026-05-18T13:06:42Z",
+      "message": "Revert \"Tune daily rhythm typography\"",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/128f618d904f2038af3f2d14e37e0ddddb7282f5"
+    },
+    {
+      "sha": "9b7664e",
+      "date": "2026-05-18T12:53:27Z",
+      "message": "Tune daily rhythm typography",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/9b7664efab62023d840388c073cee30c3bb1088a"
+    },
+    {
+      "sha": "a126487",
+      "date": "2026-05-18T12:50:15Z",
+      "message": "Refine daily rhythm footer",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/a12648727e10db61a251342c69120505e72895c9"
+    },
+    {
+      "sha": "fd7884e",
+      "date": "2026-05-18T12:09:53Z",
+      "message": "Highlight daily rhythm summary",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/fd7884e938994e20b5b02444687a36f26217b104"
+    },
+    {
+      "sha": "e8ee30d",
+      "date": "2026-05-18T12:00:28Z",
+      "message": "Split daily rhythm widgets",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/e8ee30dae77aa64c1a2dc36b9315b0df4a5e4a8d"
+    },
+    {
+      "sha": "540eea2",
+      "date": "2026-05-18T11:50:30Z",
+      "message": "Refine daily flow widget",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/540eea28bd433f977855e9f1f46309d167085932"
+    },
+    {
+      "sha": "5eaf2f5",
+      "date": "2026-05-17T14:43:25Z",
+      "message": "Update daily flow forecast math",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/5eaf2f51b62967b5a00253e5713582ac25ffce55"
+    },
+    {
+      "sha": "6627bf9",
+      "date": "2026-05-17T14:36:38Z",
+      "message": "Fix daily flow period controls",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/6627bf9d97bf40df8eaa9e9dc48250b6dd521e36"
+    },
+    {
+      "sha": "29f0609",
+      "date": "2026-05-17T14:30:25Z",
+      "message": "Merge pull request #2 from Jeffersonf/codex/daily-flow-widget",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/29f060942602a4639dbbca92814ba68adf1fc66f"
+    },
+    {
+      "sha": "c1cf354",
+      "date": "2026-05-17T14:24:31Z",
+      "message": "Add daily spending rhythm widget",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/c1cf354d5fd767c0614cf77be2b36bc2f3a179c5"
+    },
+    {
+      "sha": "6cffa8b",
+      "date": "2026-05-13T12:37:12Z",
+      "message": "Recupera sincronizacao Neon e importacao",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/6cffa8b94077ab694bc8c6b50ee9dde402535003"
+    },
+    {
+      "sha": "ee061a2",
+      "date": "2026-05-04T11:48:52Z",
+      "message": "Remove job Android Capacitor desatualizado",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/ee061a238f14c834303d46015e43ad975a665e35"
+    },
+    {
+      "sha": "8145444",
+      "date": "2026-05-04T11:48:13Z",
+      "message": "Ajusta CI Android ao repo versionado",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/81454448d91ee8e26669e10c91b5dac7737fbc84"
+    },
+    {
+      "sha": "63a4f09",
+      "date": "2026-05-04T11:45:49Z",
+      "message": "Atualiza Finanza web e Android",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/63a4f09e462585f0435115c07c8c654ee3cea7a4"
+    },
+    {
+      "sha": "5ed62e9",
+      "date": "2026-04-26T14:15:59Z",
+      "message": "docs: fechar fase 4.3.1 do Finanza",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/5ed62e99952fb991a5a4a62d4035e28351a160a1"
+    },
+    {
+      "sha": "a05b092",
+      "date": "2026-04-26T06:36:38Z",
+      "message": "update cartoes",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/a05b09218d4419be1384b6c45d7d24b56ae95dae"
+    },
+    {
+      "sha": "a1b54c6",
+      "date": "2026-04-26T06:05:05Z",
+      "message": "refactor: extract future module",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/a1b54c6a75810c5e1a76a030983923dc9ebea1a0"
+    },
+    {
+      "sha": "c6e40e5",
+      "date": "2026-04-26T05:54:30Z",
+      "message": "refactor: extract transactions module",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/c6e40e5fb7aefb80f4fbf8d550727162e4529bc9"
+    },
+    {
+      "sha": "0b51b82",
+      "date": "2026-04-26T05:50:27Z",
+      "message": "refactor: extract frontend bootstrap module",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/0b51b82a1adc87774bf910f50720c178a9432a6a"
+    },
+    {
+      "sha": "7203f74",
+      "date": "2026-04-26T05:43:41Z",
+      "message": "perf: speed up boot sync flow",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/7203f74c4d7c2712f2450959b2310388938accee"
+    },
+    {
+      "sha": "1d68ad6",
+      "date": "2026-04-26T05:41:36Z",
+      "message": "feat: refine dashboard shortcuts and fast cache boot",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/1d68ad66571a45f53caf0e9f927f74108ec0fb9f"
+    },
+    {
+      "sha": "7aa6555",
+      "date": "2026-04-26T05:32:12Z",
+      "message": "fix: restyle sidebar shortcut menu",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/7aa65555a52c56259222a41b32a3d0774df5af69"
+    },
+    {
+      "sha": "40f94f0",
+      "date": "2026-04-26T05:29:59Z",
+      "message": "fix: constrain sidebar shortcut menu sizing",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/40f94f07f3297db90574e1942c3f8173ec893aac"
+    },
+    {
+      "sha": "314ad49",
+      "date": "2026-04-26T02:01:45Z",
+      "message": "feat: refine dashboard hierarchy and sidebar shortcuts",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/314ad490e5632f5ac3dc5e67768ddc4f549af3df"
+    },
+    {
+      "sha": "44ebd22",
+      "date": "2026-04-26T01:08:36Z",
+      "message": "chore: align android v5 version with site",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/44ebd220cea56942896361daa55e8069dd7a1b00"
+    },
+    {
+      "sha": "f7ce0ba",
+      "date": "2026-04-26T01:06:45Z",
+      "message": "feat: add shared expenses, 2fa, and dashboard split",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/f7ce0ba309d204c543a55fcb76f0e1361d4d362e"
+    },
+    {
+      "sha": "8da3c62",
+      "date": "2026-04-25T14:46:48Z",
+      "message": "[codex] Separate admin panel from settings (#1)",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/8da3c624090577e4660fecb46e17489a098917b2"
+    },
+    {
+      "sha": "4760dd3",
+      "date": "2026-04-25T13:23:33Z",
+      "message": "feat: refine setup landing and transactions polish",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/4760dd37dd3b28711f3e0a5f3aef03d09b8549a9"
+    },
+    {
+      "sha": "ebecf61",
+      "date": "2026-04-23T15:29:18Z",
+      "message": "fix: expand import transaction workspace",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/ebecf61cd565924e8ae12ded358d946301b0a745"
+    },
+    {
+      "sha": "3a07fbc",
+      "date": "2026-04-23T15:23:14Z",
+      "message": "fix: refine import center dashboard controls",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/3a07fbc802fa2f178459e8515cacb447d23dfed6"
+    },
+    {
+      "sha": "1b605a5",
+      "date": "2026-04-23T15:13:23Z",
+      "message": "feat: add import shortcuts to dashboard",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/1b605a520a457856db618d5c097fabbf44866b02"
+    },
+    {
+      "sha": "5d762cb",
+      "date": "2026-04-23T15:03:34Z",
+      "message": "fix: surface 4.3 changelog on site",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/5d762cb5876359c34310a95045bc01622232dbff"
+    },
+    {
+      "sha": "5ac2707",
+      "date": "2026-04-23T14:47:02Z",
+      "message": "feat: finalize 4.3 import and reconciliation flows",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/5ac2707a27e87f1baa0d9f0056d22b7310002542"
+    },
+    {
+      "sha": "357e1af",
+      "date": "2026-04-23T14:43:36Z",
+      "message": "docs: update changelog for post-4.0 rounds",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/357e1afe535ad6cca4cda80d2a07d780a8c8ddcb"
+    },
+    {
+      "sha": "d579616",
+      "date": "2026-04-23T14:40:06Z",
+      "message": "feat: refocus dashboard on spending flow",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/d579616eee84f1fda66f0a3cb1b8989c0bf32726"
+    },
+    {
+      "sha": "2588f61",
+      "date": "2026-04-23T12:54:04Z",
+      "message": "fix: refine widget editor and car metrics",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/2588f61a6d840d52ba616924b0f83dc0e9764047"
+    },
+    {
+      "sha": "1959017",
+      "date": "2026-04-23T12:17:07Z",
+      "message": "feat: centralize data actions in settings",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/19590170ded9d3eb05b17cd9acd82e8cbbf60f2c"
+    },
+    {
+      "sha": "fd82ca7",
+      "date": "2026-04-23T11:57:48Z",
+      "message": "refactor: remove financial intelligence widget",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/fd82ca709e17047ef53ac912cef55d9c5b911ac7"
+    },
+    {
+      "sha": "59f4216",
+      "date": "2026-04-23T11:54:03Z",
+      "message": "perf: focus dashboard on spending flow",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/59f421623dca134d8f04b10afad1d0cfc7dc0ff7"
+    },
+    {
+      "sha": "00a6f6c",
+      "date": "2026-04-23T11:45:39Z",
+      "message": "feat: simplify dashboard widget controls",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/00a6f6ccd035f604c2d7b5cf5435aaeb6005364a"
+    },
+    {
+      "sha": "27b072d",
+      "date": "2026-04-23T03:19:25Z",
+      "message": "feat: close 4.2 financial intelligence",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/27b072d57db34d694493077afa3a5f227af26d9f"
+    },
+    {
+      "sha": "c1bf77e",
+      "date": "2026-04-23T03:14:31Z",
+      "message": "feat: close 4.1 frictionless usability",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/c1bf77e210620c392c1da985b157e609740196ba"
+    },
+    {
+      "sha": "99e40a5",
+      "date": "2026-04-23T03:03:44Z",
+      "message": "chore: advance 4.10 reliability roadmap",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/99e40a54a443e02956fd792c5c86816731ff5146"
+    },
+    {
+      "sha": "d658b62",
+      "date": "2026-04-23T02:47:03Z",
+      "message": "chore: add backup migrations and demo fixture",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/d658b6268385732b9107aafa6876760f59b298f2"
+    },
+    {
+      "sha": "51288cc",
+      "date": "2026-04-23T02:43:42Z",
+      "message": "chore: add fisiosaas import helper",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/51288cc63d57f86faecedee2efce18a9c8fa1efa"
+    },
+    {
+      "sha": "a58c651",
+      "date": "2026-04-23T02:41:09Z",
+      "message": "chore: define 4.10 reliability cycle",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/a58c6513cc486f1bc943bb6953d4556c66ed8321"
+    },
+    {
+      "sha": "ed48f9c",
+      "date": "2026-04-23T02:30:21Z",
+      "message": "test: cover transaction text parser",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/ed48f9c87f55b2416d145432ba03bc22a1126457"
+    },
+    {
+      "sha": "3e7849c",
+      "date": "2026-04-23T02:26:03Z",
+      "message": "feat: hide admin settings for regular users",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/3e7849c74646f2063d719541f4af863ef34bc5c4"
+    },
+    {
+      "sha": "aa35519",
+      "date": "2026-04-23T02:17:01Z",
+      "message": "feat: allow admin role updates",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/aa35519c7acb577c3cc1bc8d47adaa6ea02fab3f"
+    },
+    {
+      "sha": "b3b87c1",
+      "date": "2026-04-23T02:07:29Z",
+      "message": "feat: add admin user management",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/b3b87c138560ecd3578df64b6c9661697e5ce37a"
+    },
+    {
+      "sha": "14c6766",
+      "date": "2026-04-23T01:59:01Z",
+      "message": "feat: add persistent audit roles",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/14c6766abab63ef01e25de2d94853887682eb048"
+    },
+    {
+      "sha": "cb7cbb3",
+      "date": "2026-04-23T01:44:36Z",
+      "message": "feat: add roadmap docs and quick text entry",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/cb7cbb350fba89c5660de6a577fdb05fa5453eb8"
+    },
+    {
+      "sha": "8453a59",
+      "date": "2026-04-23T01:21:24Z",
+      "message": "fix: remove dashboard widget resizing",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/8453a590d490edd64032bd80f0df7a5df175e284"
+    },
+    {
+      "sha": "e5839d3",
+      "date": "2026-04-22T23:07:24Z",
+      "message": "feat: improve dashboard widget controls",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/e5839d30dd630f829470932fbb288477cee8e9d3"
+    },
+    {
+      "sha": "d1c8358",
+      "date": "2026-04-22T22:54:40Z",
+      "message": "style: refine mobile layout",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/d1c8358ff987983288fd084ac99837047863ffd3"
+    },
+    {
+      "sha": "00effcf",
+      "date": "2026-04-22T22:35:28Z",
+      "message": "style: make sync status notification subtle",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/00effcfc611918ee2c443883504b649a93ddfb52"
+    },
+    {
+      "sha": "c81c0ec",
+      "date": "2026-04-22T22:33:01Z",
+      "message": "feat: close roadmap and improve usability",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/c81c0ecb76ad1c80670749768b4016e3ce8bc990"
+    },
+    {
+      "sha": "41404d2",
+      "date": "2026-04-22T21:31:23Z",
+      "message": "feat: expand 4.0 search and maintenance insights",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/41404d2d7e260d5f025dc6b85b5fcf91815df577"
+    },
+    {
+      "sha": "e60ed53",
+      "date": "2026-04-22T21:26:04Z",
+      "message": "feat: expand 4.0 planning and car insights",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/e60ed5343964fa6160dc65dd6847d21d6372c69f"
+    },
+    {
+      "sha": "82672f1",
+      "date": "2026-04-22T21:21:34Z",
+      "message": "feat: add 4.0 data safety and import controls",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/82672f187261f33003c99c043b706560dc8b9cb0"
+    },
+    {
+      "sha": "a00b76c",
+      "date": "2026-04-22T21:13:45Z",
+      "message": "chore: mark 3.9 final and plan 4.0 roadmap",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/a00b76c3a8632112297bff5bf843d7d51a4d4d51"
+    },
+    {
+      "sha": "2206959",
+      "date": "2026-04-22T21:02:27Z",
+      "message": "feat: enrich car insights and charts",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/2206959bae62f1478c5886556f8a16b539b05529"
+    },
+    {
+      "sha": "99d02d9",
+      "date": "2026-04-22T20:54:30Z",
+      "message": "fix: prevent duplicate car csv imports",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/99d02d9c03e3d53b81a2334d66b62e732049a5b1"
+    },
+    {
+      "sha": "82adda3",
+      "date": "2026-04-22T20:47:50Z",
+      "message": "fix: persist car settings without hiding history",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/82adda3e5ebd76cef841da811f2827145f4cd75b"
+    },
+    {
+      "sha": "c2f930b",
+      "date": "2026-04-22T20:40:50Z",
+      "message": "feat: expand car tracker filters and vehicles",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/c2f930b2e7a0cd4793494bb4fd04a9b6b228aa48"
+    },
+    {
+      "sha": "ad79ff5",
+      "date": "2026-04-22T20:01:53Z",
+      "message": "fix: parse drivvo csv sections",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/ad79ff5ae402320acd6b9a7a7d0207f06a9edc5e"
+    },
+    {
+      "sha": "44bf7ff",
+      "date": "2026-04-22T19:52:42Z",
+      "message": "fix: keep drivvo imports out of transactions by default",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/44bf7ff0494b0782c36653e354bbf871e80d451e"
+    },
+    {
+      "sha": "3c53bc9",
+      "date": "2026-04-22T19:50:21Z",
+      "message": "feat: add car tracking and drivvo csv import",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/3c53bc98e35c12628e4f31f976997c1caa777708"
+    },
+    {
+      "sha": "bd70cc4",
+      "date": "2026-04-22T18:17:55Z",
+      "message": "feat: polish finanza v4 design and android widgets",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/bd70cc4a6992193a421360771beb6e992f8e16cd"
+    },
+    {
+      "sha": "8111da0",
+      "date": "2026-04-20T18:16:31Z",
+      "message": "ocultar valores",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/8111da02778fea33c9724735a27494aa276f05a0"
+    },
+    {
+      "sha": "152f02f",
+      "date": "2026-04-20T14:25:26Z",
+      "message": "v3.9.5",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/152f02fda72258fe0dfbcbd30288c32edd925387"
+    },
+    {
+      "sha": "0d5643a",
+      "date": "2026-04-19T23:06:53Z",
+      "message": "v3.9.1",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/0d5643a7d523d2063fdeb7d133ae7b9dabbb3216"
+    },
+    {
+      "sha": "43e2b12",
+      "date": "2026-04-19T21:38:38Z",
+      "message": "Corrige cores das categorias e reduz animacoes",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/43e2b1228ba73a6db5daa03858b0d3c6bd80e4ab"
+    },
+    {
+      "sha": "792bb78",
+      "date": "2026-04-19T21:35:24Z",
+      "message": "Adiciona foto de perfil",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/792bb78125158b12f8f3303297cdde9e3163f5c7"
+    },
+    {
+      "sha": "3ad11ea",
+      "date": "2026-04-19T21:29:29Z",
+      "message": "Ajusta login cadastro recuperacao e layout",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/3ad11ea8461f702caa74a8f1818cf209294c4da0"
+    },
+    {
+      "sha": "788ec58",
+      "date": "2026-04-19T21:12:39Z",
+      "message": "Troca login por usuario e senha",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/788ec58db01b2976c62e21462c78badcd14d9978"
+    },
+    {
+      "sha": "b198a93",
+      "date": "2026-04-19T20:39:33Z",
+      "message": "Corrige deploy do GitHub Pages",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/b198a93fa6166e4a95b9ad38b8cd604f61d5ee13"
+    },
+    {
+      "sha": "af24f5c",
+      "date": "2026-04-19T20:34:08Z",
+      "message": "Atualiza persistencia Supabase",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/af24f5cc90c152396e015762b5f0c6568cf32198"
+    },
+    {
+      "sha": "ab11abc",
+      "date": "2026-04-19T11:51:39Z",
+      "message": "feat: light theme fix, visual effects, new widgets, shopping dash, remove auto backup",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/ab11abc6da7b9cb9255ce97a12f3a859430cbec1"
+    },
+    {
+      "sha": "8f69276",
+      "date": "2026-04-19T03:41:57Z",
+      "message": "android e removido adicao rapida",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/8f69276fa6cb65bca4715718f08dab196808f6bd"
+    },
+    {
+      "sha": "ac3c265",
+      "date": "2026-04-18T22:24:52Z",
+      "message": "lista de compras e notificacoes persistentes",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/ac3c265c0306f6b8b13e8548ce3ea336b41faad4"
+    },
+    {
+      "sha": "0bc4382",
+      "date": "2026-04-18T17:40:05Z",
+      "message": "feat: widget system dashboard, layout fix, mini stats, goals/budget widgets",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/0bc4382940a5514b049957e1e7b6522a82ca3693"
+    },
+    {
+      "sha": "c2758bd",
+      "date": "2026-04-18T04:54:21Z",
+      "message": "feat: auto backup, conn indicator, month compare, projection, budget alerts, inline edit",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/c2758bdd9aea68c5f119760dd0a9d1d48bb11ef4"
+    },
+    {
+      "sha": "190088e",
+      "date": "2026-04-15T17:47:14Z",
+      "message": "fix: export UTF-8 robusto, emojis preservados, importar normalizado",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/190088e739889d73639d2bf04143fa5a70d2080e"
+    },
+    {
+      "sha": "ed58e94",
+      "date": "2026-04-14T19:48:49Z",
+      "message": "rollback pro render 3",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/ed58e942e1b4aed93e1660ecde3cadc8d44490a9"
+    },
+    {
+      "sha": "bdce878",
+      "date": "2026-04-14T19:44:57Z",
+      "message": "rollback pro render 2",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/bdce878382cd2d614c92b66a73ccc5c381cabd1b"
+    },
+    {
+      "sha": "cbb7bd5",
+      "date": "2026-04-14T19:41:07Z",
+      "message": "rollback pro render",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/cbb7bd57ef9c4e07463370f3e8665680812f2d54"
+    },
+    {
+      "sha": "4e2afea",
+      "date": "2026-04-10T14:10:32Z",
+      "message": "v3: beta 2",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/4e2afea11a947d1f6f0d6bf8398f448a715ffc62"
+    },
+    {
+      "sha": "866e76a",
+      "date": "2026-04-09T17:22:36Z",
+      "message": "v3: multi-user backend, WebView fixes, Supabase ready",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/866e76a648d534789dba6c029cb73078a1570770"
+    },
+    {
+      "sha": "2baea81",
+      "date": "2026-04-08T19:04:13Z",
+      "message": "v4 final: overflow fix, fonts, logo, android prep",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/2baea81982b783b8e4b08aeaaee2c5fe88ce68ee"
+    },
+    {
+      "sha": "6842a2d",
+      "date": "2026-04-08T14:57:59Z",
+      "message": "fix: layout cutoff, font readability, qa-wrap position",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/6842a2d913ee91904d9dd0c3dd69f12fba11eb00"
+    },
+    {
+      "sha": "e012c51",
+      "date": "2026-04-08T14:39:10Z",
+      "message": "feat: v4 beta - glassmorphism, floating pill nav, gradient accents",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/e012c512b64b6723bd6fdf69ebfc18923faa5ca2"
+    },
+    {
+      "sha": "cdd4483",
+      "date": "2026-04-05T19:24:47Z",
+      "message": "fix: corrige JS cortado no financas.html v3",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/cdd4483717126f89496c5aa54e64c424b44211a9"
+    },
+    {
+      "sha": "e929928",
+      "date": "2026-04-05T19:02:59Z",
+      "message": "fix: corrige JS cortado no financas.html v3",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/e929928b4911abc832f9db7ea644b8d842d0e3fe"
+    },
+    {
+      "sha": "3719f18",
+      "date": "2026-04-05T13:20:26Z",
+      "message": "feat: finanza v3 - quick add, busca global, categorias custom, calendário, multi-usuário",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/3719f18635d18c62afb240c92797bb1b5a6b9d06"
+    },
+    {
+      "sha": "5fd2550",
+      "date": "2026-04-04T22:41:56Z",
+      "message": "feat: multi-usuario, conta local, modo online/offline",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/5fd255011ce09bad186083e90d70f9f704beec33"
+    },
+    {
+      "sha": "85ce3e9",
+      "date": "2026-04-04T00:54:20Z",
+      "message": "feat: pull-to-refresh, back handler, favicon, settings page",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/85ce3e9a518f57c1faad731d3a877068ab6ba4fb"
+    },
+    {
+      "sha": "09e1435",
+      "date": "2026-04-03T12:54:37Z",
+      "message": "feat: contas, recorrência, exportar, tema claro/escuro",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/09e143556a8461cef72d0c896b5c11eea27ecb55"
+    },
+    {
+      "sha": "c5457d7",
+      "date": "2026-04-03T03:02:46Z",
+      "message": "feat: a receber, saldo futuro, fix modal drag",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/c5457d75144d6ad3da919c4c9d45d5a46a595cb8"
+    },
+    {
+      "sha": "7b9b73b",
+      "date": "2026-04-03T02:54:34Z",
+      "message": "feat: parcelas, gastos futuros, filtros, mobile, fix modal",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/7b9b73b0a7a7bddd482ecac01a722dfbd933cd38"
+    },
+    {
+      "sha": "aef38fc",
+      "date": "2026-04-02T19:28:31Z",
+      "message": "feat: parcelamento, gastos futuros e filtros de período",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/aef38fc548db6c3a13d99abba57f9a87afcc8b93"
+    },
+    {
+      "sha": "549fb2f",
+      "date": "2026-04-02T19:25:11Z",
+      "message": "fix: corrigir deploy do GitHub Pages",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/549fb2fdb96d4d376d78c93559c0504fe3fa2dc7"
+    },
+    {
+      "sha": "8e1c40f",
+      "date": "2026-04-02T12:18:04Z",
+      "message": "primeiro commit: finanza app",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finanza/commit/8e1c40f1b2591fe70f9f87cba5f0bd88139f88a2"
+    }
+  ]
+}

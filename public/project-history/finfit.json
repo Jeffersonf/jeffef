@@ -1,0 +1,356 @@
+{
+  "id": "finfit",
+  "total": 50,
+  "commits": [
+    {
+      "sha": "57bf110",
+      "date": "2026-05-18T15:03:45Z",
+      "message": "Polish weekly plan and restore nav presence",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/57bf110234233ed882d73f43d6be648e4a28c730"
+    },
+    {
+      "sha": "43ce61b",
+      "date": "2026-05-18T14:50:54Z",
+      "message": "Strengthen dark sports identity",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/43ce61b1e02b8eb4747853e3a9f3ad79b7e7c1de"
+    },
+    {
+      "sha": "94fe3db",
+      "date": "2026-05-18T14:45:24Z",
+      "message": "Harden sports UI and add weekly check table",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/94fe3dbd04c4630fc3c9b1252bfd9bf7d23a9036"
+    },
+    {
+      "sha": "7ac1ebf",
+      "date": "2026-05-18T14:29:32Z",
+      "message": "Split catalogs and fix purple theme",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/7ac1ebf58180ef190511e17905f3a77e57043491"
+    },
+    {
+      "sha": "0255b9b",
+      "date": "2026-05-18T14:20:57Z",
+      "message": "Make black theme the default",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/0255b9b7c9ea893de52cd070b7b29260619dae11"
+    },
+    {
+      "sha": "a20bc8f",
+      "date": "2026-05-18T14:12:25Z",
+      "message": "Refactor sports UI and restore XP",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/a20bc8fca6c7da91adee254c4144d4ed8caadb80"
+    },
+    {
+      "sha": "eb3957a",
+      "date": "2026-05-18T14:05:23Z",
+      "message": "Move dashboard toward Strava style",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/eb3957a0041092022533b79db1bcfb3ff9ec4c95"
+    },
+    {
+      "sha": "3566bbc",
+      "date": "2026-05-18T13:09:31Z",
+      "message": "Soften app typography",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/3566bbc4afb8a5df6438730ca1069c5f46008697"
+    },
+    {
+      "sha": "739107f",
+      "date": "2026-05-18T12:46:24Z",
+      "message": "Add XP page and calm typography",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/739107f398b5eed1c5e6c6e210dcd73732c46b79"
+    },
+    {
+      "sha": "c20fa08",
+      "date": "2026-05-18T12:11:54Z",
+      "message": "Lighten home and fix refresh caching",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/c20fa0892dd649dbe674700e47ce26fc0420a465"
+    },
+    {
+      "sha": "194c948",
+      "date": "2026-05-18T11:43:48Z",
+      "message": "Switch to native fitness app visual",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/194c9484d8fdc938fd72bfb6c7d2d30017e71e77"
+    },
+    {
+      "sha": "2579a8a",
+      "date": "2026-05-18T02:55:55Z",
+      "message": "Force visible editorial redesign",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/2579a8a7df76560ee4114b732d18e540347bae16"
+    },
+    {
+      "sha": "8273d84",
+      "date": "2026-05-18T02:47:20Z",
+      "message": "Rebuild visual direction away from Discord",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/8273d843f37a30763a2f5d9f44446c2bf75a1ddf"
+    },
+    {
+      "sha": "0716582",
+      "date": "2026-05-18T02:38:59Z",
+      "message": "Add athlete mission layer",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/0716582d69e0cd292d73f13146349e8d9c0b8559"
+    },
+    {
+      "sha": "e58ca15",
+      "date": "2026-05-18T02:32:44Z",
+      "message": "Soften sports typography",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/e58ca15edd18fb1e7856d7579e627383272299b2"
+    },
+    {
+      "sha": "b1dc386",
+      "date": "2026-05-17T14:42:01Z",
+      "message": "Add athlete log visual direction",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/b1dc386b7fde9a96accc3a4a18a4874a87fb336e"
+    },
+    {
+      "sha": "1ac80e1",
+      "date": "2026-05-17T14:32:44Z",
+      "message": "Shift UI toward sports tracker style",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/1ac80e1e026b0a795826fbf1aaf782891af723c2"
+    },
+    {
+      "sha": "3ed2ffb",
+      "date": "2026-05-17T14:27:14Z",
+      "message": "Refactor visual system and lighten CSS",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/3ed2ffb7378d4d6f730b61a77dd7ca45667da9fc"
+    },
+    {
+      "sha": "e628a7d",
+      "date": "2026-05-17T14:17:44Z",
+      "message": "Redesign Finfit sport experience",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/e628a7d8b40c4d0891f0d49bdd1ad8097483ebbb"
+    },
+    {
+      "sha": "5fc3b88",
+      "date": "2026-05-17T14:10:09Z",
+      "message": "Add sport UI dashboard pass",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/5fc3b882aa572da8c2ce987b71f0c657db6501a3"
+    },
+    {
+      "sha": "59ba6bf",
+      "date": "2026-05-17T13:49:53Z",
+      "message": "Deepen strength and running contexts",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/59ba6bf04d0850f82df332257452f48b042d1203"
+    },
+    {
+      "sha": "37abeaf",
+      "date": "2026-05-17T01:53:48Z",
+      "message": "Add private feed and sport insights",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/37abeaf7e61a4623b1a87ae56d4969b02f1b7946"
+    },
+    {
+      "sha": "9f922d2",
+      "date": "2026-05-17T01:43:16Z",
+      "message": "Add helpful daily analysis",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/9f922d296bdf581beefe80091d47b2ab75a9ebf7"
+    },
+    {
+      "sha": "3454942",
+      "date": "2026-05-17T01:14:32Z",
+      "message": "Finish daily quick actions",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/3454942d979a8c3d793fe3ea0e6b865d23fe7e49"
+    },
+    {
+      "sha": "230a0e0",
+      "date": "2026-05-17T00:55:02Z",
+      "message": "Add daily food and body check-ins",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/230a0e0e07ffc6166e26d2862bef98b4ddc58cf8"
+    },
+    {
+      "sha": "dc62dfb",
+      "date": "2026-05-17T00:49:24Z",
+      "message": "Complete daily dashboard flow",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/dc62dfb8c532162acc0f08225bd36f4ded73b983"
+    },
+    {
+      "sha": "596ee62",
+      "date": "2026-05-17T00:45:43Z",
+      "message": "Add master product plan",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/596ee629999e53c6eeaee6752bba886d369a4bfe"
+    },
+    {
+      "sha": "1e92f9b",
+      "date": "2026-05-17T00:33:27Z",
+      "message": "Prioritize daily dashboard and plan Strava sync",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/1e92f9b49c8304f3f5f3faf5d4acf36a35c4113c"
+    },
+    {
+      "sha": "4bec0c0",
+      "date": "2026-05-17T00:12:28Z",
+      "message": "Add dashboard daily check panel",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/4bec0c0cbee28488510e66e18e05ad7870844f1a"
+    },
+    {
+      "sha": "c821c5e",
+      "date": "2026-05-16T23:33:55Z",
+      "message": "Calm visual hierarchy",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/c821c5e39dcf3f45b6d76f7dad32f335a1f93626"
+    },
+    {
+      "sha": "c7a12df",
+      "date": "2026-05-16T23:32:01Z",
+      "message": "Simplify sidebar navigation",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/c7a12df416ca32a4ab244c43a19fc81d6475bb26"
+    },
+    {
+      "sha": "a7faf0e",
+      "date": "2026-05-16T23:27:13Z",
+      "message": "Fix sidebar layout",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/a7faf0e679ad9306e2a25e69e4fcff85959b0ecb"
+    },
+    {
+      "sha": "7c9580b",
+      "date": "2026-05-16T22:38:01Z",
+      "message": "Add nutrition diary and activity contexts",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/7c9580b3f1ac816887555146e8cb3e3dc3110a95"
+    },
+    {
+      "sha": "0ad5a59",
+      "date": "2026-05-16T21:18:33Z",
+      "message": "Refine visual polish",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/0ad5a59cfa37c4a0690c039a101198626388b842"
+    },
+    {
+      "sha": "5f7a4b8",
+      "date": "2026-05-15T19:13:07Z",
+      "message": "Add reports cleanup templates and PWA status",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/5f7a4b81d981e6ea9950f84980b29d3e27ed5b68"
+    },
+    {
+      "sha": "3763d15",
+      "date": "2026-05-15T18:25:56Z",
+      "message": "Add sport engines and durable restore",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/3763d1519ff23c7e042bd4e51666b82993b820b1"
+    },
+    {
+      "sha": "28cf002",
+      "date": "2026-05-15T18:21:35Z",
+      "message": "Add weekly coach actions",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/28cf002cf4798a0217c9f6c785ea31a696928f2a"
+    },
+    {
+      "sha": "0bdd7c4",
+      "date": "2026-05-15T18:16:53Z",
+      "message": "Add activity modality hub",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/0bdd7c4e3072d7f9f7d0b4bb10167e153c8d556f"
+    },
+    {
+      "sha": "3f66df2",
+      "date": "2026-05-15T18:10:02Z",
+      "message": "Add visible activity focus filter",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/3f66df21b6d829c297e27b4f42cd3993e414b010"
+    },
+    {
+      "sha": "604168b",
+      "date": "2026-05-15T18:03:10Z",
+      "message": "Add Pages static marker",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/604168b0509bbe5f86e03ccf9373db645c7dc55d"
+    },
+    {
+      "sha": "21061b8",
+      "date": "2026-05-15T18:00:39Z",
+      "message": "Add private running coach and route lab",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/21061b8a766f76ca32f80dbdbc046188c019fc20"
+    },
+    {
+      "sha": "80b46f6",
+      "date": "2026-05-15T17:50:09Z",
+      "message": "Release Finfit 1.0.0",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/80b46f6c2ea84e0fe4f55f5223bc5e1b465b4465"
+    },
+    {
+      "sha": "c121945",
+      "date": "2026-05-15T16:02:58Z",
+      "message": "Add seasons body context and TCX import",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/c12194527f4864636d5f7a28d7d19c12f1f93a2f"
+    },
+    {
+      "sha": "c3560bc",
+      "date": "2026-05-15T15:41:17Z",
+      "message": "Add PWA offline mode and workout timer",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/c3560bc5e3f9f20e68cc59253f733e8c352a0630"
+    },
+    {
+      "sha": "c7e10b7",
+      "date": "2026-05-15T15:33:46Z",
+      "message": "Add progress analytics and structured workout details",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/c7e10b7a5e4c73b814e73b2140c4cf47d4fd9734"
+    },
+    {
+      "sha": "2f7ce40",
+      "date": "2026-05-15T14:05:28Z",
+      "message": "Build local-first Finfit roadmap features",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/2f7ce40c1eea58be548dfefecf59d713a890084e"
+    },
+    {
+      "sha": "9a66d02",
+      "date": "2026-05-15T13:55:28Z",
+      "message": "Add data import workflow and expanded roadmap",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/9a66d024499f3c1284848b4e6c3f5a1ea2e85645"
+    },
+    {
+      "sha": "a995c3f",
+      "date": "2026-05-15T13:52:50Z",
+      "message": "Add quick multi-sport workout capture",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/a995c3fcfeb70d827f617a2dbab2865e0cc2289a"
+    },
+    {
+      "sha": "263f067",
+      "date": "2026-05-15T13:49:51Z",
+      "message": "Align Finfit visual language with Finanza",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/263f067180812ba85ca09e6ef69d5009640d5e18"
+    },
+    {
+      "sha": "bda29dc",
+      "date": "2026-05-15T13:46:44Z",
+      "message": "Initial Finfit roadmap and prototype",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finfit/commit/bda29dc2cb0f364ae14833dc7156582dfbb7835d"
+    }
+  ]
+}

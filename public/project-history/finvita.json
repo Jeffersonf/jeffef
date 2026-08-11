@@ -1,0 +1,62 @@
+{
+  "id": "finvita",
+  "total": 8,
+  "commits": [
+    {
+      "sha": "183d33d",
+      "date": "2026-04-26T15:51:20Z",
+      "message": "feat: consolidar frontend e backend do finvita",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finvita/commit/183d33dffd811a43dda768a94ad28308616d8ab4"
+    },
+    {
+      "sha": "347f85d",
+      "date": "2026-04-26T01:03:02Z",
+      "message": "chore: add app shell and android project",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finvita/commit/347f85d015e02a9fcc39919e0bb57186b8980786"
+    },
+    {
+      "sha": "c1be7c3",
+      "date": "2026-04-26T01:02:11Z",
+      "message": "feat: refine dashboard widgets and themes",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finvita/commit/c1be7c3236fcfc02f0fa3dfa55332fd95540b3a8"
+    },
+    {
+      "sha": "d5a81fa",
+      "date": "2026-04-26T00:22:44Z",
+      "message": "feat: improve landing typography spacing",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finvita/commit/d5a81fa3737cf61f45e151c7287bb84b5ab1cf00"
+    },
+    {
+      "sha": "bf09316",
+      "date": "2026-04-25T15:19:29Z",
+      "message": "Refina dashboard visuals and roadmap",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finvita/commit/bf093168a96544413f092fca43922f3119495009"
+    },
+    {
+      "sha": "cbb9a0f",
+      "date": "2026-04-23T21:11:25Z",
+      "message": "Build first functional Finvita dashboard",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finvita/commit/cbb9a0fdcfce661ec8dee3d343e875f3873c90fa"
+    },
+    {
+      "sha": "ff6244c",
+      "date": "2026-04-23T20:38:46Z",
+      "message": "Expand landing with interactive product sections",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finvita/commit/ff6244c384377f87f8578592efeddd01a60679ed"
+    },
+    {
+      "sha": "716f2a3",
+      "date": "2026-04-23T20:33:56Z",
+      "message": "Initial Finvita landing page",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/finvita/commit/716f2a3abeb296fdabec10a7db37503c66633ca2"
+    }
+  ]
+}

@@ -25,3 +25,29 @@ export const projectDetails = {
 } as const;
 
 export type ProjectId = keyof typeof projectDetails;
+
+export const projectRoadmaps: Record<ProjectId, string[]> = {
+  finanza:['Consolidar a experiência mobile','Refinar importações e relatórios','Ampliar testes e automações'],
+  finanzav3:['Catalogar o que ainda vale migrar','Arquivar fluxos substituídos','Manter apenas correções essenciais'],
+  finfit:['Definir o MVP','Criar rotina de treinos','Adicionar histórico e evolução'],
+  finvita:['Unificar os fluxos principais','Melhorar a experiência mobile','Preparar uma versão estável'],
+  painelure2:['Aprimorar indicadores','Simplificar rotinas recorrentes','Documentar operações críticas'],
+  setechub:['Consolidar módulos prioritários','Revisar a migração de dados','Publicar a primeira versão estável'],
+  bandamarcial:['Definir identidade e conteúdo','Construir páginas principais','Publicar a primeira versão'],
+  arena:['Fechar o fluxo de pagamentos','Melhorar comunicação com alunos','Preparar implantação'],
+  jeffef:['Evoluir a área de projetos','Ampliar o arquivo de notas','Refinar a publicação pelo CMS'],
+  'finanza-next':['Consolidar módulos Android','Unificar dados com o Finanza','Preparar distribuição estável'],
+  'finanza-android':['Concluir paridade com a versão web','Integrar sincronização','Gerar versão de distribuição'],
+  nexttrip:['Conectar dados persistentes','Completar roteiro e despesas','Preparar primeira versão instalável'],
+  fisiosaas:['Alinhar nome e domínio do produto','Consolidar o fluxo principal','Preparar implantação'],
+  'automacao-confirmacao':['Documentar execução','Adicionar tratamento de falhas','Versionar no GitHub'],
+  'robo-sam':['Revisar o fluxo atual','Documentar configuração','Criar repositório próprio'],
+  odysseus:['Definir objetivo de uso','Registrar alterações próprias','Decidir entre fork ou referência'],
+  sisteminha:['Documentar a proposta','Revisar dependências','Decidir se será retomado'],
+  'agua-poke':['Adicionar documentação','Revisar funcionamento atual','Manter como arquivo ou retomar'],
+  portfolio:['Preservar como referência','Migrar conteúdo relevante','Direcionar para o jeffef.dev'],
+  'cadastro-time':['Documentar o exercício','Revisar acessibilidade','Arquivar ou incorporar ideias'],
+  'formulario-cadastro':['Revisar validações','Adicionar estilos e acessibilidade','Manter como referência'],
+  'python-alura':['Organizar por curso','Adicionar índice de conteúdos','Registrar aprendizados principais'],
+  forgottenserver:['Manter como arquivo histórico','Documentar o contexto','Sem desenvolvimento ativo previsto']
+};

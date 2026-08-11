@@ -1,13 +1,15 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { projectDetails } from '../../lib/project-details';
+import { projectDetails, projectRoadmaps } from '../../lib/project-details';
 
 export function getStaticPaths() {
-  return Object.entries(projectDetails).map(([id, project]) => ({ params: { id }, props: { project } }));
+  return Object.entries(projectDetails).map(([id, project]) => ({ params: { id }, props: { project, id } }));
 }
 
-const { project } = Astro.props;
+const { project, id } = Astro.props;
 const vscodeUrl = project.pc ? `vscode://file/${project.pc.replaceAll('\\', '/')}` : null;
+const roadmaps: Record<string, string[]> = projectRoadmaps;
+const roadmap = roadmaps[id] ?? [];
 ---
 <BaseLayout title={`${project.name} — projetos`} description={project.summary}>
   <main class="project-page">
@@ -18,11 +20,20 @@ const vscodeUrl = project.pc ? `vscode://file/${project.pc.replaceAll('\\', '/')
         <time datetime={project.iso}><span>última modificação</span><strong>{project.date}</strong></time>
       </header>
       <section class="project-last-change"><span>última entrega</span><h2>{project.change}</h2></section>
+      <section class="project-roadmap-full">
+        <p class="project-profile-label">Roadmap completo</p>
+        <ol>{roadmap.map((item:string, index:number) => <li><span>{String(index + 1).padStart(2,'0')}</span><p>{item}</p></li>)}</ol>
+      </section>
       <div class="project-profile-grid">
         <section><p class="project-profile-label">Tecnologias</p><div class="project-tech">{project.tech.map((item:string) => <span>{item}</span>)}</div></section>
         <section><p class="project-profile-label">Acesso</p><div class="project-links">{vscodeUrl && <a href={vscodeUrl}>▣ abrir no VS Code</a>}{project.github && <a href={project.github} target="_blank" rel="noreferrer">↗ abrir GitHub</a>}{!vscodeUrl && !project.github && <span class="link-disabled">Sem acesso configurado</span>}</div></section>
       </div>
       {project.pc && <section class="project-path"><p class="project-profile-label">Pasta local</p><code>{project.pc}</code><button type="button" data-copy-path={project.pc}>copiar caminho</button></section>}
+      <section class="project-history" data-history data-project-id={id}>
+        <div class="project-history-head"><div><p class="project-profile-label">Histórico completo</p><h2>Desde o primeiro commit</h2></div><strong data-history-count>carregando…</strong></div>
+        <div class="commit-list" data-commit-list aria-live="polite"></div>
+        <button class="history-more" type="button" data-history-more hidden>carregar mais</button>
+      </section>
     </article>
   </main>
   <script is:inline>
@@ -31,5 +42,26 @@ const vscodeUrl = project.pc ? `vscode://file/${project.pc.replaceAll('\\', '/')
       await navigator.clipboard.writeText(button.dataset.copyPath);
       button.textContent = 'copiado';
     });
+    const history = document.querySelector('[data-history]');
+    if (history) {
+      const id = history.dataset.projectId;
+      const list = history.querySelector('[data-commit-list]');
+      const count = history.querySelector('[data-history-count]');
+      const more = history.querySelector('[data-history-more]');
+      let commits = [], shown = 0;
+      const renderBatch = () => {
+        commits.slice(shown, shown + 25).forEach(commit => {
+          const item = document.createElement('article'); item.className = 'commit-item';
+          const date = new Date(commit.date).toLocaleDateString('pt-BR');
+          item.innerHTML = `<time datetime="${commit.date}">${date}</time><div><h3></h3><p>${commit.author} · ${commit.sha || 'local'}</p></div>`;
+          item.querySelector('h3').textContent = commit.message;
+          if (commit.url) { const link = document.createElement('a'); link.href = commit.url; link.target = '_blank'; link.rel = 'noreferrer'; link.textContent = '↗'; item.append(link); }
+          list.append(item);
+        });
+        shown = Math.min(shown + 25, commits.length); more.hidden = shown >= commits.length;
+      };
+      fetch(`/jeffef/project-history/${id}.json`).then(response => response.json()).then(data => { commits = data.commits; count.textContent = `${data.total} registros`; renderBatch(); }).catch(() => { count.textContent = 'histórico indisponível'; });
+      more.addEventListener('click', renderBatch);
+    }
   </script>
 </BaseLayout>

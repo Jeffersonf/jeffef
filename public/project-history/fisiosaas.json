@@ -1,0 +1,244 @@
+{
+  "id": "fisiosaas",
+  "total": 34,
+  "commits": [
+    {
+      "sha": "6410763",
+      "date": "2026-04-24T02:44:10Z",
+      "message": "feat: align clinical list system",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/FisioSaaS/commit/6410763349c180f68199b1a65932af09af8029fe"
+    },
+    {
+      "sha": "24d7c4c",
+      "date": "2026-04-24T02:14:33Z",
+      "message": "fix: normalize finanza shell surfaces",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/FisioSaaS/commit/24d7c4c9412a4cb4d42e3e37e43deeacf3d21e0a"
+    },
+    {
+      "sha": "c86b807",
+      "date": "2026-04-24T01:58:29Z",
+      "message": "fix: align node admin dark list layouts",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/FisioSaaS/commit/c86b807769a82bc3e084b647e843e44d3a35d842"
+    },
+    {
+      "sha": "9fc7720",
+      "date": "2026-04-24T01:45:00Z",
+      "message": "fix: flatten dark sidebar active states",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/FisioSaaS/commit/9fc77202b62d68be7a3e5e8e50be57fa8f350830"
+    },
+    {
+      "sha": "e880468",
+      "date": "2026-04-24T01:33:22Z",
+      "message": "fix: remove dark theme gradients",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/FisioSaaS/commit/e8804680e5402a27f1aecb71448fd160a0c9e41b"
+    },
+    {
+      "sha": "e981d13",
+      "date": "2026-04-24T01:29:15Z",
+      "message": "fix: copy finanza dark shell styling",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/FisioSaaS/commit/e981d1340d1278f19d8c10f34324686c4e11ef9a"
+    },
+    {
+      "sha": "87dc067",
+      "date": "2026-04-24T01:23:29Z",
+      "message": "fix: calm finanza dark theme gradients",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/FisioSaaS/commit/87dc0672928e3330f3eaf70b69110370f05a5a56"
+    },
+    {
+      "sha": "4c738f3",
+      "date": "2026-04-24T01:14:16Z",
+      "message": "feat: align finclinica with finanza visual system",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/FisioSaaS/commit/4c738f30c9978c2d3df06161492433118dee6d42"
+    },
+    {
+      "sha": "fac198a",
+      "date": "2026-04-24T01:01:37Z",
+      "message": "feat: consolidate modern admin shell",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/FisioSaaS/commit/fac198a44ce649f6af16dcb0e6e9e8607691ba29"
+    },
+    {
+      "sha": "ef656ce",
+      "date": "2026-04-24T00:17:52Z",
+      "message": "feat: align finclinica themes with legacy shell",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/FisioSaaS/commit/ef656ce43644c9818db84327a5383a72aa392a00"
+    },
+    {
+      "sha": "d6f54de",
+      "date": "2026-04-23T19:10:20Z",
+      "message": "feat: add node clinical admin workspace",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/FisioSaaS/commit/d6f54de69833e2066ce565e41c11abc90c9e5dc5"
+    },
+    {
+      "sha": "6629561",
+      "date": "2026-04-23T03:26:27Z",
+      "message": "perf: reduce admin motion and density",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/FisioSaaS/commit/66295618a82dc685764bef9b3c0ea78fb9f4c596"
+    },
+    {
+      "sha": "a75c899",
+      "date": "2026-04-23T03:23:52Z",
+      "message": "style: lighten admin interface",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/FisioSaaS/commit/a75c89991b3c3db2853fb8de3c0e691e3857912c"
+    },
+    {
+      "sha": "58e0449",
+      "date": "2026-04-23T03:07:35Z",
+      "message": "feat: polish public booking flow",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/FisioSaaS/commit/58e044953705be984862b6dc1a9e305a3009c4d6"
+    },
+    {
+      "sha": "9728a0d",
+      "date": "2026-04-22T23:12:53Z",
+      "message": "Aprofunda migracao visual Finanza no admin",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/FisioSaaS/commit/9728a0d9b494906611f6e09896ce1012914bc195"
+    },
+    {
+      "sha": "9e545b6",
+      "date": "2026-04-22T23:04:46Z",
+      "message": "Reescreve dashboard admin nativo Finanza",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/FisioSaaS/commit/9e545b688de7b3ea5e91171cd859cb8d323f45b1"
+    },
+    {
+      "sha": "f3c75ac",
+      "date": "2026-04-22T22:59:39Z",
+      "message": "Reestrutura dashboard no fluxo Finanza",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/FisioSaaS/commit/f3c75acfe5b9a5addb94429881191bcb34a00750"
+    },
+    {
+      "sha": "f2d8ac3",
+      "date": "2026-04-22T22:53:38Z",
+      "message": "Aproxima admin da estrutura Finanza",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/FisioSaaS/commit/f2d8ac3837e9cef58bdc658f4a7d24dfd24e7aa8"
+    },
+    {
+      "sha": "512d305",
+      "date": "2026-04-22T22:35:32Z",
+      "message": "Avanca migracao v2 do admin",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/FisioSaaS/commit/512d305ced8c7cbc3b9d1b1fb9d71a0c0d8573f6"
+    },
+    {
+      "sha": "55e5659",
+      "date": "2026-04-22T21:31:17Z",
+      "message": "feat: expand admin v2 to core clinic modules",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/FisioSaaS/commit/55e5659f3b052e4714dcb62b74392f338886e9b0"
+    },
+    {
+      "sha": "2901520",
+      "date": "2026-04-22T21:21:15Z",
+      "message": "feat: start admin v2 dashboard shell",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/FisioSaaS/commit/2901520a8a7a028115f06526fe552269a803e1b7"
+    },
+    {
+      "sha": "22fd63d",
+      "date": "2026-04-22T21:11:47Z",
+      "message": "fix: speed up admin navigation and sync branded home",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/FisioSaaS/commit/22fd63da1f47afa775034383b82707617d589792"
+    },
+    {
+      "sha": "112c091",
+      "date": "2026-04-22T20:56:08Z",
+      "message": "feat: polish dashboard light surfaces and cards",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/FisioSaaS/commit/112c09135d9bd75004dffb423ec6aefda0e70c57"
+    },
+    {
+      "sha": "e57dae8",
+      "date": "2026-04-22T20:51:12Z",
+      "message": "feat: refine physiotherapy dashboard light theme and motion",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/FisioSaaS/commit/e57dae82e04e6ca594b1ac7493c0d5e94c3fe4f9"
+    },
+    {
+      "sha": "4855aa3",
+      "date": "2026-04-22T20:33:27Z",
+      "message": "Refina tema claro e categorias do admin",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/FisioSaaS/commit/4855aa3466901f6f975affb77861f4843daddf3a"
+    },
+    {
+      "sha": "81862a0",
+      "date": "2026-04-22T19:59:14Z",
+      "message": "Refina transicoes fluidas do admin",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/FisioSaaS/commit/81862a025fba826ba54a32877c9398870841168a"
+    },
+    {
+      "sha": "3485455",
+      "date": "2026-04-22T19:52:00Z",
+      "message": "Melhora fluidez das interacoes do admin",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/FisioSaaS/commit/3485455a16fffa3a992f8d711727ff0d402a9178"
+    },
+    {
+      "sha": "e37478c",
+      "date": "2026-04-22T19:48:16Z",
+      "message": "Aprimora detalhes visuais do dashboard admin",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/FisioSaaS/commit/e37478caf0941b4b5f8d6343efbd3d768fde1eb7"
+    },
+    {
+      "sha": "f3591a3",
+      "date": "2026-04-22T19:35:03Z",
+      "message": "Refina visual do admin no estilo Finanza",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/FisioSaaS/commit/f3591a3148b1eb3fe977fe910b543e10a4a52a8a"
+    },
+    {
+      "sha": "d7da328",
+      "date": "2026-04-22T19:30:04Z",
+      "message": "Atualiza tema do admin inspirado no Finanza",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/FisioSaaS/commit/d7da328ec59297b14b4002be721cfcc26d80d3c8"
+    },
+    {
+      "sha": "c77dbce",
+      "date": "2026-04-22T18:03:10Z",
+      "message": "rename project to FisioSaaS",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/FisioSaaS/commit/c77dbcefc83904d1bd8f4532f1a85f6dd493f0e3"
+    },
+    {
+      "sha": "ba30969",
+      "date": "2026-04-22T18:01:06Z",
+      "message": "add render deploy readme",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/FisioSaaS/commit/ba30969bfb2c770ee2bafb7ae14f7482d548d301"
+    },
+    {
+      "sha": "b2ea343",
+      "date": "2026-04-22T18:00:35Z",
+      "message": "remove local documents from repository",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/FisioSaaS/commit/b2ea3437d5fe49f5482e7900f8d7be7d81e388fb"
+    },
+    {
+      "sha": "caa0c49",
+      "date": "2026-04-22T17:45:12Z",
+      "message": "fix scheduling UI and prepare free deploy",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/FisioSaaS/commit/caa0c497fa6c63ef8207f6eef7eb3d6bcb774544"
+    }
+  ]
+}
