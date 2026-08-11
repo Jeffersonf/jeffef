@@ -64,7 +64,12 @@ const projects = allProjects.filter(project => visibleProjects.has(project.id));
           </summary>
           <div class="project-detail">
             <div class="project-links">
-              {project.pc ? <a href={project.pc} title="Abrir pasta local"><span>▣</span> abrir no PC</a> : <span class="link-disabled">Sem cópia local encontrada</span>}
+              {project.pc ? (
+                <>
+                  <a href={project.pc.replace('file:///', 'vscode://file/')} title="Abrir projeto no VS Code"><span>▣</span> abrir no VS Code</a>
+                  <button class="project-copy-path" type="button" data-copy-path={decodeURIComponent(project.pc.replace('file:///', '').replaceAll('/', '\\'))}><span>⧉</span> copiar caminho</button>
+                </>
+              ) : <span class="link-disabled">Sem cópia local encontrada</span>}
               {project.github ? <a href={project.github} target="_blank" rel="noreferrer"><span>↗</span> GitHub</a> : <span class="link-disabled">GitHub não configurado</span>}
             </div>
             <div class="project-columns">
@@ -96,6 +101,21 @@ const projects = allProjects.filter(project => visibleProjects.has(project.id));
     };
     setView(localStorage.getItem(viewKey) || 'large');
     viewButtons.forEach(button => button.addEventListener('click', () => setView(button.dataset.view)));
+    document.querySelectorAll('[data-copy-path]').forEach(button => {
+      button.addEventListener('click', async () => {
+        const path = button.dataset.copyPath;
+        try {
+          await navigator.clipboard.writeText(path);
+        } catch {
+          const field = document.createElement('textarea');
+          field.value = path; field.style.position = 'fixed'; field.style.opacity = '0';
+          document.body.append(field); field.select(); document.execCommand('copy'); field.remove();
+        }
+        const original = button.innerHTML;
+        button.textContent = 'caminho copiado';
+        window.setTimeout(() => { button.innerHTML = original; }, 1800);
+      });
+    });
     const key = 'jeffef-project-ideas';
     let ideas = {};
     try { ideas = JSON.parse(localStorage.getItem(key) || '{}'); } catch {}
