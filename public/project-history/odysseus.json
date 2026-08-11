@@ -1,6 +1,6 @@
 {
   "id": "odysseus",
-  "total": 1996,
+  "total": 1990,
   "commits": [
     {
       "sha": "22e0af2",
@@ -3020,20 +3020,6 @@
       "url": "https://github.com/odysseus-dev/odysseus/commit/cf0c1f68b2f3893add69fc9f647f3945585691d6"
     },
     {
-      "sha": "71105b5",
-      "date": "2026-06-18T18:49:58Z",
-      "message": "chore(deps): bump actions/checkout in the actions group (#4559)",
-      "author": "dependabot[bot]",
-      "url": "https://github.com/odysseus-dev/odysseus/commit/71105b557e15b81d5871623bce1f1d14e5d4e6f2"
-    },
-    {
-      "sha": "377b883",
-      "date": "2026-06-18T18:42:49Z",
-      "message": "chore(deps): bump the npm group with 2 updates (#4558)",
-      "author": "dependabot[bot]",
-      "url": "https://github.com/odysseus-dev/odysseus/commit/377b883c752750f63762156011de7324cafda981"
-    },
-    {
       "sha": "67b40d6",
       "date": "2026-06-18T18:26:22Z",
       "message": "fix(hwfit): normalize CPU arch for fallback estimates (#4441)",
@@ -3643,13 +3629,6 @@
       "url": "https://github.com/odysseus-dev/odysseus/commit/3a459a0d409d02506e1440110424f5dcb2203476"
     },
     {
-      "sha": "ee32d7d",
-      "date": "2026-06-15T11:21:04Z",
-      "message": "chore(deps): bump the npm group with 2 updates (#3989)",
-      "author": "dependabot[bot]",
-      "url": "https://github.com/odysseus-dev/odysseus/commit/ee32d7da8d2a721ed9b0a9f9586ae612895d5f90"
-    },
-    {
       "sha": "ac624d2",
       "date": "2026-06-15T10:44:43Z",
       "message": "fix(memory): reject ambiguous multi-object outputs during skill extraction (#3985)",
@@ -3669,27 +3648,6 @@
       "message": "fix(ui): restore all-edge modal snap zones (#2260)",
       "author": "nubs",
       "url": "https://github.com/odysseus-dev/odysseus/commit/51ce8df8d06ec905e72845d3bbe8a6ba355a2795"
-    },
-    {
-      "sha": "74e5b7b",
-      "date": "2026-06-15T10:26:05Z",
-      "message": "chore(deps): bump the actions group with 4 updates (#3990)",
-      "author": "dependabot[bot]",
-      "url": "https://github.com/odysseus-dev/odysseus/commit/74e5b7bdb3c1f8895788ae16382318c0ec350d2b"
-    },
-    {
-      "sha": "60d9bc2",
-      "date": "2026-06-15T10:25:15Z",
-      "message": "chore(deps): bump the python group with 3 updates (#3991)",
-      "author": "dependabot[bot]",
-      "url": "https://github.com/odysseus-dev/odysseus/commit/60d9bc2b3a0f19fe86805f99bc384d9abd2be0fa"
-    },
-    {
-      "sha": "ed760a1",
-      "date": "2026-06-15T10:23:27Z",
-      "message": "chore(deps): bump python from 3.12-slim to 3.14-slim (#3988)",
-      "author": "dependabot[bot]",
-      "url": "https://github.com/odysseus-dev/odysseus/commit/ed760a1811aaa23e0013dde688320b11bb77bbd2"
     },
     {
       "sha": "9309ac6",

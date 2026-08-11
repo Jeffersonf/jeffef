@@ -10,6 +10,8 @@ const { project, id } = Astro.props;
 const vscodeUrl = project.pc ? `vscode://file/${project.pc.replaceAll('\\', '/')}` : null;
 const roadmaps: Record<string, string[]> = projectRoadmaps;
 const roadmap = roadmaps[id] ?? [];
+const localCovers = new Set(['arena','finanza-next','finanza-android','nexttrip','fisiosaas','jeffef','painelure2']);
+const cover = localCovers.has(id) ? `/jeffef/project-covers/${id}.png` : project.github ? `https://opengraph.githubassets.com/project-${id}/${project.github.replace('https://github.com/', '')}` : null;
 ---
 <BaseLayout title={`${project.name} — projetos`} description={project.summary}>
   <main class="project-page">
@@ -19,6 +21,7 @@ const roadmap = roadmaps[id] ?? [];
         <div><p class="projects-kicker">{project.status}</p><h1>{project.name}</h1><p class="project-profile-summary">{project.summary}</p></div>
         <time datetime={project.iso}><span>última modificação</span><strong>{project.date}</strong></time>
       </header>
+      {cover && <figure class="project-profile-cover"><img src={cover} alt={`Imagem do projeto ${project.name}`} /></figure>}
       <section class="project-last-change"><span>última entrega</span><h2>{project.change}</h2></section>
       <section class="project-roadmap-full">
         <p class="project-profile-label">Roadmap completo</p>

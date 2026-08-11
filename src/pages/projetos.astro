@@ -34,6 +34,8 @@ const visibleProjects = new Set(settings?.data.visibleProjects ?? allProjects.ma
 const projects = allProjects.filter(project => visibleProjects.has(project.id));
 const statuses = [...new Set(projects.map(project => project.status))].sort();
 const technologies = [...new Set(projects.flatMap(project => project.tech))].sort();
+const localCovers = new Set(['arena','finanza-next','finanza-android','nexttrip','fisiosaas','jeffef','painelure2']);
+const coverFor = (id:string) => localCovers.has(id) ? `/jeffef/project-covers/${id}.png` : updates[id]?.github ? `https://opengraph.githubassets.com/project-${id}/${updates[id].github.replace('https://github.com/', '')}` : null;
 ---
 <BaseLayout title="projetos — jefferson" description="Projetos, status, entregas e próximos passos de Jefferson.">
   <main class="projects-page">
@@ -71,6 +73,7 @@ const technologies = [...new Set(projects.flatMap(project => project.tech))].sor
         <details class={`project-board-card accent-${project.color}`} open={index === 0} data-project={project.id} data-name={project.name} data-summary={project.summary} data-status={project.status} data-tech={project.tech.join('|')} data-date={updates[project.id]?.iso}>
           <summary>
             <div class="project-summary-top"><span class="project-kind">{project.kind}</span><span class="project-status"><i></i>{project.status}</span></div>
+            {coverFor(project.id) && <a class="project-cover" href={`/jeffef/projetos/${project.id}/`} tabindex="-1" aria-hidden="true"><img src={coverFor(project.id)} alt="" loading="lazy" /></a>}
             <div class="project-title-row"><div class="project-mark">{String(index + 1).padStart(2,'0')}</div><div><h2><a class="project-page-link" href={`/jeffef/projetos/${project.id}/`}>{project.name}</a></h2><p>{project.summary}</p><div class="project-tech" aria-label="Tecnologias utilizadas">{project.tech.map(item => <span>{item}</span>)}</div><p class="project-updated"><time datetime={updates[project.id]?.iso}>{updates[project.id]?.date}</time><span>{updates[project.id]?.change}</span></p></div></div>
             <span class="project-expand">ver detalhes <b>⌄</b></span>
           </summary>

@@ -24,7 +24,13 @@ mkdirSync(outputDir, { recursive: true });
 
 for (const [id, [owner, repo]] of Object.entries(repositories)) {
   const raw = execFileSync('gh', ['api', '--paginate', '--slurp', `repos/${owner}/${repo}/commits?per_page=100`], { encoding:'utf8', maxBuffer: 64 * 1024 * 1024 });
-  const commits = JSON.parse(raw).flat().map(item => ({
+  const commits = JSON.parse(raw).flat().filter(item => {
+    const login = item.author?.login ?? '', author = item.commit.author?.name ?? '', email = item.commit.author?.email ?? '';
+    const message = item.commit.message.split('\n')[0].trim();
+    const isBot = item.author?.type === 'Bot' || /\[bot\]|github-actions|dependabot|renovate/i.test(`${login} ${author} ${email}`);
+    const isAutomatedData = /^(update|sync) (car schedule|schedule|generated|cached|seed|snapshot|mirror).*data/i.test(message) || /^chore.*(sync|update).*(data|schedule)/i.test(message);
+    return !isBot && !isAutomatedData;
+  }).map(item => ({
     sha: item.sha.slice(0, 7),
     date: item.commit.author?.date ?? item.commit.committer?.date,
     message: item.commit.message.split('\n')[0],

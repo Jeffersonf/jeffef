@@ -1,7 +1,28 @@
 {
   "id": "jeffef",
-  "total": 62,
+  "total": 65,
   "commits": [
+    {
+      "sha": "8a4c110",
+      "date": "2026-08-11T14:27:44Z",
+      "message": "Especializa busca por nome do projeto",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/8a4c110b85cd73bd4bf4832e7d38ef04014c40e7"
+    },
+    {
+      "sha": "f0d83e7",
+      "date": "2026-08-11T14:27:17Z",
+      "message": "Adiciona filtros aos projetos e historicos",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/f0d83e7f7078c0b0764c76d2798eb11032c61471"
+    },
+    {
+      "sha": "55b5358",
+      "date": "2026-08-11T14:25:18Z",
+      "message": "Adiciona roadmap completo e historico de commits",
+      "author": "Jeffersonf",
+      "url": "https://github.com/Jeffersonf/jeffef/commit/55b5358fa5a1548ae637f1a0303b35a53e6e6683"
+    },
     {
       "sha": "ea04e01",
       "date": "2026-08-11T14:21:03Z",
