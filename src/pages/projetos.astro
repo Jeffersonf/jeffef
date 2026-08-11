@@ -1,6 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getEntry } from 'astro:content';
+import { projectDetails } from '../lib/project-details';
+const updates: Record<string, (typeof projectDetails)[keyof typeof projectDetails]> = projectDetails;
 
 const allProjects = [
   { id:'finanza', name:'Finanza', kind:'produto', status:'ativo', color:'teal', tech:['Kotlin','JavaScript','HTML/CSS'], pc:'file:///C:/Users/jeffe/finanza', github:'https://github.com/Jeffersonf/finanza', summary:'Controle financeiro pessoal para organizar vencimentos, listas, importações e decisões do dia a dia.', ready:['Aplicação web e mobile','Sincronização e banco de dados','Build para Android','Fluxos de contas e vencimentos'], roadmap:['Consolidar a experiência mobile','Refinar importações e relatórios','Ampliar testes e automações'] },
@@ -59,7 +61,7 @@ const projects = allProjects.filter(project => visibleProjects.has(project.id));
         <details class={`project-board-card accent-${project.color}`} open={index === 0} data-project={project.id}>
           <summary>
             <div class="project-summary-top"><span class="project-kind">{project.kind}</span><span class="project-status"><i></i>{project.status}</span></div>
-            <div class="project-title-row"><div class="project-mark">{String(index + 1).padStart(2,'0')}</div><div><h2>{project.name}</h2><p>{project.summary}</p><div class="project-tech" aria-label="Tecnologias utilizadas">{project.tech.map(item => <span>{item}</span>)}</div></div></div>
+            <div class="project-title-row"><div class="project-mark">{String(index + 1).padStart(2,'0')}</div><div><h2><a class="project-page-link" href={`/jeffef/projetos/${project.id}/`}>{project.name}</a></h2><p>{project.summary}</p><div class="project-tech" aria-label="Tecnologias utilizadas">{project.tech.map(item => <span>{item}</span>)}</div><p class="project-updated"><time datetime={updates[project.id]?.iso}>{updates[project.id]?.date}</time><span>{updates[project.id]?.change}</span></p></div></div>
             <span class="project-expand">ver detalhes <b>⌄</b></span>
           </summary>
           <div class="project-detail">
@@ -107,9 +109,7 @@ const projects = allProjects.filter(project => visibleProjects.has(project.id));
         try {
           await navigator.clipboard.writeText(path);
         } catch {
-          const field = document.createElement('textarea');
-          field.value = path; field.style.position = 'fixed'; field.style.opacity = '0';
-          document.body.append(field); field.select(); document.execCommand('copy'); field.remove();
+          window.prompt('Copie o caminho do projeto:', path);
         }
         const original = button.innerHTML;
         button.textContent = 'caminho copiado';

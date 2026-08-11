@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { projectDetails } from '../../lib/project-details';
+
+export function getStaticPaths() {
+  return Object.entries(projectDetails).map(([id, project]) => ({ params: { id }, props: { project } }));
+}
+
+const { project } = Astro.props;
+const vscodeUrl = project.pc ? `vscode://file/${project.pc.replaceAll('\\', '/')}` : null;
+---
+<BaseLayout title={`${project.name} — projetos`} description={project.summary}>
+  <main class="project-page">
+    <article class="projects-shell project-profile">
+      <a class="project-back" href="/jeffef/projetos/">← todos os projetos</a>
+      <header>
+        <div><p class="projects-kicker">{project.status}</p><h1>{project.name}</h1><p class="project-profile-summary">{project.summary}</p></div>
+        <time datetime={project.iso}><span>última modificação</span><strong>{project.date}</strong></time>
+      </header>
+      <section class="project-last-change"><span>última entrega</span><h2>{project.change}</h2></section>
+      <div class="project-profile-grid">
+        <section><p class="project-profile-label">Tecnologias</p><div class="project-tech">{project.tech.map((item:string) => <span>{item}</span>)}</div></section>
+        <section><p class="project-profile-label">Acesso</p><div class="project-links">{vscodeUrl && <a href={vscodeUrl}>▣ abrir no VS Code</a>}{project.github && <a href={project.github} target="_blank" rel="noreferrer">↗ abrir GitHub</a>}{!vscodeUrl && !project.github && <span class="link-disabled">Sem acesso configurado</span>}</div></section>
+      </div>
+      {project.pc && <section class="project-path"><p class="project-profile-label">Pasta local</p><code>{project.pc}</code><button type="button" data-copy-path={project.pc}>copiar caminho</button></section>}
+    </article>
+  </main>
+  <script is:inline>
+    document.querySelector('[data-copy-path]')?.addEventListener('click', async event => {
+      const button = event.currentTarget;
+      await navigator.clipboard.writeText(button.dataset.copyPath);
+      button.textContent = 'copiado';
+    });
+  </script>
+</BaseLayout>
