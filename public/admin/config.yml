@@ -70,6 +70,15 @@ collections:
               - { label: "Texto", name: "body", widget: "text", required: false }
               - { label: "Destaque", name: "highlight", widget: "boolean", default: false }
           - { label: "Fechamento", name: "closing", widget: "string" }
+      - label: "Projetos"
+        name: "project-settings"
+        file: "src/content/site/project-settings.json"
+        format: "json"
+        fields:
+          - label: "Projetos visíveis"
+            name: "visibleProjects"
+            widget: "list"
+            hint: "Remova um ID desta lista para retirar o projeto do site. Publique para salvar diretamente no repositório."
       - label: "Agora"
         name: "agora"
         file: "src/content/site/agora.json"

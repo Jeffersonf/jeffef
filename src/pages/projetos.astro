@@ -1,7 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getEntry } from 'astro:content';
 
-const projects = [
+const allProjects = [
   { id:'finanza', name:'Finanza', kind:'produto', status:'ativo', color:'teal', tech:['Kotlin','JavaScript','HTML/CSS'], pc:'file:///C:/Users/jeffe/finanza', github:'https://github.com/Jeffersonf/finanza', summary:'Controle financeiro pessoal para organizar vencimentos, listas, importações e decisões do dia a dia.', ready:['Aplicação web e mobile','Sincronização e banco de dados','Build para Android','Fluxos de contas e vencimentos'], roadmap:['Consolidar a experiência mobile','Refinar importações e relatórios','Ampliar testes e automações'] },
   { id:'finanzav3', name:'Finanza v3', kind:'arquivo', status:'legado vivo', color:'amber', tech:['JavaScript','HTML/CSS','SQL'], pc:'file:///C:/Users/jeffe/finanzav3', github:'https://github.com/Jeffersonf/finanza', summary:'Versão anterior do Finanza, preservada como referência de produto, código e ideias.', ready:['Base web funcional','Aplicativo Android','Estrutura de banco','Histórico do produto'], roadmap:['Catalogar o que ainda vale migrar','Arquivar fluxos substituídos','Manter apenas correções essenciais'] },
   { id:'finfit', name:'Finfit', kind:'app', status:'em construção', color:'rose', tech:['JavaScript','HTML/CSS','PWA'], pc:'file:///C:/Users/jeffe/finfit', github:null, summary:'Organização de treinos, saúde e acompanhamento pessoal em um fluxo direto e leve.', ready:['Direção inicial do produto','Pasta local e protótipo de app'], roadmap:['Definir o MVP','Criar rotina de treinos','Adicionar histórico e evolução'] },
@@ -26,6 +27,9 @@ const projects = [
   { id:'python-alura', name:'Python Alura', kind:'estudo', status:'privado', color:'amber', tech:['Python','Jupyter Notebook'], pc:null, github:'https://github.com/Jeffersonf/Python-Alura', summary:'Cadernos e exercícios de formação em Python realizados na Alura.', ready:['Notebooks de estudo','Exercícios Python','Repositório privado'], roadmap:['Organizar por curso','Adicionar índice de conteúdos','Registrar aprendizados principais'] },
   { id:'forgottenserver', name:'Forgotten Server ORTS', kind:'fork', status:'arquivo', color:'rose', tech:['Lua','C++'], pc:null, github:'https://github.com/Jeffersonf/FORGOTTENSERVER-ORTS', summary:'Fork histórico de servidor Open Tibia, preservado como parte dos primeiros projetos no GitHub.', ready:['Fork público','Código do servidor','Histórico preservado'], roadmap:['Manter como arquivo histórico','Documentar o contexto','Sem desenvolvimento ativo previsto'] }
 ];
+const settings = await getEntry('site', 'project-settings');
+const visibleProjects = new Set(settings?.data.visibleProjects ?? allProjects.map(project => project.id));
+const projects = allProjects.filter(project => visibleProjects.has(project.id));
 ---
 <BaseLayout title="projetos — jefferson" description="Projetos, status, entregas e próximos passos de Jefferson.">
   <main class="projects-page">
@@ -41,6 +45,7 @@ const projects = [
     </section>
 
     <section class="projects-shell projects-toolbar" aria-label="Opções de visualização">
+      <a class="projects-manage" href="/jeffef/admin/#/collections/site/entries/project-settings" title="Remover ou reorganizar projetos">gerenciar projetos</a>
       <span>visualização</span>
       <div class="view-switch" role="group" aria-label="Visualização dos projetos">
         <button type="button" data-view="cards" title="Cards" aria-label="Visualizar em cards"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="8" rx="1"/><rect x="14" y="3" width="7" height="8" rx="1"/><rect x="3" y="15" width="7" height="6" rx="1"/><rect x="14" y="15" width="7" height="6" rx="1"/></svg></button>

@@ -1973,6 +1973,8 @@ h1 {
 .ideas-box>ul li { background:var(--p-card); color:var(--p-copy); }
 
 .projects-toolbar { display:flex; align-items:center; justify-content:flex-end; gap:12px; padding-top:22px; }
+.projects-manage { margin-right:auto; border:1px solid var(--p-line); border-radius:9px; padding:7px 10px; color:var(--p-muted); font:500 10px "IBM Plex Mono",monospace; letter-spacing:.08em; text-decoration:none; text-transform:uppercase; }
+.projects-manage:hover { border-color:var(--rose); color:var(--rose); }
 .projects-toolbar>span { color:var(--p-muted); font:500 10px "IBM Plex Mono",monospace; letter-spacing:.12em; text-transform:uppercase; }
 .view-switch { display:flex; gap:3px; border:1px solid var(--p-line); border-radius:10px; padding:3px; background:var(--p-card); }
 .view-switch button { display:grid; place-items:center; width:34px; height:30px; border:0; border-radius:7px; background:transparent; color:var(--p-muted); cursor:pointer; }

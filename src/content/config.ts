@@ -32,6 +32,7 @@ const site = defineCollection({
     })).default([]),
     sections: z.record(z.any()).optional(),
     closing: z.string().optional(),
+    visibleProjects: z.array(z.string()).optional(),
     cards: z.array(z.object({
       label: z.string(),
       title: z.string(),
