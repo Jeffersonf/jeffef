@@ -2,15 +2,15 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 const projects = [
-  { id:'finanza', name:'Finanza', kind:'produto', status:'ativo', color:'teal', pc:'file:///C:/Users/jeffe/finanza', github:'https://github.com/Jeffersonf/finanza', summary:'Controle financeiro pessoal para organizar vencimentos, listas, importações e decisões do dia a dia.', ready:['Aplicação web e mobile','Sincronização e banco de dados','Build para Android','Fluxos de contas e vencimentos'], roadmap:['Consolidar a experiência mobile','Refinar importações e relatórios','Ampliar testes e automações'] },
-  { id:'finanzav3', name:'Finanza v3', kind:'arquivo', status:'legado vivo', color:'amber', pc:'file:///C:/Users/jeffe/finanzav3', github:'https://github.com/Jeffersonf/finanza', summary:'Versão anterior do Finanza, preservada como referência de produto, código e ideias.', ready:['Base web funcional','Aplicativo Android','Estrutura de banco','Histórico do produto'], roadmap:['Catalogar o que ainda vale migrar','Arquivar fluxos substituídos','Manter apenas correções essenciais'] },
-  { id:'finfit', name:'Finfit', kind:'app', status:'em construção', color:'rose', pc:'file:///C:/Users/jeffe/finfit', github:null, summary:'Organização de treinos, saúde e acompanhamento pessoal em um fluxo direto e leve.', ready:['Direção inicial do produto','Pasta local e protótipo de app'], roadmap:['Definir o MVP','Criar rotina de treinos','Adicionar histórico e evolução'] },
-  { id:'finvita', name:'Finvita', kind:'app', status:'em construção', color:'rose', pc:'file:///C:/Users/jeffe/finvita', github:'https://github.com/Jeffersonf/finvita', summary:'Rotina, cuidado e informações pessoais conectados ao ecossistema de ferramentas.', ready:['Aplicação web','Servidor próprio','Projeto Android','Ferramentas de build'], roadmap:['Unificar os fluxos principais','Melhorar a experiência mobile','Preparar uma versão estável'] },
-  { id:'painelure2', name:'Painel URE2', kind:'painel', status:'em uso', color:'teal', pc:'file:///C:/Users/jeffe/painelure2', github:'https://github.com/Jeffersonf/painelure', summary:'Painel operacional para dados, acompanhamento e organização do trabalho da URE.', ready:['Painel em operação','Banco e migrações','Módulos de trabalho','Rotinas de verificação'], roadmap:['Aprimorar indicadores','Simplificar rotinas recorrentes','Documentar operações críticas'] },
-  { id:'setechub', name:'Setec Hub', kind:'hub', status:'em construção', color:'amber', pc:'file:///C:/Users/jeffe/setechub', github:'https://github.com/Jeffersonf/painelurelegado', summary:'Hub para centralizar informações, processos e ferramentas da área técnica.', ready:['Frontend e servidor','Integração com Supabase','Sincronização de dados','Testes iniciais'], roadmap:['Consolidar módulos prioritários','Revisar a migração de dados','Publicar a primeira versão estável'] },
-  { id:'bandamarcial', name:'Banda Marcial', kind:'site', status:'em construção', color:'rose', pc:'file:///C:/Users/jeffe/bandamarcial', github:null, summary:'Presença digital e organização do conteúdo, história e atividades da banda marcial.', ready:['Estrutura local iniciada','Direção geral do site'], roadmap:['Definir identidade e conteúdo','Construir páginas principais','Publicar a primeira versão'] },
-  { id:'arena', name:'Arena Futevôlei', kind:'produto', status:'ativo', color:'teal', pc:'file:///C:/Users/jeffe/arena-futvolei', github:'https://github.com/Jeffersonf/arena-futvolei', summary:'App leve para escola de futevôlei: alunos, aulas, presenças, pagamentos e recados.', ready:['Gestão de alunos e aulas','Servidor e assets','Auditoria de fluxo e visual','Ambiente de desenvolvimento'], roadmap:['Fechar o fluxo de pagamentos','Melhorar comunicação com alunos','Preparar implantação'] },
-  { id:'jeffef', name:'jeffef.dev', kind:'site', status:'caderno aberto', color:'amber', pc:'file:///C:/Users/jeffe/jeffef-site', github:'https://github.com/Jeffersonf/jeffef', summary:'Caderno pessoal com notas, cenas, contexto e uma visão viva dos projetos.', ready:['Site Astro responsivo','Notas em Markdown','Editor Decap CMS','Temas claro e escuro'], roadmap:['Evoluir a área de projetos','Ampliar o arquivo de notas','Refinar a publicação pelo CMS'] }
+  { id:'finanza', name:'Finanza', kind:'produto', status:'ativo', color:'teal', tech:['Kotlin','JavaScript','HTML/CSS'], pc:'file:///C:/Users/jeffe/finanza', github:'https://github.com/Jeffersonf/finanza', summary:'Controle financeiro pessoal para organizar vencimentos, listas, importações e decisões do dia a dia.', ready:['Aplicação web e mobile','Sincronização e banco de dados','Build para Android','Fluxos de contas e vencimentos'], roadmap:['Consolidar a experiência mobile','Refinar importações e relatórios','Ampliar testes e automações'] },
+  { id:'finanzav3', name:'Finanza v3', kind:'arquivo', status:'legado vivo', color:'amber', tech:['JavaScript','HTML/CSS','SQL'], pc:'file:///C:/Users/jeffe/finanzav3', github:'https://github.com/Jeffersonf/finanza', summary:'Versão anterior do Finanza, preservada como referência de produto, código e ideias.', ready:['Base web funcional','Aplicativo Android','Estrutura de banco','Histórico do produto'], roadmap:['Catalogar o que ainda vale migrar','Arquivar fluxos substituídos','Manter apenas correções essenciais'] },
+  { id:'finfit', name:'Finfit', kind:'app', status:'em construção', color:'rose', tech:['JavaScript','HTML/CSS','PWA'], pc:'file:///C:/Users/jeffe/finfit', github:null, summary:'Organização de treinos, saúde e acompanhamento pessoal em um fluxo direto e leve.', ready:['Direção inicial do produto','Pasta local e protótipo de app'], roadmap:['Definir o MVP','Criar rotina de treinos','Adicionar histórico e evolução'] },
+  { id:'finvita', name:'Finvita', kind:'app', status:'em construção', color:'rose', tech:['Java','JavaScript','Android'], pc:'file:///C:/Users/jeffe/finvita', github:'https://github.com/Jeffersonf/finvita', summary:'Rotina, cuidado e informações pessoais conectados ao ecossistema de ferramentas.', ready:['Aplicação web','Servidor próprio','Projeto Android','Ferramentas de build'], roadmap:['Unificar os fluxos principais','Melhorar a experiência mobile','Preparar uma versão estável'] },
+  { id:'painelure2', name:'Painel URE2', kind:'painel', status:'em uso', color:'teal', tech:['JavaScript','Node.js','HTML/CSS'], pc:'file:///C:/Users/jeffe/painelure2', github:'https://github.com/Jeffersonf/painelure', summary:'Painel operacional para dados, acompanhamento e organização do trabalho da URE.', ready:['Painel em operação','Banco e migrações','Módulos de trabalho','Rotinas de verificação'], roadmap:['Aprimorar indicadores','Simplificar rotinas recorrentes','Documentar operações críticas'] },
+  { id:'setechub', name:'Setec Hub', kind:'hub', status:'em construção', color:'amber', tech:['JavaScript','Node.js','Supabase'], pc:'file:///C:/Users/jeffe/setechub', github:'https://github.com/Jeffersonf/painelurelegado', summary:'Hub para centralizar informações, processos e ferramentas da área técnica.', ready:['Frontend e servidor','Integração com Supabase','Sincronização de dados','Testes iniciais'], roadmap:['Consolidar módulos prioritários','Revisar a migração de dados','Publicar a primeira versão estável'] },
+  { id:'bandamarcial', name:'Banda Marcial', kind:'site', status:'em construção', color:'rose', tech:['TypeScript','React','CSS'], pc:'file:///C:/Users/jeffe/bandamarcial', github:null, summary:'Presença digital e organização do conteúdo, história e atividades da banda marcial.', ready:['Estrutura local iniciada','Direção geral do site'], roadmap:['Definir identidade e conteúdo','Construir páginas principais','Publicar a primeira versão'] },
+  { id:'arena', name:'Arena Futevôlei', kind:'produto', status:'ativo', color:'teal', tech:['JavaScript','Node.js','PWA'], pc:'file:///C:/Users/jeffe/arena-futvolei', github:'https://github.com/Jeffersonf/arena-futvolei', summary:'App leve para escola de futevôlei: alunos, aulas, presenças, pagamentos e recados.', ready:['Gestão de alunos e aulas','Servidor e assets','Auditoria de fluxo e visual','Ambiente de desenvolvimento'], roadmap:['Fechar o fluxo de pagamentos','Melhorar comunicação com alunos','Preparar implantação'] },
+  { id:'jeffef', name:'jeffef.dev', kind:'site', status:'caderno aberto', color:'amber', tech:['Astro','TypeScript','CSS'], pc:'file:///C:/Users/jeffe/jeffef-site', github:'https://github.com/Jeffersonf/jeffef', summary:'Caderno pessoal com notas, cenas, contexto e uma visão viva dos projetos.', ready:['Site Astro responsivo','Notas em Markdown','Editor Decap CMS','Temas claro e escuro'], roadmap:['Evoluir a área de projetos','Ampliar o arquivo de notas','Refinar a publicação pelo CMS'] }
 ];
 ---
 <BaseLayout title="projetos — jefferson" description="Projetos, status, entregas e próximos passos de Jefferson.">
@@ -26,12 +26,21 @@ const projects = [
       </div>
     </section>
 
-    <section class="projects-shell projects-grid" aria-label="Lista de projetos">
+    <section class="projects-shell projects-toolbar" aria-label="Opções de visualização">
+      <span>visualização</span>
+      <div class="view-switch" role="group" aria-label="Visualização dos projetos">
+        <button type="button" data-view="cards" title="Cards" aria-label="Visualizar em cards"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="8" rx="1"/><rect x="14" y="3" width="7" height="8" rx="1"/><rect x="3" y="15" width="7" height="6" rx="1"/><rect x="14" y="15" width="7" height="6" rx="1"/></svg></button>
+        <button type="button" data-view="large" title="Cards grandes" aria-label="Visualizar em cards grandes"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="8" rx="1"/><rect x="3" y="15" width="18" height="6" rx="1"/></svg></button>
+        <button type="button" data-view="lines" title="Linhas" aria-label="Visualizar em linhas"><svg viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13"/><circle cx="3.5" cy="6" r=".8"/><circle cx="3.5" cy="12" r=".8"/><circle cx="3.5" cy="18" r=".8"/></svg></button>
+      </div>
+    </section>
+
+    <section class="projects-shell projects-grid" data-project-grid data-view="large" aria-label="Lista de projetos">
       {projects.map((project, index) => (
         <details class={`project-board-card accent-${project.color}`} open={index === 0} data-project={project.id}>
           <summary>
             <div class="project-summary-top"><span class="project-kind">{project.kind}</span><span class="project-status"><i></i>{project.status}</span></div>
-            <div class="project-title-row"><div class="project-mark">{String(index + 1).padStart(2,'0')}</div><div><h2>{project.name}</h2><p>{project.summary}</p></div></div>
+            <div class="project-title-row"><div class="project-mark">{String(index + 1).padStart(2,'0')}</div><div><h2>{project.name}</h2><p>{project.summary}</p><div class="project-tech" aria-label="Tecnologias utilizadas">{project.tech.map(item => <span>{item}</span>)}</div></div></div>
             <span class="project-expand">ver detalhes <b>⌄</b></span>
           </summary>
           <div class="project-detail">
@@ -54,7 +63,20 @@ const projects = [
     </section>
   </main>
   <script is:inline>
-    document.documentElement.dataset.theme = 'dark';
+    const viewKey = 'jeffef-project-view';
+    const grid = document.querySelector('[data-project-grid]');
+    const viewButtons = document.querySelectorAll('[data-view]');
+    const setView = (view) => {
+      grid.dataset.view = view;
+      viewButtons.forEach(button => {
+        const active = button.dataset.view === view;
+        button.classList.toggle('active', active);
+        button.setAttribute('aria-pressed', String(active));
+      });
+      localStorage.setItem(viewKey, view);
+    };
+    setView(localStorage.getItem(viewKey) || 'large');
+    viewButtons.forEach(button => button.addEventListener('click', () => setView(button.dataset.view)));
     const key = 'jeffef-project-ideas';
     let ideas = {};
     try { ideas = JSON.parse(localStorage.getItem(key) || '{}'); } catch {}
