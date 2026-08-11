@@ -31,6 +31,12 @@ const roadmap = roadmaps[id] ?? [];
       {project.pc && <section class="project-path"><p class="project-profile-label">Pasta local</p><code>{project.pc}</code><button type="button" data-copy-path={project.pc}>copiar caminho</button></section>}
       <section class="project-history" data-history data-project-id={id}>
         <div class="project-history-head"><div><p class="project-profile-label">Histórico completo</p><h2>Desde o primeiro commit</h2></div><strong data-history-count>carregando…</strong></div>
+        <div class="history-filters">
+          <label class="filter-search"><span>buscar</span><input type="search" data-history-search placeholder="Mensagem, autor ou hash…" /></label>
+          <label><span>de</span><input type="date" data-history-from /></label>
+          <label><span>até</span><input type="date" data-history-to /></label>
+          <button type="button" data-history-clear>limpar</button>
+        </div>
         <div class="commit-list" data-commit-list aria-live="polite"></div>
         <button class="history-more" type="button" data-history-more hidden>carregar mais</button>
       </section>
@@ -48,9 +54,10 @@ const roadmap = roadmaps[id] ?? [];
       const list = history.querySelector('[data-commit-list]');
       const count = history.querySelector('[data-history-count]');
       const more = history.querySelector('[data-history-more]');
-      let commits = [], shown = 0;
+      const search = history.querySelector('[data-history-search]'), from = history.querySelector('[data-history-from]'), to = history.querySelector('[data-history-to]');
+      let commits = [], filtered = [], shown = 0;
       const renderBatch = () => {
-        commits.slice(shown, shown + 25).forEach(commit => {
+        filtered.slice(shown, shown + 25).forEach(commit => {
           const item = document.createElement('article'); item.className = 'commit-item';
           const date = new Date(commit.date).toLocaleDateString('pt-BR');
           item.innerHTML = `<time datetime="${commit.date}">${date}</time><div><h3></h3><p>${commit.author} · ${commit.sha || 'local'}</p></div>`;
@@ -58,9 +65,16 @@ const roadmap = roadmaps[id] ?? [];
           if (commit.url) { const link = document.createElement('a'); link.href = commit.url; link.target = '_blank'; link.rel = 'noreferrer'; link.textContent = '↗'; item.append(link); }
           list.append(item);
         });
-        shown = Math.min(shown + 25, commits.length); more.hidden = shown >= commits.length;
+        shown = Math.min(shown + 25, filtered.length); more.hidden = shown >= filtered.length;
       };
-      fetch(`/jeffef/project-history/${id}.json`).then(response => response.json()).then(data => { commits = data.commits; count.textContent = `${data.total} registros`; renderBatch(); }).catch(() => { count.textContent = 'histórico indisponível'; });
+      const applyHistoryFilters = () => {
+        const query = search.value.trim().toLocaleLowerCase('pt-BR'), start = from.value, end = to.value;
+        filtered = commits.filter(commit => { const day = commit.date.slice(0,10), text = `${commit.message} ${commit.author} ${commit.sha || ''}`.toLocaleLowerCase('pt-BR'); return (!query || text.includes(query)) && (!start || day >= start) && (!end || day <= end); });
+        shown = 0; list.innerHTML = ''; count.textContent = `${filtered.length} de ${commits.length} registros`; renderBatch();
+      };
+      fetch(`/jeffef/project-history/${id}.json`).then(response => response.json()).then(data => { commits = data.commits; applyHistoryFilters(); }).catch(() => { count.textContent = 'histórico indisponível'; });
+      [search, from, to].forEach(input => input.addEventListener('input', applyHistoryFilters));
+      history.querySelector('[data-history-clear]').addEventListener('click', () => { search.value=''; from.value=''; to.value=''; applyHistoryFilters(); });
       more.addEventListener('click', renderBatch);
     }
   </script>
