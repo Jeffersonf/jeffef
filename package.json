@@ -1,6 +1,7 @@
 {
-  "name": "jeffef-caderno",
-  "version": "0.1.0",
+  "name": "revoada",
+  "version": "0.2.0",
+  "description": "Revoada - Hub pessoal, caderno de notas e ecossistema de projetos de Jefferson",
   "private": true,
   "type": "module",
   "scripts": {

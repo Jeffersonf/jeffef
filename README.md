@@ -1,13 +1,11 @@
-# jeffef.dev - caderno pessoal
+# 🪺 Revoada (jeffef.dev) - Hub & Caderno Pessoal
 
-Site pessoal em Astro com notas em Markdown e editor web via Decap CMS.
+O **Revoada** é o ninho central do ecossistema de projetos de **Jefferson de Paula**. Um espaço calmo para caderno de notas em Markdown, cenas, pensamentos e a vitrine unificada de todas as aves do ecossistema (*Harpia*, *Kestrel*, *Falcão*, *Tuiuiú*).
 
-O projeto tem duas experiencias separadas:
+O projeto tem duas experiências separadas:
 
-- `/` e `/notas/...`: leitura publica do caderno.
-- `/admin/`: editor para criar e alterar notas.
-
-A aplicacao ativa fica na raiz com Astro. O pacote antigo foi movido para `legacy/` apenas como referencia enquanto o novo caderno amadurece.
+- `/` e `/notas/...`: leitura pública do caderno e vitrine dos projetos da Revoada.
+- `/admin/`: editor para criar e alterar notas via Decap CMS.
 
 ## Estrutura
 
