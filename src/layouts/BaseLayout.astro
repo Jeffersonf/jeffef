@@ -44,7 +44,10 @@ const url = (path: string) => `${base}${path.replace(/^\/+/, '')}`;
   </head>
   <body>
     <header class="shell topbar">
-      <a class="brand" href={url('/')}>jefferson</a>
+      <a class="brand revoada-brand" href={url('/')}>
+        <img class="brand-bird" src={url('/icons/revoada.svg')} alt="Revoada" width="26" height="26" />
+        <span>jefferson <small class="brand-tag">· revoada</small></span>
+      </a>
       <button class="theme-toggle" type="button" aria-label="Alternar tema" data-theme-toggle>
         <span class="theme-icon theme-icon-sun" aria-hidden="true">
           <svg viewBox="0 0 24 24" role="img">
@@ -77,8 +80,8 @@ const url = (path: string) => `${base}${path.replace(/^\/+/, '')}`;
 
     <footer class="footer">
       <div class="shell">
-        <span><strong>jeffef.dev</strong>, caderno pessoal</span>
-        <span>feito com calma</span>
+        <span><strong>jeffef.dev</strong>, ninho central & caderno pessoal</span>
+        <span>feito com calma · a revoada 🪶</span>
       </div>
     </footer>
     <script is:inline>

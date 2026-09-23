@@ -12,6 +12,11 @@
   --green: #4f7c73;
   --rose: #846f95;
   --gold: #8c793e;
+  --accent-harpia: #eab308;
+  --accent-kestrel: #f97316;
+  --accent-falcao: #06b6d4;
+  --accent-revoada: #38bdf8;
+  --accent-tuiuiu: #ef4444;
   --glass-bg: rgba(255, 255, 255, .64);
   --glass-border: rgba(255, 255, 255, .86);
   --shadow: 0 14px 42px rgba(30, 55, 85, .06);
@@ -2026,4 +2031,98 @@ h1 {
     animation: none !important;
     transition: none !important;
   }
+}
+
+
+/* ==================== A REVOADA THEME & BIRD CARDS ==================== */
+.revoada-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.revoada-brand .brand-bird {
+  width: 26px;
+  height: 26px;
+  border-radius: 7px;
+  box-shadow: 0 2px 10px rgba(56, 189, 248, 0.35);
+  display: block;
+}
+
+.revoada-brand .brand-tag {
+  font-family: 'Space Grotesk', sans-serif;
+  color: var(--accent-revoada, #38bdf8);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  font-size: 0.85em;
+  text-transform: uppercase;
+}
+
+.manifesto-quote {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--muted);
+  max-width: 620px;
+}
+
+.project-card[data-bird="revoada"] { --card-accent: var(--accent-revoada); }
+.project-card[data-bird="harpia"] { --card-accent: var(--accent-harpia); }
+.project-card[data-bird="kestrel"] { --card-accent: var(--accent-kestrel); }
+.project-card[data-bird="falcao"] { --card-accent: var(--accent-falcao); }
+.project-card[data-bird="tuiuiu"] { --card-accent: var(--accent-tuiuiu); }
+
+.project-card.bird-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--card-accent, var(--blue));
+  opacity: 0.92;
+}
+
+.project-card.bird-card:hover {
+  border-color: color-mix(in srgb, var(--card-accent, var(--green)) 45%, var(--line));
+  box-shadow: 0 16px 36px -10px color-mix(in srgb, var(--card-accent, var(--blue)) 22%, transparent), var(--shadow-lg);
+  transform: translateY(-3px);
+}
+
+.bird-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.bird-badge-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: block;
+  flex-shrink: 0;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+}
+
+.bird-header h3 {
+  margin-top: 0 !important;
+  font-size: clamp(24px, 2.2vw, 32px) !important;
+}
+
+.bird-role {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--card-accent, var(--blue));
+  margin-top: 2px;
+  letter-spacing: 0.02em;
+}
+
+.project-kind-badge {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--card-accent, var(--blue));
 }

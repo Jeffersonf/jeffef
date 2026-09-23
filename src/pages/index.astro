@@ -17,71 +17,61 @@ const recentes = notas.slice(0, 6);
 const nowCards = agoraData?.cards?.slice(0, 3) ?? [];
 const base = '/jeffef/';
 const url = (path: string) => `${base}${path.replace(/^\/+/, '')}`;
-const githubPagesBase = 'https://jeffersonf.github.io';
 const projects = [
   {
+    id: 'revoada',
+    name: 'Revoada',
+    icon: url('/icons/revoada.svg'),
+    folder: 'jeffef-site',
+    href: url('/'),
+    status: 'ninho central',
+    role: 'Hub Pessoal & Caderno',
+    body: 'O ponto de pouso, repouso e partida de todas as aves. Onde as ideias nascem, registram-se e alçam voo.',
+    kind: 'hub'
+  },
+  {
+    id: 'harpia',
     name: 'Harpia',
+    icon: url('/icons/harpia.svg'),
     folder: 'radar-imoveis',
-    href: `${githubPagesBase}/radar-imoveis/`,
+    href: url('/projetos/radar-imoveis/'),
     status: 'ativo',
-    body: 'Radar de inteligência imobiliária com visão aguçada e detecção cirúrgica de oportunidades no mercado.',
+    role: 'Radar de Imóveis',
+    body: 'A visão mais aguçada das Américas. Escaneia o território de cima e detecta oportunidades cirúrgicas no mercado.',
     kind: 'radar'
   },
   {
+    id: 'kestrel',
     name: 'Kestrel',
+    icon: url('/icons/kestrel.svg'),
     folder: 'teamlucaofuturo',
-    href: `${githubPagesBase}/teamlucaofuturo/`,
+    href: url('/projetos/arena/'),
     status: 'ativo',
-    body: 'Motor SaaS white-label para arenas esportivas, turmas, alunos e cobranças Pix (Team Lucão e parceiros).',
+    role: 'SaaS White-Label Core',
+    body: 'O pequeno falcão ágil que paira estático contra fortes ventos. Motor multi-tenant para arenas esportivas e comunidades.',
     kind: 'saas'
   },
   {
+    id: 'falcao',
     name: 'Falcão',
+    icon: url('/icons/falcao.svg'),
     folder: 'finanza-auto',
-    href: `${githubPagesBase}/finanza-auto/`,
+    href: url('/projetos/finanza-auto/'),
     status: 'ativo',
-    body: 'Telemetria veicular, custos de combustível (km/l), revisões preventivas e sincronização na nuvem.',
+    role: 'Telemetria & Custos',
+    body: 'O animal mais veloz da Terra. Alta performance, registro instantâneo de abastecimentos, consumo (km/l) e saúde preventiva.',
     kind: 'auto'
   },
   {
+    id: 'tuiuiu',
     name: 'Tuiuiú',
+    icon: url('/icons/tuiuiu.svg'),
     folder: 'finanza-next',
-    href: `${githubPagesBase}/finanza-next/`,
+    href: url('/projetos/finanza-next/'),
     status: 'ativo',
-    body: 'Gestão e sustentação patrimonial, controle diário de contas e visão financeira de longo prazo.',
+    role: 'Gestão Patrimonial',
+    body: 'A maior envergadura de asas das planícies. Estrutura sólida, elegância e sustentação estável para patrimônio familiar.',
     kind: 'finanças'
-  },
-  {
-    name: 'Revoada',
-    folder: 'jeffef-site',
-    href: `${githubPagesBase}/jeffef/`,
-    status: 'ninho central',
-    body: 'O ninho central do ecossistema: caderno aberto de notas, memórias, fotografia e a vitrine de todos os projetos.',
-    kind: 'hub'
-  },
-  {
-    name: 'Painel URE2',
-    folder: 'painelure2',
-    href: `${githubPagesBase}/painelure2/`,
-    status: 'em uso',
-    body: 'Painel operacional para dados, acompanhamento e organização de trabalho.',
-    kind: 'painel'
-  },
-  {
-    name: 'Setec Hub',
-    folder: 'setechub',
-    href: `${githubPagesBase}/setechub/`,
-    status: 'em construção',
-    body: 'Hub para organizar informações, processos e ferramentas da área técnica.',
-    kind: 'hub'
-  },
-  {
-    name: 'Banda Marcial',
-    folder: 'bandamarcial',
-    href: `${githubPagesBase}/bandamarcial/`,
-    status: 'em construção',
-    body: 'Projeto para presença digital e organização de conteúdo da banda.',
-    kind: 'site'
   }
 ];
 
@@ -217,29 +207,36 @@ const emphasisClosing = data.closing?.replace('memória própria', '<em>memória
     <section class="shell section" id="projetos">
       <div class="section-head">
         <div>
-          <p class="eyebrow">projetos</p>
-          <h2>o que esta em andamento</h2>
+          <p class="eyebrow">🪶 a revoada</p>
+          <h2>ecossistema de projetos</h2>
         </div>
-        <p>Um mapa simples dos projetos que estao na raiz da pasta de trabalho, entre produtos, paineis, sites e experimentos vivos.</p>
+        <p class="manifesto-quote"><em>"Nenhuma ave voa alto demais se voar com as próprias asas, mas ao voar em formação, a revoada corta os céus e vence qualquer tempestade."</em></p>
       </div>
 
       <div class="section-body">
         <div class="project-grid">
           {projects.map((project) => (
-            <a class="project-card" href={project.href} target="_blank" rel="noreferrer" aria-label={`Abrir ${project.name} no GitHub Pages`}>
+            <a class="project-card bird-card" data-bird={project.id} href={project.href} aria-label={`Conhecer ${project.name}`}>
               <div class="project-card-top">
-                <span>{project.kind}</span>
+                <span class="project-kind-badge">{project.kind}</span>
                 <strong>{project.status}</strong>
               </div>
-              <h3>{project.name}</h3>
+              <div class="bird-header">
+                <img src={project.icon} alt="" class="bird-badge-icon" width="44" height="44" />
+                <div>
+                  <h3>{project.name}</h3>
+                  <span class="bird-role">{project.role}</span>
+                </div>
+              </div>
               <p>{project.body}</p>
               <div class="project-card-foot">
                 <code>{project.folder}</code>
-                <span>abrir</span>
+                <span>conhecer</span>
               </div>
             </a>
           ))}
         </div>
+        <p class="more-link"><a href={url('/projetos/')}>ver mapa completo de todos os projetos</a></p>
       </div>
     </section>
 
