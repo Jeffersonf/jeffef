@@ -5,249 +5,29 @@ import { projectDetails } from '../lib/project-details';
 const updates: Record<string, (typeof projectDetails)[keyof typeof projectDetails]> = projectDetails;
 
 const allProjects = [
-  // --- A REVOADA (CORE) ---
-  {
-    id: 'revoada',
-    name: 'Revoada (jeffef.dev)',
-    kind: 'hub',
-    status: 'ninho central',
-    color: 'teal',
-    tech: ['Astro', 'TypeScript', 'CSS', 'Decap CMS'],
-    pc: 'file:///G:/Outros%20computadores/Meu%20laptop/Projetos/jeffef-site',
-    github: 'https://github.com/Jeffersonf/jeffef',
-    summary: 'O ninho central do ecossistema: caderno aberto de notas, memórias, fotografia e a vitrine unificada de todos os projetos.',
-    ready: ['Site Astro responsivo', 'Notas em Markdown', 'Editor Decap CMS', 'Nova identidade visual A Revoada'],
-    roadmap: ['Ampliar arquivo de notas e reflexões', 'Consolidar vitrine das aves', 'Refinar editor Decap CMS']
-  },
-  {
-    id: 'harpia',
-    name: 'Harpia (Radar de Imóveis)',
-    kind: 'radar',
-    status: 'ativo',
-    color: 'amber',
-    tech: ['Python', 'FastAPI', 'Playwright', 'Tailwind CSS'],
-    pc: 'file:///G:/Outros%20computadores/Meu%20laptop/Projetos/radar-imoveis',
-    github: 'https://github.com/Jeffersonf/radar-imoveis',
-    summary: 'Radar de inteligência imobiliária com visão aguçada e detecção cirúrgica de oportunidades no mercado.',
-    ready: ['Scrapers automáticos', 'Cálculo de margem líquida e preço/m²', 'Painel interativo de anúncios'],
-    roadmap: ['Expandir scrapers para novas fontes', 'Aprimorar algoritmo de estimativa de reforma', 'Alertas instantâneos via bot']
-  },
-  {
-    id: 'kestrel',
-    name: 'Kestrel (Team Lucão & Parceiros)',
-    kind: 'saas',
-    status: 'ativo',
-    color: 'amber',
-    tech: ['Node.js', 'Express', 'PWA', 'Cloudflare Pages'],
-    pc: 'file:///G:/Outros%20computadores/Meu%20laptop/Projetos/teamlucaofuturo',
-    github: 'https://github.com/Jeffersonf/teamlucaofuturo',
-    summary: 'Motor SaaS white-label para arenas esportivas, turmas, alunos e cobranças Pix automatizadas.',
-    ready: ['Gestão de turmas e matrículas', 'Cobrança dinâmica via Pix', 'PWA mobile-first ultra veloz', 'Instância Team Lucão em produção'],
-    roadmap: ['Finalizar módulo de reposição por chuva', 'Automação completa de conciliação Pix', 'Suporte a novas modalidades esportivas']
-  },
-  {
-    id: 'falcao',
-    name: 'Falcão (Telemetria & Custos)',
-    kind: 'auto',
-    status: 'ativo',
-    color: 'teal',
-    tech: ['Flutter', 'Android', 'JavaScript', 'Cloudflare Workers'],
-    pc: 'file:///G:/Outros%20computadores/Meu%20laptop/Projetos/finanza-auto',
-    github: 'https://github.com/Jeffersonf/finanza-auto',
-    summary: 'Telemetria veicular de alta performance, registro instantâneo de consumo (km/l), revisões preventivas e sync em nuvem.',
-    ready: ['Registro em menos de 3s', 'Dashboard com consumo médio', 'Manutenção preventiva (óleo, pneus, IPVA)', 'Sincronização Cloudflare KV'],
-    roadmap: ['Paridade total Android Flutter e Web PWA', 'Gráficos comparativos de combustíveis', 'Histórico de manutenções preventivas']
-  },
-  {
-    id: 'tuiuiu',
-    name: 'Tuiuiú (Gestão Patrimonial)',
-    kind: 'finanças',
-    status: 'ativo',
-    color: 'rose',
-    tech: ['Next.js', 'React', 'Tailwind CSS', 'Node.js'],
-    pc: 'file:///G:/Outros%20computadores/Meu%20laptop/Projetos/finanza-next',
-    github: 'https://github.com/Jeffersonf/finanza-next',
-    summary: 'Gestão e sustentação patrimonial, controle diário de fluxo de caixa, conciliação e visão financeira duradoura.',
-    ready: ['Controle de vencimentos diários', 'Envelopes orçamentários', 'Importação e conciliação bancária', 'Relatórios de patrimônio'],
-    roadmap: ['Refinar leitura automatizada de extratos (OFX)', 'Simulador de metas patrimoniais', 'Melhorias de responsividade mobile']
-  },
-  {
-    id: 'revoada-docs',
-    name: 'A Revoada (Docs & Manifesto)',
-    kind: 'documentação',
-    status: 'documentação',
-    color: 'teal',
-    tech: ['Markdown', 'HTML5', 'CSS Moderno', 'SVG'],
-    pc: 'file:///G:/Outros%20computadores/Meu%20laptop/Projetos/revoada-docs',
-    github: 'https://github.com/Jeffersonf/revoada-docs',
-    summary: 'Documentação central, manifesto e especificações de design do ecossistema A Revoada.',
-    ready: ['Manifesto oficial escrito', 'Identidade visual das aves definida', 'Conjunto de ícones vetoriais SVG', 'Landing page de apresentação'],
-    roadmap: ['Publicar documentação interativa online', 'Adicionar novos guias de arquitetura', 'Expandir iconografia vetorial']
-  },
-
-  // --- VIDA, TREINO & ROTINA ---
-  {
-    id: 'finvita',
-    name: 'João-de-Barro (Finvita)',
-    kind: 'vida',
-    status: 'em construção',
-    color: 'amber',
-    tech: ['Java', 'JavaScript', 'Android', 'SQLite'],
-    pc: 'file:///G:/Outros%20computadores/Meu%20laptop/Projetos/Vida/finvita',
-    github: 'https://github.com/Jeffersonf/finvita',
-    summary: 'Rotina, semana, projetos pessoais, listas, hábitos, áreas da vida e intenções organizadas.',
-    ready: ['Aplicação web', 'Servidor próprio', 'Projeto Android', 'Ferramentas de build'],
-    roadmap: ['Unificar fluxos de hábitos diários', 'Melhorar experiência de anotações rápidas', 'Preparar versão estável']
-  },
-  {
-    id: 'nexttrip',
-    name: 'Andorinha (NextTrip)',
-    kind: 'viagem',
-    status: 'ativo',
-    color: 'rose',
-    tech: ['Kotlin', 'Android', 'Room', 'PostgreSQL'],
-    pc: 'file:///G:/Outros%20computadores/Meu%20laptop/Projetos/Vida/nexttrip',
-    github: 'https://github.com/Jeffersonf/tripnext',
-    summary: 'Planejador de viagens local-first com sincronização resiliente, itinerários e controle de custos.',
-    ready: ['Cliente Android local-first', 'Aplicação web responsiva', 'Sincronização sem conflitos no Postgres'],
-    roadmap: ['Conectar persistência offline resiliente', 'Completar cálculo de despesas da viagem', 'Gerar instalador Android']
-  },
-  {
-    id: 'opengym',
-    name: 'Carcará (openGym)',
-    kind: 'treino',
-    status: 'ativo',
-    color: 'teal',
-    tech: ['TypeScript', 'React', 'Node.js', 'Self-Hosted'],
-    pc: 'file:///G:/Outros%20computadores/Meu%20laptop/Projetos/Vida/openGym',
-    github: 'https://github.com/arvids-unavailable/openGym',
-    summary: 'Tracker self-hosted de academia, repetições, progressão de carga e peso corporal.',
-    ready: ['Planejamento de semana de treinos', 'Execução guiada de exercícios', 'Histórico de cargas e peso'],
-    roadmap: ['Adicionar rotinas guiadas de exercícios', 'Histórico de sobrecarga progressiva', 'Backup e restauração local']
-  },
-  {
-    id: 'finfit',
-    name: 'Asa-de-Telha (Finfit)',
-    kind: 'treino',
-    status: 'em construção',
-    color: 'rose',
-    tech: ['JavaScript', 'HTML/CSS', 'PWA'],
-    pc: 'file:///G:/Outros%20computadores/Meu%20laptop/Projetos/Vida/finfit',
-    github: 'https://github.com/Jeffersonf/finfit',
-    summary: 'Registro de musculação e performance física com estética dark (irmão esportivo do Finanza).',
-    ready: ['Direção inicial do produto', 'Pasta local e protótipo de app'],
-    roadmap: ['Definir rotinas de treino semanais', 'Histórico de evolução e medidas', 'Refinamento do tema escuro']
-  },
-
-  // --- INTELIGÊNCIA & DEV HUB ---
-  {
-    id: 'project-hub',
-    name: 'Condor (Project Hub PRO)',
-    kind: 'dev tool',
-    status: 'ativo',
-    color: 'teal',
-    tech: ['Python', 'Electron', 'HTML/CSS', 'Git'],
-    pc: 'file:///G:/Outros%20computadores/Meu%20laptop/Projetos/IA,%20Dev%20Tools,%20Proxies%20e%20Arquivos%20Soltos/project-hub',
-    github: 'https://github.com/Jeffersonf/project-hub',
-    summary: 'Estação de trabalho e gerenciador de projetos desktop integrado ao Antigravity IDE, VS Code e Git.',
-    ready: ['Integração com Antigravity IDE', 'Visualização em Grid, List e Kanban', 'Monitoramento e limpeza de projetos'],
-    roadmap: ['Integração com terminal flutuante', 'Customização avançada de temas', 'Monitoramento de recursos']
-  },
-  {
-    id: 'odysseus',
-    name: 'Corujão (Odysseus AI)',
-    kind: 'ia',
-    status: 'experimento',
-    color: 'rose',
-    tech: ['Python', 'FastAPI', 'RAG', 'ChromaDB'],
-    pc: 'file:///G:/Outros%20computadores/Meu%20laptop/Projetos/IA,%20Dev%20Tools,%20Proxies%20e%20Arquivos%20Soltos/odysseus/odysseus',
-    github: 'https://github.com/pewdiepie-archdaemon/odysseus',
-    summary: 'Assistente pessoal de IA autônomo com RAG, pesquisa profunda, memória vetorial e tools.',
-    ready: ['Camada companion LAN para celular', 'Núcleo RAG e memória vetorial', 'Integração de ferramentas locais'],
-    roadmap: ['Melhorar extração de memórias semânticas', 'Adicionar suporte a novos provedores de embeddings', 'Refinar companion LAN']
-  },
-  {
-    id: 'radar-oportunidades',
-    name: 'Martim-Pescador (Radar Oportunidades)',
-    kind: 'radar',
-    status: 'ativo',
-    color: 'teal',
-    tech: ['Python', 'BeautifulSoup', 'SQLite'],
-    pc: 'file:///G:/Outros%20computadores/Meu%20laptop/Projetos/IA,%20Dev%20Tools,%20Proxies%20e%20Arquivos%20Soltos/radar-oportunidades',
-    github: 'https://github.com/Jeffersonf/radar-oportunidades',
-    summary: 'Monitor inteligente de vagas de emprego, processos seletivos e editais de concursos públicos.',
-    ready: ['Monitor leve e modular em Python puro', 'Catalogação de editais e processos', 'Banco de dados SQLite'],
-    roadmap: ['Adicionar novos portais de concursos', 'Filtro por escolaridade e região', 'Notificações via Telegram']
-  },
-
-  // --- INFRAESTRUTURA URE ---
-  {
-    id: 'ure-server-hub',
-    name: 'Quero-Quero (URE Server Hub)',
-    kind: 'infra',
-    status: 'ativo',
-    color: 'teal',
-    tech: ['Python', 'FastAPI', 'Tkinter', 'Tunnels'],
-    pc: 'file:///G:/Outros%20computadores/Meu%20laptop/Projetos/Infraestrutura%20URE/ure-server-hub',
-    github: 'https://github.com/Jeffersonf/ure-server-hub',
-    summary: 'Central de infraestrutura, monitoramento e guardião de serviços remotos da regional URE Itapeva.',
-    ready: ['Serviço resiliente local autônomo', 'Monitoramento e guardião de túneis', 'Instalador de 1-clique'],
-    roadmap: ['Testes de resiliência em falhas de rede', 'Automatização de reinicialização de serviços', 'Painel de logs em tempo real']
-  },
-  {
-    id: 'painelure-cloud',
-    name: 'Gavião-Guia (PainelURE Cloudflare)',
-    kind: 'painel',
-    status: 'ativo',
-    color: 'teal',
-    tech: ['JavaScript', 'Node.js', 'Cloudflare Workers', 'HTML/CSS'],
-    pc: 'file:///G:/Outros%20computadores/Meu%20laptop/Projetos/Infraestrutura%20URE/painelure%20clodflare',
-    github: 'https://github.com/Jeffersonf/painelure-clodflare',
-    summary: 'Base operacional preparada para Cloudflare, concentrando rotina técnica regional e escolas.',
-    ready: ['Frontend moderno', 'Módulos de escolas e chamados', 'Estrutura preparada para Edge Workers'],
-    roadmap: ['Concluir migração definitiva para Cloudflare', 'Desacoplar persistência do navegador', 'Implementar autenticação por escola']
-  },
-  {
-    id: 'central-chamados',
-    name: 'Tico-Tico (Central de Chamados)',
-    kind: 'painel',
-    status: 'em uso',
-    color: 'teal',
-    tech: ['HTML5', 'CSS Moderno', 'JavaScript', 'GitHub Pages'],
-    pc: 'file:///G:/Outros%20computadores/Meu%20laptop/Projetos/Infraestrutura%20URE/central-chamados',
-    github: 'https://github.com/Jeffersonf/central-chamados',
-    summary: 'Dashboard executivo interativo para acompanhamento e métricas dos chamados de T.I. das escolas.',
-    ready: ['Dashboard executivo online no GitHub Pages', 'Gráficos interativos de chamados', 'Filtros por escola e período'],
-    roadmap: ['Automatizar extração de relatórios mensais', 'Gráficos de tempo médio de atendimento', 'Exportação em PDF']
-  },
-
-  // --- LEGADO ---
-  {
-    id: 'bandamarcial',
-    name: 'Uirapuru (Banda Marcial Paineira)',
-    kind: 'site',
-    status: 'legado',
-    color: 'rose',
-    tech: ['TypeScript', 'React', 'Tailwind CSS', 'Vite'],
-    pc: 'file:///G:/Outros%20computadores/Meu%20laptop/Projetos/legado/bandamarcial',
-    github: 'https://github.com/Jeffersonf/banda-marcial',
-    summary: 'Portal institucional e presença digital da Banda Marcial Paineira.',
-    ready: ['Estrutura React com Tailwind CSS', 'Galeria de fotos e apresentações'],
-    roadmap: ['Galeria histórica de apresentações', 'Seção de partituras e repertório', 'Agenda de eventos']
-  },
-  {
-    id: 'finanza',
-    name: 'Finanza (Base Original)',
-    kind: 'arquivo',
-    status: 'legado',
-    color: 'amber',
-    tech: ['Kotlin', 'JavaScript', 'HTML/CSS', 'PostgreSQL'],
-    pc: 'file:///G:/Outros%20computadores/Meu%20laptop/Projetos/Ecossistema%20Finanza/finanza',
-    github: 'https://github.com/Jeffersonf/finanza',
-    summary: 'Base original do aplicativo de controle financeiro pessoal.',
-    ready: ['Aplicação web e mobile histórica', 'Estrutura completa de banco e rotinas'],
-    roadmap: ['Manter como arquivo histórico de engenharia', 'Sem desenvolvimento ativo previsto']
-  }
+  { id:'finanza', name:'Finanza', kind:'produto', status:'ativo', color:'teal', tech:['Kotlin','JavaScript','HTML/CSS'], pc:'file:///C:/Users/jeffe/finanza', github:'https://github.com/Jeffersonf/finanza', summary:'Controle financeiro pessoal para organizar vencimentos, listas, importações e decisões do dia a dia.', ready:['Aplicação web e mobile','Sincronização e banco de dados','Build para Android','Fluxos de contas e vencimentos'], roadmap:['Consolidar a experiência mobile','Refinar importações e relatórios','Ampliar testes e automações'] },
+  { id:'finanzav3', name:'Finanza v3', kind:'arquivo', status:'legado vivo', color:'amber', tech:['JavaScript','HTML/CSS','SQL'], pc:'file:///C:/Users/jeffe/finanzav3', github:'https://github.com/Jeffersonf/finanza', summary:'Versão anterior do Finanza, preservada como referência de produto, código e ideias.', ready:['Base web funcional','Aplicativo Android','Estrutura de banco','Histórico do produto'], roadmap:['Catalogar o que ainda vale migrar','Arquivar fluxos substituídos','Manter apenas correções essenciais'] },
+  { id:'finfit', name:'Finfit', kind:'app', status:'em construção', color:'rose', tech:['JavaScript','HTML/CSS','PWA'], pc:'file:///C:/Users/jeffe/finfit', github:null, summary:'Organização de treinos, saúde e acompanhamento pessoal em um fluxo direto e leve.', ready:['Direção inicial do produto','Pasta local e protótipo de app'], roadmap:['Definir o MVP','Criar rotina de treinos','Adicionar histórico e evolução'] },
+  { id:'finvita', name:'Finvita', kind:'app', status:'em construção', color:'rose', tech:['Java','JavaScript','Android'], pc:'file:///C:/Users/jeffe/finvita', github:'https://github.com/Jeffersonf/finvita', summary:'Rotina, cuidado e informações pessoais conectados ao ecossistema de ferramentas.', ready:['Aplicação web','Servidor próprio','Projeto Android','Ferramentas de build'], roadmap:['Unificar os fluxos principais','Melhorar a experiência mobile','Preparar uma versão estável'] },
+  { id:'painelure2', name:'Painel URE2', kind:'painel', status:'em uso', color:'teal', tech:['JavaScript','Node.js','HTML/CSS'], pc:'file:///C:/Users/jeffe/painelure2', github:'https://github.com/Jeffersonf/painelure', summary:'Painel operacional para dados, acompanhamento e organização do trabalho da URE.', ready:['Painel em operação','Banco e migrações','Módulos de trabalho','Rotinas de verificação'], roadmap:['Aprimorar indicadores','Simplificar rotinas recorrentes','Documentar operações críticas'] },
+  { id:'setechub', name:'Setec Hub', kind:'hub', status:'em construção', color:'amber', tech:['JavaScript','Node.js','Supabase'], pc:'file:///C:/Users/jeffe/setechub', github:'https://github.com/Jeffersonf/painelurelegado', summary:'Hub para centralizar informações, processos e ferramentas da área técnica.', ready:['Frontend e servidor','Integração com Supabase','Sincronização de dados','Testes iniciais'], roadmap:['Consolidar módulos prioritários','Revisar a migração de dados','Publicar a primeira versão estável'] },
+  { id:'bandamarcial', name:'Banda Marcial', kind:'site', status:'em construção', color:'rose', tech:['TypeScript','React','CSS'], pc:'file:///C:/Users/jeffe/bandamarcial', github:null, summary:'Presença digital e organização do conteúdo, história e atividades da banda marcial.', ready:['Estrutura local iniciada','Direção geral do site'], roadmap:['Definir identidade e conteúdo','Construir páginas principais','Publicar a primeira versão'] },
+  { id:'arena', name:'Arena Futevôlei', kind:'produto', status:'ativo', color:'teal', tech:['JavaScript','Node.js','PWA'], pc:'file:///C:/Users/jeffe/arena-futvolei', github:'https://github.com/Jeffersonf/arena-futvolei', summary:'App leve para escola de futevôlei: alunos, aulas, presenças, pagamentos e recados.', ready:['Gestão de alunos e aulas','Servidor e assets','Auditoria de fluxo e visual','Ambiente de desenvolvimento'], roadmap:['Fechar o fluxo de pagamentos','Melhorar comunicação com alunos','Preparar implantação'] },
+  { id:'jeffef', name:'jeffef.dev', kind:'site', status:'caderno aberto', color:'amber', tech:['Astro','TypeScript','CSS'], pc:'file:///C:/Users/jeffe/jeffef-site', github:'https://github.com/Jeffersonf/jeffef', summary:'Caderno pessoal com notas, cenas, contexto e uma visão viva dos projetos.', ready:['Site Astro responsivo','Notas em Markdown','Editor Decap CMS','Temas claro e escuro'], roadmap:['Evoluir a área de projetos','Ampliar o arquivo de notas','Refinar a publicação pelo CMS'] },
+  { id:'finanza-next', name:'Finanza Next', kind:'produto', status:'ativo', color:'teal', tech:['Kotlin','Android','Gradle'], pc:'file:///C:/Users/jeffe/finanza-next', github:'https://github.com/Jeffersonf/finanza-next', summary:'Nova geração do ecossistema Finanza, com projetos Android nativos e módulo dedicado a viagens.', ready:['Repositório principal','Base Android em Kotlin','Módulo de viagens','Estrutura de build Gradle'], roadmap:['Consolidar módulos Android','Unificar dados com o Finanza','Preparar distribuição estável'] },
+  { id:'finanza-android', name:'Finanza Android Kotlin', kind:'app', status:'em desenvolvimento', color:'teal', tech:['Kotlin','Android','Gradle'], pc:'file:///C:/Users/jeffe/finanza-android-kotlin', github:null, summary:'Implementação Android nativa do Finanza mantida localmente para evolução e paridade visual.', ready:['Projeto Android','Telas em Kotlin','Rotinas de build','Auditoria de paridade visual'], roadmap:['Concluir paridade com a versão web','Integrar sincronização','Gerar versão de distribuição'] },
+  { id:'nexttrip', name:'NextTrip', kind:'app', status:'protótipo', color:'rose', tech:['Kotlin','Android','Jetpack'], pc:'file:///C:/Users/jeffe/nexttrip', github:null, summary:'Aplicativo Android para planejar viagens, orçamento, roteiro e checklist em uma experiência de bolso.', ready:['Projeto Kotlin','Protótipo visual','Estrutura Android','Fluxos iniciais da viagem'], roadmap:['Conectar dados persistentes','Completar roteiro e despesas','Preparar primeira versão instalável'] },
+  { id:'fisiosaas', name:'FisioSaaS', kind:'produto', status:'em construção', color:'teal', tech:['HTML/CSS','JavaScript','Python'], pc:'file:///C:/Users/jeffe/Downloads/BarbeariaSaaS', github:'https://github.com/Jeffersonf/FisioSaaS', summary:'Sistema SaaS com frontend web e backend Python, atualmente armazenado localmente como BarbeariaSaaS.', ready:['Frontend web','Backend Python','Dependências e ambiente local','Repositório privado'], roadmap:['Alinhar nome e domínio do produto','Consolidar o fluxo principal','Preparar implantação'] },
+  { id:'automacao-confirmacao', name:'Automação Confirmação', kind:'automação', status:'local', color:'amber', tech:['Python'], pc:'file:///C:/Users/jeffe/Nova%20pasta%20(2)/AutomacaoConfirmacao', github:null, summary:'Automação em Python para agilizar confirmações e reduzir tarefas repetitivas.', ready:['Projeto local','Dependências Python','Fluxo inicial de automação'], roadmap:['Documentar execução','Adicionar tratamento de falhas','Versionar no GitHub'] },
+  { id:'robo-sam', name:'Robô SAM', kind:'automação', status:'local', color:'amber', tech:['Python'], pc:'file:///C:/Users/jeffe/Downloads/Robo%20SAM', github:null, summary:'Robô de automação mantido em Downloads, com ambiente Python e pacote de distribuição arquivado.', ready:['Código local','Dependências Python','Arquivo de backup'], roadmap:['Revisar o fluxo atual','Documentar configuração','Criar repositório próprio'] },
+  { id:'odysseus', name:'Odysseus', kind:'experimento', status:'referência', color:'rose', tech:['Python','JavaScript','Node.js'], pc:'file:///C:/Users/jeffe/odysseus/odysseus', github:'https://github.com/pewdiepie-archdaemon/odysseus', summary:'Projeto híbrido Python e JavaScript mantido localmente a partir de um repositório externo.', ready:['Ambiente Python','Aplicação JavaScript','Repositório de origem configurado'], roadmap:['Definir objetivo de uso','Registrar alterações próprias','Decidir entre fork ou referência'] },
+  { id:'sisteminha', name:'Sisteminha', kind:'experimento', status:'arquivado', color:'rose', tech:['TypeScript'], pc:null, github:'https://github.com/Jeffersonf/sisteminha', summary:'Experimento em TypeScript preservado no GitHub como parte do histórico de desenvolvimento.', ready:['Código versionado','Base TypeScript','Repositório público'], roadmap:['Documentar a proposta','Revisar dependências','Decidir se será retomado'] },
+  { id:'agua-poke', name:'Água Poke', kind:'experimento', status:'arquivado', color:'rose', tech:['Python'], pc:null, github:'https://github.com/Jeffersonf/agua-poke', summary:'Projeto experimental em Python preservado no GitHub.', ready:['Código Python','Histórico versionado','Repositório público'], roadmap:['Adicionar documentação','Revisar funcionamento atual','Manter como arquivo ou retomar'] },
+  { id:'portfolio', name:'Portfólio', kind:'site', status:'legado', color:'amber', tech:['TypeScript'], pc:null, github:'https://github.com/Jeffersonf/portfolio', summary:'Versão anterior de portfólio pessoal construída em TypeScript.', ready:['Site versionado','Base TypeScript','Repositório público'], roadmap:['Preservar como referência','Migrar conteúdo relevante','Direcionar para o jeffef.dev'] },
+  { id:'cadastro-time', name:'Cadastro Nosso Time', kind:'estudo', status:'privado', color:'amber', tech:['HTML/CSS'], pc:null, github:'https://github.com/Jeffersonf/cadastro-nosso-time', summary:'Projeto privado de cadastro e interface, mantido como exercício e referência.', ready:['Interface em CSS','Repositório privado','Histórico versionado'], roadmap:['Documentar o exercício','Revisar acessibilidade','Arquivar ou incorporar ideias'] },
+  { id:'formulario-cadastro', name:'Formulário de Cadastro', kind:'estudo', status:'privado', color:'amber', tech:['HTML'], pc:null, github:'https://github.com/Jeffersonf/formulario-de-cadastro', summary:'Formulário HTML de estudo preservado em repositório privado.', ready:['Estrutura HTML','Fluxo de formulário','Repositório privado'], roadmap:['Revisar validações','Adicionar estilos e acessibilidade','Manter como referência'] },
+  { id:'python-alura', name:'Python Alura', kind:'estudo', status:'privado', color:'amber', tech:['Python','Jupyter Notebook'], pc:null, github:'https://github.com/Jeffersonf/Python-Alura', summary:'Cadernos e exercícios de formação em Python realizados na Alura.', ready:['Notebooks de estudo','Exercícios Python','Repositório privado'], roadmap:['Organizar por curso','Adicionar índice de conteúdos','Registrar aprendizados principais'] },
+  { id:'forgottenserver', name:'Forgotten Server ORTS', kind:'fork', status:'arquivo', color:'rose', tech:['Lua','C++'], pc:null, github:'https://github.com/Jeffersonf/FORGOTTENSERVER-ORTS', summary:'Fork histórico de servidor Open Tibia, preservado como parte dos primeiros projetos no GitHub.', ready:['Fork público','Código do servidor','Histórico preservado'], roadmap:['Manter como arquivo histórico','Documentar o contexto','Sem desenvolvimento ativo previsto'] }
 ];
 const settings = await getEntry('site', 'project-settings');
 const visibleProjects = new Set(settings?.data.visibleProjects ?? allProjects.map(project => project.id));
