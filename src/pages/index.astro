@@ -13,81 +13,75 @@ const notas = await getPublishedNotas();
 const destaques = notas.filter((nota) => nota.data.photo).slice(0, 4);
 const heroPhoto = destaques[0];
 const secondaryPhotos = destaques.slice(1);
-const recentes = notas.slice(0, 5);
+const recentes = notas.slice(0, 6);
 const nowCards = agoraData?.cards?.slice(0, 3) ?? [];
-
 const base = '/jeffef/';
 const url = (path: string) => `${base}${path.replace(/^\/+/, '')}`;
 const githubPagesBase = 'https://jeffersonf.github.io';
-
-// Principais projetos reais em destaque na home
-const featuredProjects = [
+const projects = [
   {
-    id: 'finanza',
-    name: 'Finanza',
-    kind: 'produto',
+    name: 'Harpia',
+    folder: 'radar-imoveis',
+    href: `${githubPagesBase}/radar-imoveis/`,
     status: 'ativo',
-    featured: true,
-    cover: '/jeffef/project-covers/finanza-next.png',
-    tech: ['Kotlin', 'Android', 'JavaScript', 'SQL'],
-    summary: 'Ecossistema completo de controle financeiro pessoal, contas, vencimentos, sincronização na nuvem e app Android nativo.',
+    body: 'Radar de inteligência imobiliária com visão aguçada e detecção cirúrgica de oportunidades no mercado.',
+    kind: 'radar'
+  },
+  {
+    name: 'Kestrel',
+    folder: 'teamlucaofuturo',
+    href: `${githubPagesBase}/teamlucaofuturo/`,
+    status: 'ativo',
+    body: 'Motor SaaS white-label para arenas esportivas, turmas, alunos e cobranças Pix (Team Lucão e parceiros).',
+    kind: 'saas'
+  },
+  {
+    name: 'Falcão',
+    folder: 'finanza-auto',
+    href: `${githubPagesBase}/finanza-auto/`,
+    status: 'ativo',
+    body: 'Telemetria veicular, custos de combustível (km/l), revisões preventivas e sincronização na nuvem.',
+    kind: 'auto'
+  },
+  {
+    name: 'Tuiuiú',
+    folder: 'finanza-next',
     href: `${githubPagesBase}/finanza-next/`,
-    github: 'https://github.com/Jeffersonf/finanza-next'
-  },
-  {
-    id: 'arena',
-    name: 'Arena Futevôlei',
-    kind: 'saas',
     status: 'ativo',
-    cover: '/jeffef/project-covers/arena.png',
-    tech: ['JavaScript', 'Node.js', 'PWA'],
-    summary: 'Plataforma leve para gestão de escolas esportivas: turmas, alunos, presenças, pagamentos e comunicação.',
-    href: `${githubPagesBase}/arena-futvolei/`,
-    github: 'https://github.com/Jeffersonf/arena-futvolei'
+    body: 'Gestão e sustentação patrimonial, controle diário de contas e visão financeira de longo prazo.',
+    kind: 'finanças'
   },
   {
-    id: 'painelure2',
+    name: 'Revoada',
+    folder: 'jeffef-site',
+    href: `${githubPagesBase}/jeffef/`,
+    status: 'ninho central',
+    body: 'O ninho central do ecossistema: caderno aberto de notas, memórias, fotografia e a vitrine de todos os projetos.',
+    kind: 'hub'
+  },
+  {
     name: 'Painel URE2',
-    kind: 'painel',
-    status: 'em uso',
-    cover: '/jeffef/project-covers/painelure2.png',
-    tech: ['Node.js', 'PostgreSQL', 'HTML/CSS'],
-    summary: 'Painel operacional para gestão de dados, acompanhamento de indicadores e organização de fluxos de trabalho da URE.',
+    folder: 'painelure2',
     href: `${githubPagesBase}/painelure2/`,
-    github: 'https://github.com/Jeffersonf/painelure'
+    status: 'em uso',
+    body: 'Painel operacional para dados, acompanhamento e organização de trabalho.',
+    kind: 'painel'
   },
   {
-    id: 'fisiosaas',
-    name: 'FisioSaaS',
-    kind: 'saas',
+    name: 'Setec Hub',
+    folder: 'setechub',
+    href: `${githubPagesBase}/setechub/`,
     status: 'em construção',
-    cover: '/jeffef/project-covers/fisiosaas.png',
-    tech: ['Python', 'JavaScript', 'HTML/CSS'],
-    summary: 'Sistema SaaS multi-tenant voltado para clínicas e profissionais, com agendamentos e prontuários.',
-    href: null,
-    github: 'https://github.com/Jeffersonf/FisioSaaS'
+    body: 'Hub para organizar informações, processos e ferramentas da área técnica.',
+    kind: 'hub'
   },
   {
-    id: 'nexttrip',
-    name: 'NextTrip',
-    kind: 'app',
-    status: 'protótipo',
-    cover: '/jeffef/project-covers/nexttrip.png',
-    tech: ['Kotlin', 'Jetpack Compose', 'Android'],
-    summary: 'Aplicativo Android para planejar viagens, controle de orçamento, checklists e roteiros inteligentes de bolso.',
-    href: null,
-    github: null
-  },
-  {
-    id: 'jeffef',
-    name: 'jeffef.dev',
-    kind: 'hub & caderno',
-    status: 'caderno vivo',
-    cover: '/jeffef/project-covers/jeffef.png',
-    tech: ['Astro', 'TypeScript', 'Decap CMS'],
-    summary: 'Este espaço pessoal: caderno de notas em Markdown, cenas cotidianas, dados e vitrine de projetos.',
-    href: url('/'),
-    github: 'https://github.com/Jeffersonf/jeffef'
+    name: 'Banda Marcial',
+    folder: 'bandamarcial',
+    href: `${githubPagesBase}/bandamarcial/`,
+    status: 'em construção',
+    body: 'Projeto para presença digital e organização de conteúdo da banda.',
+    kind: 'site'
   }
 ];
 
@@ -102,53 +96,25 @@ const chipColor = {
 const emphasisClosing = data.closing?.replace('memória própria', '<em>memória própria</em>');
 ---
 
-<BaseLayout title="Jefferson — Dev & Caderno Pessoal" description={data.description}>
+<BaseLayout title={data.title} description={data.description}>
   <main>
-    {/* HERO SECTION */}
     <section class="shell hero">
       <div class="hero-copy">
-        <div class="hero-badge">
-          <span class="status-pulse"></span>
-          <span>disponível para novas ideias & projetos</span>
-        </div>
-
         <h1 set:html={data.heroTitle?.replace('movimento', '<em>movimento</em>')} />
-        
         <p class="lead">{data.heroLead}</p>
-        
         <p class="hero-note">{data.heroNote}</p>
-
-        <div class="hero-actions">
-          <a class="btn-primary" href="#projetos">
-            <span>Explorar Projetos</span>
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="m6 9 6 6 6-6"/>
-            </svg>
-          </a>
-          <a class="btn-secondary" href={url('/notas/')}>
-            <span>Ler Caderno</span>
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M5 12h14M12 5l7 7-7 7"/>
-            </svg>
-          </a>
-        </div>
-
         <div class="status-row" aria-label="Temas atuais do caderno">
           {data.chips.map((chip) => (
             <span class="chip" style={`--chip-c: ${chipColor[chip.color]}`}>{chip.label}</span>
           ))}
         </div>
       </div>
-
       {heroPhoto && (
-        <a class="hero-visual" href={url(`/notas/${noteSlug(heroPhoto.id)}/`)} title={`Ver nota: ${heroPhoto.data.title}`}>
+        <a class="hero-visual" href={url(`/notas/${noteSlug(heroPhoto.id)}/`)}>
           <figure>
-            <img src={resolveAssetPath(heroPhoto.data.photo)} alt={heroPhoto.data.photoAlt ?? heroPhoto.data.title} loading="eager" />
+            <img src={resolveAssetPath(heroPhoto.data.photo)} alt={heroPhoto.data.photoAlt ?? ''} />
             <figcaption>
-              <div class="hero-visual-meta">
-                <span>{heroPhoto.data.place ?? 'Itapeva, SP'}</span>
-                <small>{heroPhoto.data.kind}</small>
-              </div>
+              <span>{heroPhoto.data.place ?? heroPhoto.data.kind}</span>
               <strong>{heroPhoto.data.title}</strong>
             </figcaption>
           </figure>
@@ -156,96 +122,13 @@ const emphasisClosing = data.closing?.replace('memória própria', '<em>memória
       )}
     </section>
 
-    {/* PROJETOS EM DESTAQUE */}
-    <section class="shell section" id="projetos">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">engenharia & produtos</p>
-          <h2>o que está em andamento</h2>
-        </div>
-        <p>Aplicações, plataformas e ferramentas que construo no dia a dia, entre soluções em produção, SaaS e experimentos.</p>
-        <div class="head-action">
-          <a href={url('/projetos/')} class="section-link">
-            <span>ver catálogo completo ({featuredProjects.length}+)</span>
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-        </div>
-      </div>
-
-      <div class="section-body">
-        <div class="bento-grid">
-          {featuredProjects.map((project) => (
-            <article class:list={['bento-card', { 'bento-featured': project.featured }]}>
-              {project.cover && (
-                <div class="bento-cover">
-                  <img src={project.cover} alt={`Capa de ${project.name}`} loading="lazy" />
-                  <div class="bento-cover-overlay"></div>
-                </div>
-              )}
-              
-              <div class="bento-content">
-                <div class="bento-header">
-                  <span class="bento-kind">{project.kind}</span>
-                  <span class="bento-status">
-                    <i class="status-dot"></i>
-                    {project.status}
-                  </span>
-                </div>
-
-                <h3>
-                  <a href={url(`/projetos/${project.id}/`)}>{project.name}</a>
-                </h3>
-
-                <p>{project.summary}</p>
-
-                <div class="bento-tech">
-                  {project.tech.map((t) => (
-                    <span class="tech-tag">{t}</span>
-                  ))}
-                </div>
-
-                <div class="bento-footer">
-                  <a href={url(`/projetos/${project.id}/`)} class="bento-link">
-                    <span>detalhes</span>
-                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                  </a>
-                  
-                  <div class="bento-actions">
-                    {project.github && (
-                      <a href={project.github} target="_blank" rel="noreferrer" class="bento-ext" title="Ver código no GitHub">
-                        <span>GitHub</span>
-                        <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
-                      </a>
-                    )}
-                    {project.href && project.href !== url('/') && (
-                      <a href={project.href} target="_blank" rel="noreferrer" class="bento-ext live" title="Abrir projeto online">
-                        <span>Demo</span>
-                        <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
-                      </a>
-                    )}
-                  </div>
-                </div>
-              </div>
-            </article>
-          ))}
-        </div>
-      </div>
-    </section>
-
-    {/* CENAS EM DESTAQUE (FOTOGRAFIA) */}
     <section class="shell section" id="cenas">
       <div class="section-head">
         <div>
-          <p class="eyebrow">{data.sections?.photos?.eyebrow ?? 'fotografia'}</p>
-          <h2>{data.sections?.photos?.title ?? 'cenas em destaque'}</h2>
+          <p class="eyebrow">{data.sections?.photos?.eyebrow}</p>
+          <h2>{data.sections?.photos?.title}</h2>
         </div>
-        <p>{data.sections?.photos?.body ?? 'Imagens e fragmentos do dia a dia capturados na rotina.'}</p>
-        <div class="head-action">
-          <a href={url('/cenas/')} class="section-link">
-            <span>ver galeria de cenas</span>
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-        </div>
+        <p>{data.sections?.photos?.body}</p>
       </div>
 
       <div class="section-body">
@@ -254,35 +137,26 @@ const emphasisClosing = data.closing?.replace('memória própria', '<em>memória
             {(secondaryPhotos.length > 0 ? secondaryPhotos : destaques).map((nota) => (
               <a class="feature-photo" href={url(`/notas/${noteSlug(nota.id)}/`)}>
                 <figure>
-                  <img src={resolveAssetPath(nota.data.photo)} alt={nota.data.photoAlt ?? ''} loading="lazy" />
-                  <figcaption>
-                    <span>{nota.data.place ?? nota.data.kind}</span>
-                    <strong>{nota.data.title}</strong>
-                  </figcaption>
+                  <img src={resolveAssetPath(nota.data.photo)} alt={nota.data.photoAlt ?? ''} />
+                  <figcaption>{nota.data.title}</figcaption>
                 </figure>
               </a>
             ))}
           </div>
         ) : (
-          <p class="empty-state">As cenas vão aparecer aqui quando alguma nota tiver foto.</p>
+          <p class="empty-state">As cenas vao aparecer aqui quando alguma nota tiver foto.</p>
         )}
+        <p class="more-link"><a href={url('/cenas/')}>ver todas as cenas</a></p>
       </div>
     </section>
 
-    {/* NOTAS RECENTES */}
     <section class="shell section" id="notas">
       <div class="section-head">
         <div>
-          <p class="eyebrow">{data.sections?.notes?.eyebrow ?? 'caderno'}</p>
-          <h2>{data.sections?.notes?.title ?? 'notas recentes'}</h2>
+          <p class="eyebrow">{data.sections?.notes?.eyebrow}</p>
+          <h2>{data.sections?.notes?.title}</h2>
         </div>
-        <p>{data.sections?.notes?.body ?? 'Registros sem filtro, reflexões de desenvolvimento e aprendizados.'}</p>
-        <div class="head-action">
-          <a href={url('/notas/')} class="section-link">
-            <span>ler todas as notas</span>
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-        </div>
+        <p>{data.sections?.notes?.body}</p>
       </div>
 
       <div class="section-body">
@@ -296,43 +170,33 @@ const emphasisClosing = data.closing?.replace('memória própria', '<em>memória
                   <small>{dateParts(nota.data.date).year}</small>
                 </time>
                 <article>
-                  <div class="note-meta-top">
-                    <span class="kind">{nota.data.kind}</span>
-                    {nota.data.place && <span class="place">{nota.data.place}</span>}
-                  </div>
+                  <span class="kind">{nota.data.kind}</span>
                   <h3>{nota.data.title}</h3>
                   {nota.data.summary && <p>{nota.data.summary}</p>}
                   <div class="tags">
+                    {nota.data.place && <span class="place">{nota.data.place}</span>}
                     {nota.data.tags.map((tag) => <span class="tag">{tag}</span>)}
                   </div>
                 </article>
-                <div class="note-arrow" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </div>
               </a>
             ))}
           </div>
         ) : (
-          <p class="empty-state">As primeiras notas ainda não foram publicadas.</p>
+          <p class="empty-state">As primeiras notas ainda nao foram publicadas.</p>
         )}
+
+        <p class="more-link"><a href={url('/notas/')}>ver todas as notas</a></p>
       </div>
     </section>
 
-    {/* AGORA / EM CURSO (SE EXISTIREM CARDS) */}
     {nowCards.length > 0 && (
       <section class="shell section home-now" id="em-curso">
         <div class="section-head">
           <div>
-            <p class="eyebrow">{agoraData?.sections?.now?.eyebrow ?? 'estado atual'}</p>
-            <h2>{agoraData?.sections?.now?.title ?? 'em curso'}</h2>
+            <p class="eyebrow">{agoraData?.sections?.now?.eyebrow}</p>
+            <h2>{agoraData?.sections?.now?.title}</h2>
           </div>
-          <p>{agoraData?.sections?.now?.body ?? 'O que está ocupando a mente e o tempo nas últimas semanas.'}</p>
-          <div class="head-action">
-            <a href={url('/agora/')} class="section-link">
-              <span>ver página agora</span>
-              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-          </div>
+          <p>{agoraData?.sections?.now?.body}</p>
         </div>
 
         <div class="section-body">
@@ -345,53 +209,62 @@ const emphasisClosing = data.closing?.replace('memória própria', '<em>memória
               </article>
             ))}
           </div>
+          <p class="more-link"><a href={url('/agora/')}>ver agora</a></p>
         </div>
       </section>
     )}
 
-    {/* SOBRE MIM (BENTO PROFILE) */}
-    <section class="shell section" id="sobre">
+    <section class="shell section" id="projetos">
       <div class="section-head">
         <div>
-          <p class="eyebrow">{data.sections?.about?.eyebrow ?? 'contexto'}</p>
-          <h2>{data.sections?.about?.title ?? 'sobre'}</h2>
+          <p class="eyebrow">projetos</p>
+          <h2>o que esta em andamento</h2>
         </div>
-        <p>{data.sections?.about?.body ?? 'De onde saem os projetos, as notas e a rotina.'}</p>
-        <div class="head-action">
-          <a href={url('/sobre/')} class="section-link">
-            <span>mais sobre mim</span>
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-        </div>
+        <p>Um mapa simples dos projetos que estao na raiz da pasta de trabalho, entre produtos, paineis, sites e experimentos vivos.</p>
       </div>
 
       <div class="section-body">
-        <div class="profile-bento">
-          {data.cards.map((card, index) => (
-            <article class:list={['profile-card', { highlight: card.highlight, wide: index === 0 }]}>
-              <span class="profile-label">{card.label}</span>
-              <h3>{card.title}</h3>
-              {card.body && <p>{card.body}</p>}
-            </article>
+        <div class="project-grid">
+          {projects.map((project) => (
+            <a class="project-card" href={project.href} target="_blank" rel="noreferrer" aria-label={`Abrir ${project.name} no GitHub Pages`}>
+              <div class="project-card-top">
+                <span>{project.kind}</span>
+                <strong>{project.status}</strong>
+              </div>
+              <h3>{project.name}</h3>
+              <p>{project.body}</p>
+              <div class="project-card-foot">
+                <code>{project.folder}</code>
+                <span>abrir</span>
+              </div>
+            </a>
           ))}
-          <article class="profile-card profile-connect">
-            <span class="profile-label">conectar</span>
-            <h3>Presença digital & código</h3>
-            <p>Acompanhe os códigos no GitHub ou veja os detalhes de cada entrega.</p>
-            <div class="profile-links">
-              <a href="https://github.com/Jeffersonf" target="_blank" rel="noreferrer">
-                <span>↗ GitHub (@Jeffersonf)</span>
-              </a>
-              <a href="mailto:contato@jeffef.dev">
-                <span>✉ E-mail de contato</span>
-              </a>
-            </div>
-          </article>
         </div>
       </div>
     </section>
 
-    {/* MANIFESTO DE ENCERRAMENTO */}
+    <section class="shell section" id="sobre">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">{data.sections?.about?.eyebrow}</p>
+          <h2>{data.sections?.about?.title}</h2>
+        </div>
+        <p>{data.sections?.about?.body}</p>
+      </div>
+
+      <div class="section-body">
+        <div class="profile">
+          {data.cards.map((card, index) => (
+            <article class:list={['panel', { highlight: card.highlight, wide: index === 0 }]}>
+              <span>{card.label}</span>
+              <h3>{card.title}</h3>
+              {card.body && <p>{card.body}</p>}
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
     <div class="shell">
       <p class="closing" set:html={emphasisClosing} />
     </div>
